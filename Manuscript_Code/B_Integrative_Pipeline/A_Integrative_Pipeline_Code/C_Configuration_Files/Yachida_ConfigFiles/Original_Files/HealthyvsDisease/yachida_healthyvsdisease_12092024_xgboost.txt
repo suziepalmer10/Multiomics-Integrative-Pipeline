@@ -1,0 +1,20 @@
+#configuration file
+model_to_run='model_functions/xgboost_function.R'
+file_path='/home2/s180020/Desktop/Yachida_integrated/IntegratedLearner'
+input_file='OriginalDataProcessing/nofilter_yachida_healthyvscancer_12062024.csv'
+study_name='nf_yachida_healthyvscancer_12092024_xgb'
+type_of_analysis='binary'
+response_variable='disease_status'
+
+#leave stratify variable blank ('') if no stratification is needed
+#Default is '', not stratify included
+stratify_variable='disease_status'
+#Default is 0.8 for training proportion. Leave blank if 0.8 is desired. 
+#Add in other value if you wish to partition the data differently. 
+training_proportion=0.8
+#Default is 3 repeats for V-fold CV. Leave blank if 3 is desired. 
+#Add in other value if you wish to use a different quantitiy of repeats. 
+num_repeats=3
+#Default is 5 folds for V-fold CV. Leave blank if 5 is desired. 
+#Add in other value if you wish to use a different quantitiy of folds. 
+num_folds=5

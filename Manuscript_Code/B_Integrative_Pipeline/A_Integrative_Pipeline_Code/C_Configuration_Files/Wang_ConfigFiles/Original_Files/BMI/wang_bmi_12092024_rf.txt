@@ -1,0 +1,20 @@
+#configuration file
+model_to_run='model_functions/rf_function.R'
+file_path='/home2/s180020/Desktop/Wang_integrated/IntegratedLearner'
+input_file='OriginalDataProcessing/nofilter_wang_bmi_12092024.csv'
+study_name='nf_wang_bmi_12092024_rf'
+type_of_analysis='continuous'
+response_variable='BMI'
+
+#leave stratify variable blank ('') if no stratification is needed
+#Default is '', not stratify included
+stratify_variable='Study.Group'
+#Default is 0.8 for training proportion. Leave blank if 0.8 is desired. 
+#Add in other value if you wish to partition the data differently. 
+training_proportion=0.8
+#Default is 3 repeats for V-fold CV. Leave blank if 3 is desired. 
+#Add in other value if you wish to use a different quantitiy of repeats. 
+num_repeats=3
+#Default is 5 folds for V-fold CV. Leave blank if 5 is desired. 
+#Add in other value if you wish to use a different quantitiy of folds. 
+num_folds=5

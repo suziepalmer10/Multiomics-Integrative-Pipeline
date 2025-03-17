@@ -1,0 +1,287 @@
+---
+title: "Violin Plot For Feature Comparisons Code"
+output: html_notebook
+date: 03-13-2025 (last modified)
+author: Suzette Palmer
+---
+
+Code to run before: FeatureExtractionAnalysis.Rmd
+
+This code is used for comparison analyses between the features (metabolites and taxa) selected by Elastic Net, XGBoost and Random Forest Base Models. This code is used for Figures 4-6 and Supplemental Figures __. 
+
+First, install the following packages. To do this, you can Google "install" and name of the package. 
+Note: Package versions can be found below.
+
+```{r}
+library(readxl) #readxl_1.4.3
+library(ggplot2) #ggplot2_3.5.1
+library(tidyverse) #tidyverse_2.0.0
+```
+Change the working directory, where your processed data excel files are stored from the FeatureExtractionAnalysis.Rmd file. 
+```{r}
+setwd('/Users/suzettepalmer/Desktop/IntegratedLearner_March2025/Code_and_Files/Feature_Comparisons/')
+```
+
+There are 6 possible options to generate violin plots
+taxa feature_reduced
+taxa full_dimensional
+metabolite feature_reduced
+metabolite full_dimensional 
+concat feature_reduced
+concat full_dimensional
+
+```{r}
+dataset_selection = 'metabolite'
+parameter_selection = 'full_dimensional'
+
+```
+
+
+Next, we will load in the desired analyses that we would like to process moving forward. 
+```{r}
+if (dataset_selection == 'metabolite' & parameter_selection == 'feature_reduced') {
+top1_df <- read_excel('Top1/1metab_filtered_03112025.xlsx')
+top3_df <- read_excel('Top3/3metab_filtered_03112025.xlsx')
+top5_df <- read_excel('Top5/5metab_filtered_03112025.xlsx')
+top10_df <- read_excel('Top10/10metab_filtered_03112025.xlsx')
+top20_df <- read_excel('Top20/20metab_filtered_03112025.xlsx')
+top50_df <- read_excel('Top50/50metab_filtered_03112025.xlsx')
+} else if (dataset_selection == 'metabolite' & parameter_selection == 'full_dimensional') {
+top1_df <- read_excel('Top1/1metab_unfiltered_03112025.xlsx')
+top3_df <- read_excel('Top3/3metab_unfiltered_03112025.xlsx')
+top5_df <- read_excel('Top5/5metab_unfiltered_03112025.xlsx')
+top10_df <- read_excel('Top10/10metab_unfiltered_03112025.xlsx')
+top20_df <- read_excel('Top20/20metab_unfiltered_03112025.xlsx')
+top50_df <- read_excel('Top50/50metab_unfiltered_03112025.xlsx')
+} else if (dataset_selection == 'taxa' & parameter_selection == 'feature_reduced') {
+top1_df <- read_excel('Top1/1taxa_filtered_03112025.xlsx')
+top3_df <- read_excel('Top3/3taxa_filtered_03112025.xlsx')
+top5_df <- read_excel('Top5/5taxa_filtered_03112025.xlsx')
+top10_df <- read_excel('Top10/10taxa_filtered_03112025.xlsx')
+top20_df <- read_excel('Top20/20taxa_filtered_03112025.xlsx')
+top50_df <- read_excel('Top50/50taxa_filtered_03112025.xlsx')
+} else if (dataset_selection == 'taxa' & parameter_selection == 'full_dimensional') {
+top1_df <- read_excel('Top1/1taxa_unfiltered_03112025.xlsx')
+top3_df <- read_excel('Top3/3taxa_unfiltered_03112025.xlsx')
+top5_df <- read_excel('Top5/5taxa_unfiltered_03112025.xlsx')
+top10_df <- read_excel('Top10/10taxa_unfiltered_03112025.xlsx')
+top20_df <- read_excel('Top20/20taxa_unfiltered_03112025.xlsx')
+top50_df <- read_excel('Top50/50taxa_unfiltered_03112025.xlsx')
+} else if (dataset_selection == 'concat' & parameter_selection == 'feature_reduced') {
+top1_df <- read_excel('Top1/1concat_filtered_03112025.xlsx')
+top3_df <- read_excel('Top3/3concat_filtered_03112025.xlsx')
+top5_df <- read_excel('Top5/5concat_filtered_03112025.xlsx')
+top10_df <- read_excel('Top10/10concat_filtered_03112025.xlsx')
+top20_df <- read_excel('Top20/20concat_filtered_03112025.xlsx')
+top50_df <- read_excel('Top50/50concat_filtered_03112025.xlsx')
+} else if (dataset_selection == 'concat' & parameter_selection == 'full_dimensional') {
+top1_df <- read_excel('Top1/1concat_unfiltered_03112025.xlsx')
+top3_df <- read_excel('Top3/3concat_unfiltered_03112025.xlsx')
+top5_df <- read_excel('Top5/5concat_unfiltered_03112025.xlsx')
+top10_df <- read_excel('Top10/10concat_unfiltered_03112025.xlsx')
+top20_df <- read_excel('Top20/20concat_unfiltered_03112025.xlsx')
+top50_df <- read_excel('Top50/50concat_unfiltered_03112025.xlsx')
+}
+```
+
+We will extract the dataframe names from the analysis where the top feature for Elastic Net, XGBoost and Random Forest are compared. The logic is that if there is not even 1 feature, the Dataframe will not be present in any of the comparisons of greater numbers of features.
+```{r}
+# Extract the DataFrame_Names reference from top1_df
+valid_names <- top1_df$Dataframe_Name
+```
+The below function, "align_dataframe_names" ensures that the Comparisons will have the same dataframe names, even if a dataset is missing from this comparison. Reasons for not having the same number of datasets across the comparisons is likely due to one of the models (XGBoost, Random Forest or XGBoost) having less than the required threshold, such as 20 features greater than 0 to perform the comparison. You will notice that as we increase in desired feature threshold (such as 50 features), the number of datasets that we can analyze decreases in size. This code importantly add these dataframe names back with NA as a placeholder for the values, so we are able to plot these comparisons on the same violin plot. 
+```{r}
+# Function to align dataframe names
+align_dataframe_names <- function(df, valid_names) {
+  missing_names <- setdiff(valid_names, df$Dataframe_Name)
+  
+  if (length(missing_names) > 0) {
+    missing_rows <- data.frame(Dataframe_Name = missing_names, matrix(NA, nrow = length(missing_names), ncol = ncol(df) - 1))
+    colnames(missing_rows) <- colnames(df)  # Ensure column names match
+    df <- bind_rows(df, missing_rows)
+  }
+  df <- df %>% arrange(factor(Dataframe_Name, levels = valid_names))
+  return(df)
+}
+```
+This code chunk runs the above function to ensure consistent dataframe shapes for the feature comparison. 
+```{r}
+# Apply function to all datasets
+top3_df <- align_dataframe_names(top3_df, valid_names)
+top5_df <- align_dataframe_names(top5_df, valid_names)
+top10_df <- align_dataframe_names(top10_df, valid_names)
+top20_df <- align_dataframe_names(top20_df, valid_names)
+top50_df <- align_dataframe_names(top50_df, valid_names)
+```
+This list stores the feature comparisons in a list that we will be plotting downstream. 
+```{r}
+# Store datasets in a named list
+data_list <- list(
+  "Top1" = top1_df,
+  "Top3" = top3_df,
+  "Top5" = top5_df,
+  "Top10" = top10_df,
+  "Top20" = top20_df,
+  "Top50" = top50_df
+)
+```
+This chunk converts our data into "long format", which will allow us to have multiple panels of comparisons on the same violin plot. 
+```{r}
+# Process data into long format
+long_data_list <- list()
+for (name in names(data_list)) {
+  df <- data_list[[name]]
+  if (!is.null(df)) {
+    long_data_list[[name]] <- df %>%
+      pivot_longer(cols = -Dataframe_Name, names_to = "Metric", values_to = "Value") %>%
+      mutate(Dataset = name)
+  } 
+}
+```
+Long format datasets are combined and then the "Metric" and "Dataset" parameters are converted to Factors, so that the order fo the datasets and the comparisons are maintained. These basically allow us to set the order for how these are plotted. 
+```{r}
+# Combine all datasets
+df_combined <- bind_rows(long_data_list)
+
+df_combined$Metric <- factor(df_combined$Metric, levels = c("all_overlap", "enet_rf_overlap", "enet_xgb_overlap",
+                                                            "rf_xgb_overlap", "enet_only", "rf_only", "xgb_only"))
+df_combined$Dataset <- factor(df_combined$Dataset, levels = c("Top1", "Top3", "Top5", "Top10", "Top20", "Top50"))
+
+df_combined$Metric <- trimws(df_combined$Metric)
+```
+I manually separated my binary and continuous datasets to create separate plots for analysis. You can check the names of your dataframes by saying "unique(df_combined$Dataframe_Name)" if using my code. 
+```{r}
+unique(df_combined$Dataframe_Name)
+```
+
+Possible binary and continuous names
+```{r}
+continuous <- c(
+  "era_age", "era_cholesterol", "era_glucose", 
+  "franzosa_ControlvsCD_Age", "franzosa_ControlvsCD_Fp", 
+  "franzosa_ControlvsDisease_Age", 
+  "franzosa_ControlvsDisease_Fp", "franzosa_ControlvsUC_Age", 
+  "franzosa_ControlvsUC_Fp",
+  "yachida_age", "yachida_alcohol", "yachida_BrinkmanIndex", 
+  "wang_age", "wang_creatinine", "wang_egfr", "wang_urea",
+  "wang_bmi", 
+  "nf_era_age", "nf_era_cholesterol", "nf_era_glucose", 
+  "un_franzosa_ControlvsCD_Age", "un_franzosa_ControlvsCD_Fp", 
+  "un_franzosa_ControlvsDisease_Age",
+  "un_franzosa_ControlvsDisease_Fp", "un_franzosa_ControlvsUC_Age", 
+  "un_franzosa_ControlvsUC_Fp",
+  "nf_yachida_age", "nf_yachida_alcohol", "nf_yachida_BrinkmanIndex", 
+  "nf_wang_age", "nf_wang_bmi", "nf_wang_creatinine", "nf_wang_egfr", "nf_wang_urea"
+)
+
+binary <- c(
+  "era_alcohol", "era_sg", "franzosa_ControlvsDisease_ConvDisease", 
+  "yachida_gender", "yachida_healthyvscancer", "yachida_healthyvsearly", 
+  "yachida_healthyvsstageI_II", "yachida_healthyvsstageIII_IV",
+  "wang_studygroup", 
+  "era_gender",
+  "nf_era_alcohol", 
+  "nf_era_sg", "nf_era_gender",
+  "un_franzosa_ControlvsDisease_ConvDisease", 
+  "nf_yachida_alcohol", 
+  "nf_yachida_gender", "nf_yachida_healthyvscancer", "nf_yachida_healthyvsstageIII_IV",
+  "nf_wang_studygroup"
+)
+
+```
+
+
+I decided that I didn't want to plot the Top 3 feature comparisons and felt it was a little too crowded. To remove some comparisons for downstream analysis, you can use similar code to below. 
+```{r}
+df_combined_1 <- df_combined %>% filter(Dataset != "Top3")
+```
+This subsets the manually curated binary and continuous datasets for the graph below. 
+```{r}
+df_binary <- df_combined_1[df_combined_1$Dataframe_Name %in% binary, ]
+df_continuous <- df_combined_1[df_combined_1$Dataframe_Name %in% continuous, ]
+```
+
+```{r}
+# Custom colors for boxplot
+custom_colors <- c("all_overlap" = "#0071bc",  # Blue
+                   "enet_rf_overlap" = "#939598",  # Orange
+                   "rf_only" = "#B31E2D",  # Green
+                   "xgb_only" = "#F3C366",  # Gray
+                   "enet_only" = "#6b00b9", 
+                   "enet_xgb_overlap" = "#76dcd2", 
+                   "rf_xgb_overlap" = "#FFFFFF")  # Purple
+```
+The function below creates a faceted violin plot for each of your comparisons. 
+```{r}
+violin_plot <- function(title_select, df) {
+g <- ggplot(df, aes(x = Metric, y = Value, fill = Metric)) +
+  #geom_boxplot(outlier.shape = NA, alpha = 0.7) + 
+  geom_violin(alpha = 0.7, trim = FALSE, width = 0.6) +
+  geom_jitter(aes(color = Metric), position = position_jitter(width = 0.2, height = 0), 
+               alpha = 0.6, size = 1.5, shape = 1, color = 'black') + 
+  theme_minimal() +
+  labs(title = title_select, 
+       x = "Metric", y = "Proportion of Features") +
+  theme(
+    legend.position = "bottom",
+    axis.text.y = element_text(size = 8),
+    axis.text.x = element_text(angle = 45, hjust = 1),  # Rotate labels
+    strip.text = element_text(size = 8),
+    panel.spacing = unit(0.05, "lines"),
+  ) +
+  facet_wrap(~Dataset, nrow = 6, scales = "fixed") +
+  scale_fill_manual(values = custom_colors) +  # Apply custom colors for boxplot
+  scale_y_continuous(limits = c(0, 1.0), expand = expansion(mult = c(0.05, 0.05))) 
+print(g)
+return(g)
+}
+```
+These are the metabolite violin output files. 
+dataset_selection = 'metabolite'
+parameter_selection = 'feature_reduced'
+
+```{r}
+generate_violin_plots <- function(prefix, title_cont, title_binary) {
+  cont_plot <- violin_plot(title_cont, df_continuous)
+  binary_plot <- violin_plot(title_binary, df_binary)
+
+  pdf(paste0(prefix, "_continuous_violin_plot.pdf"), width = 6, height = 8)
+  print(cont_plot)
+  dev.off()
+
+  pdf(paste0(prefix, "_binary_violin_plot.pdf"), width = 6, height = 8)
+  print(binary_plot)
+  dev.off()
+}
+
+if (dataset_selection == 'metabolite' && parameter_selection == 'feature_reduced') {
+  generate_violin_plots("metabolite_filtered", 
+                        "Comparisons of Feature Reduced Continuous Metabolites Selected Across Datasets", 
+                        "Comparisons of Feature Reduced Binary Metabolites Selected Across Datasets")
+} else if (dataset_selection == 'metabolite' && parameter_selection == 'full_dimensional') {
+  generate_violin_plots("metabolite_unfiltered", 
+                        "Comparisons of Full Dimensional Continuous Metabolites Selected Across Datasets", 
+                        "Comparisons of Full Dimensional Binary Metabolites Selected Across Datasets")
+} else if (dataset_selection == 'taxa' && parameter_selection == 'feature_reduced') {
+  generate_violin_plots("taxa_filtered", 
+                        "Comparisons of Feature Reduced Continuous Taxa Selected Across Datasets", 
+                        "Comparisons of Feature Reduced Binary Taxa Selected Across Datasets")
+} else if (dataset_selection == 'taxa' && parameter_selection == 'full_dimensional') {
+  generate_violin_plots("taxa_unfiltered", 
+                        "Comparisons of Full Dimensional Continuous Taxa Selected Across Datasets", 
+                        "Comparisons of Full Dimensional Binary Taxa Selected Across Datasets")
+} else if (dataset_selection == 'concat' && parameter_selection == 'feature_reduced') {
+  generate_violin_plots("concat_filtered", 
+                        "Comparisons of Feature Reduced Continuous Concatenated Features Selected Across Datasets", 
+                        "Comparisons of Feature Reduced Binary Concatenated Features Selected Across Datasets")
+} else if (dataset_selection == 'concat' && parameter_selection == 'full_dimensional') {
+  generate_violin_plots("concat_unfiltered", 
+                        "Comparisons of Full Dimensional Continuous Concatenated Features Selected Across Datasets", 
+                        "Comparisons of Full Dimensional Binary Concatenated Features Selected Across Datasets")
+}
+
+```
+
+
+
+

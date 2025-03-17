@@ -1,0 +1,279 @@
+"Feature","Importance_Model_1","Importance_Model_2","Importance_Model_3","Importance_Model_4","Importance_Model_5","Importance_Model_6","Importance_Model_7","Importance_Model_8","Importance_Model_9","Importance_Model_10","Importance_Model_11","Importance_Model_12","Importance_Model_13","Importance_Model_14","Importance_Model_15","Mean_Importance"
+"m__C18-neg_Cluster_0035: NA",0,0,0,0.0624773366701985,0,0,0,0,0,0,0,0,0,0,0,0.00416515577801324
+"m__C18-neg_Cluster_0050: NA",0,0,0,0,0,0,0,0,0.00211877285629339,0,0,0,0,0,0,0.000141251523752893
+"m__C18-neg_Cluster_0063: NA",0.444713831356164,0,0.137902447232336,0.912638376989967,0,0.594618395075863,0,0.661772743976311,0,0,0.115874004529984,0.300533723810521,0.007923420977247,0.0887854772405693,0.0981446384996315,0.22419380397924
+"m__C18-neg_Cluster_0081: NA",0.0393515868666312,0,0,0,0,0,0,0,0,0.0180919553991072,0,0,0,0,0,0.00382956948438256
+"m__C18-neg_Cluster_0110: NA",0,0,0.0207105122379364,0,0,0,0,0,0,0,0,0,0,0,0,0.00138070081586242
+"m__C18-neg_Cluster_0134: NA",0,0,0,0,0,0,0,0,0,0.00622874967924044,0,0,0.0123788819733055,0,0,0.00124050877683639
+"m__C18-neg_Cluster_0136: NA",0,0,0,0,0,1,0,0,0,0.0713852185553422,0,0,0.451410630935074,0,0,0.101519723299361
+"m__C18-neg_Cluster_0191: NA",0,0,0,0,0,0,0,0,0.0181207495983563,0,0,0,0,0,0,0.00120804997322375
+"m__C18-neg_Cluster_0197: NA",1,0,0.383150296140469,0.358059976156335,0,0,0,0.540673141698993,0.508777411602175,0.0606003411946809,0,0,1,1,0.468720017147396,0.35466541226267
+"m__C18-neg_Cluster_0274: NA",0.074648658675887,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00497657724505913
+"m__C18-neg_Cluster_0388: NA",0,0,0,0,0,0.288718633529904,0,0,0,0,0,0,0,0,0,0.0192479089019936
+"m__C18-neg_Cluster_0404: NA",0,0,0,0,0,0,0,0,0,0.00965560400263277,0,0,0,0,0,0.000643706933508852
+"m__C18-neg_Cluster_0500: NA",0,0,0,0,0,0,0,0,0.00385291326689332,0,0,0,0,0,0,0.000256860884459555
+"m__C18-neg_Cluster_0513: NA",0,0,0,0,0,0,0,0,0.0101324888804788,0,0,0,0,0,0,0.000675499258698588
+"m__C18-neg_Cluster_0579: NA",0,0,0,0.0353013440039077,0,0,0,0,0,0,0,0,0,0,0,0.00235342293359385
+"m__C18-neg_Cluster_0586: NA",0,0,0,0,0.210100176405682,0.200653983309961,0,0,0,0,0,0,0,0,0,0.0273836106477095
+"m__C18-neg_Cluster_0630: NA",0,0,0.0434701755968009,0,0,0,0,0,0,0,0,0,0,0,0,0.00289801170645339
+"m__C18-neg_Cluster_0631: NA",0,0,0,0.127647440330601,0,0,0.412740351185984,0,0,0,0.173472321132919,0,0,0,0,0.0475906741766337
+"m__C18-neg_Cluster_0634: NA",0,0,0,1,0,0,0,0,0,0.0435655798237458,0,0,0,0,0,0.0695710386549164
+"m__C18-neg_Cluster_0635: NA",0.0882514293807402,0,0,0.0719663147996995,0,0,0,0,0,0,0,0,0,0,0,0.0106811829453626
+"m__C18-neg_Cluster_0772: NA",0,0,0,0,0,0,0,0,0,0,0.386101409042731,0,0,0,0,0.0257400939361821
+"m__C18-neg_Cluster_0802: NA",0,0,0,0,0,0,0,0,0.00013734428942193,0,0,0,0,0,0,9.15628596146198e-06
+"m__C18-neg_Cluster_0815: NA",0,0,0.035939835867703,0,0,0,0,0,0,0,0,0,0,0,0,0.00239598905784687
+"m__C18-neg_Cluster_0872: NA",0,0,0,0,0,0,0,0,0,0.000859211338932375,0,0,0,0,0,5.7280755928825e-05
+"m__C18-neg_Cluster_1233: NA",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0640299898706837,0,0.00426866599137891
+"m__C18-neg_Cluster_1294: NA",0,0,0.0226266447226125,0,0,0,0,0,0,0,0,0,0,0,0,0.0015084429815075
+"m__C18-neg_Cluster_1371: NA",0,0,0,0,0,0,0.118855222925854,0,0,0,0,0,0,0,0,0.00792368152839025
+"m__C18-neg_Cluster_1482: NA",0,0,0,0,0,0,0,0,0,2.49977482295258e-05,0,0,0,0,0,1.66651654863506e-06
+"m__C18-neg_Cluster_1539: NA",0,0,0,0,0,0,0,0,0,0,0.0223606341977498,0,0,0,0,0.00149070894651666
+"m__C18-neg_Cluster_1582: NA",0,0,0.041265621162924,0,0,0,0,0,0,0,0,0,0,0,0,0.0027510414108616
+"m__C18-neg_Cluster_1787: NA",0,0,0,0,0,0,0,0,0.00608281675252993,0,0,0,0,0,0,0.000405521116835329
+"m__C18-neg_Cluster_1925: NA",0,0,0,0,0,0,0,0,0.000242126458025637,0,0,0,0,0,0,1.61417638683758e-05
+"m__C18-neg_Cluster_1963: NA",0,0,0,0,0,0,0,0,0,0.00179159404445257,0,0,0,0,0,0.000119439602963504
+"m__C18-neg_Cluster_2039: NA",0.638411409183136,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0425607606122091
+"m__C18-neg_Cluster_2083: NA",0,0,0,0,0,0,0,0,0.00724324051885567,0.0139430290558276,0.123966228863981,0,0,0,0,0.00967683322924429
+"m__C18-neg_Cluster_2096: NA",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0666666666666667
+"m__C18-neg_Cluster_2109: NA",0,0,0,0,0,0,0.558225792213597,0,0,0,0,0,0,0,0,0.0372150528142398
+"m__C8-pos_Cluster_0010: NA",0,0,0,0,0,0,0,0,0,2.72706672063939e-05,0,0,0,0,0,1.81804448042626e-06
+"m__C8-pos_Cluster_0058: NA",0,0,0,0.104037353349215,0,0,0,0,0,0.0117741290985537,0,0,0,0,0,0.00772076549651788
+"m__C8-pos_Cluster_0189: NA",0.0165555503385254,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00110370335590169
+"m__C8-pos_Cluster_0498: NA",0.0321490127497375,0,0,0.0303722315641217,0,0,0,0,0,0,0,0,0,0,0,0.00416808295425728
+"m__C8-pos_Cluster_0724: NA",0,0,0.0191238396987063,0,0,0,0,0,0,0,0,0,0,0,0,0.00127492264658042
+"m__C8-pos_Cluster_0735: NA",0,0,0,0,0,0,0,0,0.00584687332403817,0,0,0,0,0,0,0.000389791554935878
+"m__C8-pos_Cluster_0738: NA",0,0.222368287351523,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0148245524901015
+"m__C8-pos_Cluster_0959: NA",0.0454241381380642,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00302827587587094
+"m__C8-pos_Cluster_1004: C16:0 ceramide (d18:1)",0,0,0,0,0,0,0,0,0,0.0147483062622033,0,0,0,0,0,0.000983220417480223
+"m__C8-pos_Cluster_1182: NA",0,0,0,0,0,0,0,0,0,0.00503781862464999,0,0,0,0,0,0.000335854574976666
+"m__C8-pos_Cluster_1239: NA",0,0,0,0,0,0,0,0,0,0,0.0511287679305564,0,0,0,0,0.00340858452870376
+"m__C8-pos_Cluster_1293: NA",0,0,0,0.0483956241777231,0,0,0,0,0,0,0,0.750323899267081,0,0.257850498591646,0,0.0704380014690967
+"m__C8-pos_Cluster_1504: C18:2 CE*",0,0,0,0,0,0,0,0,8.79506901352011e-05,0,0,0,0,0,0,5.86337934234674e-06
+"m__C8-pos_Cluster_1516: NA",0,0,0,0,0,0,0,0,0,0.00141916700399619,0,0,0,0,0,9.46111335997457e-05
+"m__C8-pos_Cluster_1737: NA",0,0,0,0,0,0,0,0.163003135202447,0,0,0,0,0,0,0,0.0108668756801632
+"m__C8-pos_Cluster_1790: NA",0.0276409136952687,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00184272757968458
+"m__C8-pos_Cluster_1795: NA",0,0,0.0266627981175853,0,0,0,0,0,0,0,0,0,0,0,0,0.00177751987450568
+"m__C8-pos_Cluster_1803: NA",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0126513206925087,0,0.000843421379500578
+"m__C8-pos_Cluster_1858: NA",0.0578198749349582,0,0,0,0,0,0,0,0,0.0315966871869062,0,0,0,0,0,0.00596110414145763
+"m__C8-pos_Cluster_1872: NA",0,0,0,0,0,0,0,0,0,0.0350734094616639,0,0,0,0,0,0.00233822729744426
+"m__C8-pos_Cluster_1888: C22:0 SM",0,0,0.114941356445134,0.0789369253022623,0,0,0,0,0,0.0100559658713923,0,0,0.0111238095383988,0,0,0.0143372038104792
+"m__C8-pos_Cluster_1903: NA",0.184575665581866,0,0,0,0,0,0,0.125928523550541,0,0,0,0,0,0,0,0.0207002792754938
+"m__C8-pos_Cluster_1981: NA",0.0319585364126469,0,0.040509124462851,0,0,0,0,0,0,0,0,0,0,0,0,0.00483117739169986
+"m__C8-pos_Cluster_2012: NA",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0271720976578505,0,0.00181147317719003
+"m__C8-pos_Cluster_2151: NA",0,0,0,0,0,0,0,0,0,0.0308133902516722,0,0,0,0,0,0.00205422601677815
+"m__C8-pos_Cluster_2158: NA",0,0,0.0183641974281622,0,0,0,0,0,0,0,0,0,0,0,0,0.00122427982854414
+"m__C8-pos_Cluster_2169: NA",0,0,0,0,0,0,0,0,0,0,0,0,0.00982028376529773,0,0.146007746436467,0.0103885353467843
+"m__C8-pos_Cluster_2438: NA",0.120443769993627,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00802958466624178
+"m__HILIC-neg_Cluster_0156: caprylic acid",0,0,0.104262444521496,0,0,0,0,0,0,0.0314444179673911,0,0,0,0,0,0.00904712416592579
+"m__HILIC-neg_Cluster_0197: NA",0,0,0,0,0,0,0,0,0,0.00175565930444118,0,0,0,0,0,0.000117043953629412
+"m__HILIC-neg_Cluster_0246: NA",0.0301319540873977,0,0,0,0,0,0,0.10122516297024,0,0.0137919709696378,0,0.152873766241243,0,0,0.0969238274249371,0.0263297787795637
+"m__HILIC-neg_Cluster_0333: NA",0.0197506627338812,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00131671084892541
+"m__HILIC-neg_Cluster_0567: NA",0.0230317727400082,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00153545151600055
+"m__HILIC-neg_Cluster_0570: NA",0,0,0,0,0,0,0,0,0,2.29889130042867e-05,0,0,0,0,0,1.53259420028578e-06
+"m__HILIC-neg_Cluster_0823: NA",0,0,0,0,0,0,0,0,0.00330913110877936,0,0,0,0,0,0,0.000220608740585291
+"m__HILIC-neg_Cluster_0847: NA",0.0185901683698132,0,0,0,0,0,0.0984074780524801,0,0,0.00847301679545189,0.0655630595384436,0,0,0,0,0.0127355815170793
+"m__HILIC-neg_Cluster_0849: NA",0,0,0,0,0,0,0,0,0,0.00264282209614401,0,0,0,0,0,0.000176188139742934
+"m__HILIC-neg_Cluster_0867: NA",0,0,0,0,0,0,0,0,0,0.0144371180362385,0,0,0,0,0,0.000962474535749231
+"m__HILIC-neg_Cluster_0877: NA",0,0,0,0.0881320766589557,0,0,0,0,0,0,0,0,0,0,0,0.00587547177726372
+"m__HILIC-neg_Cluster_0920: NA",0,0,0,0,0,0,0,0,0,0.000353459068289588,0,0,0,0,0,2.35639378859725e-05
+"m__HILIC-neg_Cluster_1196: NA",0.0700689828227999,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00467126552151999
+"m__HILIC-neg_Cluster_1314: NA",0,0,0,0,0,0,0,0,0,0.00181222882386906,0,0,0,0,0,0.000120815254924604
+"m__HILIC-neg_Cluster_1423: NA",0,0,0,0,0,0,0,0,0,0.00979195297814872,0,0,0,0,0,0.000652796865209915
+"m__HILIC-neg_Cluster_1448: NA",0,0,0,0,0,0.352799936497494,0,0,0,0,0,0,0,0,0,0.0235199957664996
+"m__HILIC-neg_Cluster_1529: NA",0,0,0,0,0,0,0,0,0,0.0140503773294051,0,0,0,0,0,0.00093669182196034
+"m__HILIC-neg_Cluster_1731: NA",0,0,0,0,0,0,0,0,0,0.00498302547043689,0,0,0,0.0227778844517651,0.149078560450306,0.0117892980248338
+"m__HILIC-neg_Cluster_1759: NA",0,0,0,0.027354950208876,0,0,0,0,0,0,0,0,0,0,0,0.0018236633472584
+"m__HILIC-neg_Cluster_1846: NA",0,0,0,0,0,0,0,0,0.000857817983509338,0,0,0,0,0,0,5.71878655672892e-05
+"m__HILIC-pos_Cluster_0030: NA",0,0,0,0,0,0,0,0,0.137134452933571,0,0.0101960548617947,0,0,0,0,0.00982203385302436
+"m__HILIC-pos_Cluster_0112: NA",0,0,0,0,0,0,0,0,0,0.0025637828376508,0,0,0,0,0,0.000170918855843387
+"m__HILIC-pos_Cluster_0133: NA",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0142521146190145,0,0.000950140974600966
+"m__HILIC-pos_Cluster_0155: NA",0.373205353596621,0,0.374305458039982,0.707563394100097,0,0,0.61080501289791,0,0.0517795637221091,0.133492113675374,1,0.226721192410721,0.0523598675230892,0.0607676508605806,0.145493611304664,0.24909954787541
+"m__HILIC-pos_Cluster_0168: NA",0,0,0,0.121617874504742,0,0,0,0,0,0,0,0,0,0,0,0.00810785830031614
+"m__HILIC-pos_Cluster_0242: NA",0.307046746984984,0.961271977855117,1,0.42122609883671,0.630290050956931,0,1,1,0,1,0.149082908836341,0.319119301605835,0.547044407645302,0.176011329377228,0,0.50073952147323
+"m__HILIC-pos_Cluster_0245: 1-methylguanine",0.0377673988811266,0,0,0.0730499915967708,0,0,0,0,0,0.00485258935464781,0,0,0,0,0,0.00771133198883635
+"m__HILIC-pos_Cluster_0254: 3-methylxanthine",0,0,0.0423399331318615,0.15762410593724,0,0,0,0,0,0.00069245375986715,0,0,0,0.27393815684829,0.191456249050155,0.0444033932484942
+"m__HILIC-pos_Cluster_0276: NA",0,0,0,0,0,0,0,0,0.0158088078299058,0.0327542428518584,0,0,0,0.0341440486753833,0,0.00551380662380983
+"m__HILIC-pos_Cluster_0309: NA",0,0,0,0,0,0,0,0,0,0.00257072614182031,0,0,0,0,0,0.00017138174278802
+"m__HILIC-pos_Cluster_0323: NA",0,0,0,0,0,0,0,0,0,0,0.0855108460304428,0,0,0,0,0.00570072306869619
+"m__HILIC-pos_Cluster_0329: NA",0,0,0,0,0,0,0,0,0,0.00316218299222935,0,0,0,0,0,0.000210812199481957
+"m__HILIC-pos_Cluster_0459: NA",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0446155598019514,0,0.00297437065346343
+"m__HILIC-pos_Cluster_0484: NA",0,0,0,0,0,0,0,0,0,0.0696603771978919,0,0,0,0,0,0.00464402514652613
+"m__HILIC-pos_Cluster_0518: NA",0.0162401917694764,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00108267945129842
+"m__HILIC-pos_Cluster_0594: NA",0.0617507681863106,0,0,0,0,0,0,0,0,0.0233225578877688,0,0,0.0252731761829554,0,0,0.00735643348380232
+"m__HILIC-pos_Cluster_0649: NA",0,0,0,0,0,0.431619104684404,0,0,0,0.00444760125092042,0,0,0.14233436939428,0,0,0.0385600716886403
+"m__HILIC-pos_Cluster_0673: NA",0,0,0,0,0,0,0,0,0.000870116769258722,0,0,0,0,0,0,5.80077846172481e-05
+"m__HILIC-pos_Cluster_0765: NA",0,0,0,0,0,0,0,0,0.00524911074947585,0.0179481368596443,0,0,0,0,0,0.00154648317394134
+"m__HILIC-pos_Cluster_0781: NA",0,0,0,0,0,0,0,0,0.0304389504274219,0,0,0,0,0,0,0.00202926336182813
+"m__HILIC-pos_Cluster_0811: NA",0,0,0,0.208024352040342,0,0,0,0,0,0,0,0,0,0,0,0.0138682901360228
+"m__HILIC-pos_Cluster_0852: NA",0,0,0,0,0,0,0,0,0.0131700498345086,0,0,0,0,0,0,0.000878003322300574
+"m__HILIC-pos_Cluster_0952: NA",0.733475003925601,0,0,0,0,0,0.137391388641559,0,0.0169992728023377,0,0,0.17754163559874,0,0.355043160552319,0,0.0946966974347038
+"m__HILIC-pos_Cluster_0971: NA",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0358430113201236,0,0.00238953408800824
+"m__HILIC-pos_Cluster_0972: NA",0,0,0,0,0,0,0,0,0,0.136127496186118,0,0,0,0,0,0.00907516641240788
+"m__HILIC-pos_Cluster_1009: NA",0,0,0,0,0,0,0,0,0.00156321664431333,0,0,0,0,0,0,0.000104214442954222
+"m__HILIC-pos_Cluster_1090: NA",0,0,0,0,0,0,0,0,0,0.00914317796221714,0,0,0,0,0,0.000609545197481143
+"m__HILIC-pos_Cluster_1208: NA",0,0,0,0.0293469523558811,0,0,0,0,0,0,0,0,0,0,0,0.00195646349039208
+"m__HILIC-pos_Cluster_1215: NA",0,0,0,0,0,0,0,0,0,0.00122940606771735,0,0,0,0,0,8.19604045144899e-05
+"m__HILIC-pos_Cluster_1225: NA",0,0,0,0,0,0,0,0,0,0,0.143351783643371,0,0,0,0,0.00955678557622474
+"m__HILIC-pos_Cluster_1240: NA",0.0672950143322937,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00448633428881958
+"m__HILIC-pos_Cluster_1394: NA",0,0,0.0189658211428699,0,0,0,0,0,0,0,0,0,0,0,0,0.00126438807619133
+"m__HILIC-pos_Cluster_1428: NA",0.0658053717621486,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00438702478414324
+"m__HILIC-pos_Cluster_1561: NA",0,0,0,0,0,0,0,0,0,0.00447725575773001,0,0,0,0,0,0.000298483717182001
+"m__HILIC-pos_Cluster_1623: NA",0,0,0,0,0,0,0,0,0.00231806730987592,0,0,0,0,0,0,0.000154537820658394
+"m__HILIC-pos_Cluster_1884: NA",0,0,0,0,0,0,0,0,0,0.0251238238292921,0,0,0,0,0,0.00167492158861948
+"m__HILIC-pos_Cluster_1921: NA",0.0271435630913418,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00180957087275612
+"m__HILIC-pos_Cluster_2049: NA",0,0,0,0,0,0,0,0,0,0.00132362973313084,0,0,0,0.0419155512166232,0,0.00288261206331694
+"m__HILIC-pos_Cluster_2091: NA",0.0564085442638497,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00376056961758998
+"m__HILIC-pos_Cluster_2135: NA",0,0,0,0.403714426412902,1,0,0,0.252668849526042,0,0.0430514837056935,0,0,0,0.388008035935682,0,0.139162853038688
+"m__HILIC-pos_Cluster_2167: NA",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0.0666666666666667
+"m__HILIC-pos_Cluster_2174: NA",0,0,0,0.0370628454010939,0,0,0,0,0,0,0,0,0,0,0,0.00247085636007293
+"m__HILIC-pos_Cluster_2368: NA",0,0,0,0,0,0,0,0,0,0.031686271808336,0,0,0,0,0,0.00211241812055573
+"t__d__Bacteria;p__Actinobacteriota;c__Actinomycetia;o__Streptosporangiales;f__Streptosporangiaceae;g__Spirillospora",0.0690997441431567,0,0,0,0,0,0,0,0,0.0149380900911913,0,0,0,0.0314291555344435,0,0.00769779931791943
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Atopobiaceae;g__UBA1367",0,0,0,0,0,0,0,0,0.000578266766898529,0,0,0,0,0,0,3.85511177932353e-05
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella;s__Collinsella sp900541195",0,0,0,0.0264850224637033,0,0,0,0,0,0,0,0,0,0,0,0.00176566816424689
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella;s__Collinsella sp900541665",0,0,0,0.0364796815843233,0,0,0,0,0.0141647518967847,0,0,0,0,0,0,0.0033762955654072
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella;s__Collinsella sp900543275",0,0,0,0.122550518441404,0,0,0,0,0,0,0,0,0,0,0,0.00817003456276027
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella;s__Collinsella sp900544755",0,0,0.0256177477529639,0,0,0,0.271542258832585,0.186147392038392,0.0406340579242157,0,0,0,0,0,0,0.0349294304365437
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella;s__Collinsella sp900554455",0,0,0.0152134380656134,0,0,0,0,0,0,0,0,0,0,0,0,0.00101422920437423
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella;s__Collinsella sp900554655",0,0,0,0,0.280937864420905,0,0,0,0,0,0,0,0,0,0,0.0187291909613937
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella;s__Collinsella sp905215725",0.0339280760550631,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00226187173700421
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__Adlercreutzia;s__Adlercreutzia celatus_A",0.01798022420572,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00119868161371467
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__CAG-1427",0,0,0,0,0,0,0,0,0,0,0,0.145732148571904,0,0,0,0.00971547657146029
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__CAG-1427;s__CAG-1427 sp900553605",0,0,0.0311869430104571,0,0,0,0,0,0,0,0,0,0,0,0,0.00207912953403048
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__CAG-1427;s__CAG-1427 sp900555755",0,0,0,0,0,0,0,0,0,0.012311204045917,0,0,0,0,0,0.000820746936394467
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__W1P20-047",0.0555732455640704,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0037048830376047
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__UMGS124;g__UMGS124;s__UMGS124 sp900555105",0,0,0,0,0,0,0,0,0,0,0.0554842847282388,0,0,0,0,0.00369895231521592
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__UBA6382",0.0649653777352205,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00433102518234803
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Barnesiellaceae;g__Barnesiella",0,0,0,0,0,0,0,0,0,0,0.128407230964164,0,0,0,0,0.00856048206427759
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Barnesiellaceae;g__Barnesiella;s__Barnesiella intestinihominis",0,0,0,0,0,0,0,0,0,0.00128003819951572,0,0,0,0,0,8.5335879967715e-05
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes_A;s__Alistipes_A ihumii",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0202567569509884,0,0.00135045046339923
+"t__d__Bacteria;p__Cyanobacteria;c__Vampirovibrionia;o__Gastranaerophilales;f__Gastranaerophilaceae;g__Stercorousia;s__Stercorousia sp900556295",0,0,0.0298135609463274,0,0,0,0,0,0,0,0,0,0,0,0,0.00198757072975516
+"t__d__Bacteria;p__Cyanobacteria;c__Vampirovibrionia;o__Gastranaerophilales;f__Gastranaerophilaceae;g__Zag111",0,0,0,0,0,0,0,0,0,0.0222199643470256,0,0,0,0,0,0.00148133095646838
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Christensenellales;f__CAG-74;g__Alectryocaccomicrobium",0,0,0,0,0,0,0,0,0.0330721675476878,0,0,0,0,0,0,0.00220481116984586
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Christensenellales;f__CAG-74;g__Faecivicinus;s__Faecivicinus avistercoris",0,0.358249485147206,0,0,0,0,0,0,0.00210649578147857,0,0,0.42720000742664,0,0,0,0.0525037325570216
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Christensenellales;f__CAG-74;g__Limiplasma;s__Limiplasma pullistercoris",0,0,0,0,0,0,0,0,0.0971452354521131,0,0,0,0.833160956076428,0,0,0.0620204127685694
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Christensenellales;f__CAG-74;g__Limiplasma;s__Limiplasma stercoravium",0,0,0,0,0,0,0,0,0.00842014196715285,0,0,0,0,0,0,0.00056134279781019
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Christensenellales;f__CAG-74;g__UBA11524",0,0,0.0889047192250279,0,0,0,0,0,0.0580868164962357,0,0.309281061612922,0.475537132264608,0,0,0,0.0621206486399196
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Christensenellales;f__CAG-74;g__UBA11524;s__UBA11524 sp000437595",0,0,0.162406035657535,0.0544813007242906,0,0,0,0,0,0,0,0,0,0,0,0.0144591557587884
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Christensenellales;f__CAG-74;g__Ventricola",0,0,0.172656650865262,0,0,0,0,0,0,0,0,0,0,0,0,0.0115104433910174
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Christensenellales;f__CAG-74;g__Ventricola;s__Ventricola sp004557905",0,0,0,0,0,0,0.314350737649153,0,0,0,0,0,0,0,0.330146010936483,0.042966449905709
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Christensenellales;f__CAG-74;g__Ventricola;s__Ventricola sp017937505",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0974841734266978,0.00649894489511318
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Christensenellales;f__CAG-74;g__Ventricola;s__Ventricola sp900542445",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0423431789567952,0,0.00282287859711968
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Christensenellales;f__CAG-74;g__Ventricola;s__Ventricola sp900548125",0.161372621162532,0,0.0407351341344732,0,0,0.39342006132893,0.200241059519095,0,0,0,0.0822502328496411,0,0.034682246133154,0,1,0.127513423675188
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Clostridiales;f__Clostridiaceae;g__Clostridium_X;s__Clostridium_X cadaveris",0,0,0,0,0,0,0,0,0,0,0,0,0.0143828269451419,0,0,0.000958855129676125
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Clostridiales;f__Clostridiaceae;g__Clostridium;s__Clostridium butyricum",0.0346402994541105,0,0,0,0,0,0,0,0,0.00532812979002685,0.0123895854217981,0,0,0,0,0.00349053431106236
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Anaerotignaceae;g__HGM11808",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0172957572285121,0,0.00115305048190081
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__Acetatifactor sp002431915",0,0,0.0180565069100922,0,0,0,0,0,0,0,0,0,0,0,0,0.00120376712733948
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__Acetatifactor sp900755865",0.0162439711229683,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00108293140819789
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__Acetatifactor sp900766575",0,0,0,0,0,0,0,0,0,0.00495188321006678,0,0,0,0,0,0.000330125547337785
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Agathobacter;s__Agathobacter sp900543445",0,0,0,0,0,0,0,0,0,0.0181962066161796,0,0,0,0,0,0.00121308044107864
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Agathobacter;s__Agathobacter sp900550545",0.0765237414214064,0,0,0,0,0,0,0,0,0,0,0,0,0.0165529806854108,0,0.00620511480712114
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Agathobacter;s__Agathobacter sp900552085",0,0,0,0.0785241938326272,0,0,0,0,0,0,0,0,0,0,0,0.00523494625550848
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Bariatricus",0,0,0,0,0,0,0,0,0,0.00487881622333126,0,0,0,0,0,0.000325254414888751
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Bariatricus;s__Bariatricus comes_A",0,0,0,0,0,0,0,0,0,0,0.0619087282327166,0,0,0,0,0.00412724854884777
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia_A;s__Blautia_A sp003474435",0,0,0,0,0,0,0,0,0,0,0,0.233865323162645,0,0,0,0.0155910215441764
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia_A;s__Blautia_A sp900066205",0,0,0.018356311838276,0,0,0,0,0,0,0,0,0,0,0,0,0.00122375412255173
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia_A;s__Blautia_A sp900066335",0,0,0,0,0,0,0,0,0,0,0,0.292826332974709,0,0,0,0.0195217555316472
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia;s__Blautia argi",0,0,0,0,0,0,0,0,0,0.0021525796359297,0,0,0,0,0,0.00014350530906198
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia;s__Blautia coccoides",0.0367071170383416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00244714113588944
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia;s__Blautia hominis",0,0,0.0663577622876832,0.0533425461863976,0,0,0,0,0,0.0228740221281188,0.0780740546909375,0,0,0,0,0.0147098923528758
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Butyrivibrio_A;s__Butyrivibrio_A sp000431815",0,0,0,0,0,0,0,0,0,0,0,0.164787659078128,0,0,0,0.0109858439385418
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-127;s__CAG-127 sp002476495",0,0,0,0,0,0,0,0,0,0.00423422839291054,0,0,0,0,0,0.000282281892860703
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-95;s__CAG-95 sp000438155",0,0,0,0,0,0,0,0,0.00202890090134309,0,0,0,0,0,0,0.000135260060089539
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-95;s__CAG-95 sp017621815",0,0,0,0,0,0,0,0,0,0.0492204060149725,0,0,0,0,0,0.00328136040099817
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-95;s__CAG-95 sp900553305",0,0,0,0,0,0,0,0,0,0.00460757304945746,0,0,0,0,0,0.000307171536630497
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Choladocola",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0540228881249489,0,0.00360152587499659
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Choladocola;s__Choladocola sp003480725",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0658016991409702,0,0.00438677994273135
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Choladousia",0,0,0,0,0,0,0,0,0,0.00545962496614495,0,0,0,0,0,0.000363974997742997
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Choladousia;s__Choladousia sp902363665",0,0,0,0,0,0,0,0,0.115843157097005,0.00533290128468476,0,0,0,0,0,0.00807840389211267
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Coprococcus;s__Coprococcus eutactus_A",0.0387368069004375,0,0,0.067736081703681,0,0,0,0.121677978085853,0,0,0,0,0,0.0183890558186847,0.110998375226888,0.0238358865157029
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Coprococcus;s__Coprococcus sp900557435",0.0878084060211028,0,0.0646986341756239,0,0,0,0,0,0,0,0,0,0,0,0,0.0101671360131151
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Cuneatibacter",0.019957018513444,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00133046790089627
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eisenbergiella;s__Eisenbergiella sp900066775",0,0,0,0,0,0,0.385207856847753,0,0,0.0034744973214571,0,0,0,0,0,0.025912156944614
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Enterocloster;s__Enterocloster aldenensis",0,0,0,0,0,0,0,0,0,0,0.0772770974989832,0.199178933347776,0,0,0,0.0184304020564506
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Enterocloster;s__Enterocloster excrementipullorum",0,0,0,0,0,0,0,0,0,0.00126979752763625,0,0,0,0,0,8.46531685090835e-05
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Enterocloster;s__Enterocloster porci",0,0,0,0.13058854564198,0,0,0,0,0,0,0,0,0,0,0,0.00870590304279865
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Faecalimonas;s__Faecalimonas sp900555395",0.0320048142497791,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00213365428331861
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__JAGTTR01",0,0,0,0,0,0,0,0,0.0182429338454834,0,0,0,0,0,0,0.00121619558969889
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__JAGTTR01;s__JAGTTR01 sp018223385",0,0,0,0,0,0,0,0,0,0.00167372575343787,0,0,0,0,0,0.000111581716895858
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__KLE1615",0,0,0,0,0,0,0,0,0,0.00436693797274098,0,0,0,0,0,0.000291129198182732
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Lachnoclostridium_B;s__Lachnoclostridium_B sp910584265",0,0,0,0,0,0,0,0,0,0.00116088519146782,0,0,0,0,0,7.73923460978544e-05
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Lachnospira;s__Lachnospira rogosae_A",0.0346335912940937,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00230890608627292
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Limivivens",0,0,0,0.823974552154682,0,0,0.417398329461788,0,0.00318820456691796,0.0293602809909548,0,0,0.0590396802661793,0,0.0977886705319994,0.0953833145315014
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Limivivens;s__Limivivens sp900066135",0,0,0,0,0,0,0,0,0,0.0130448019997815,0,0,0,0,0,0.000869653466652099
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Limivivens;s__Limivivens sp900543575",0,0,0,0,0,0,0,0,0.0441293300238971,0.0464210681017718,0,0,0.114043885274505,0,0,0.0136396188933449
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Limivivens;s__Limivivens sp905214955",0,0,0,0,0,0,0,0,0,0.0031073996491773,0,0,0,0,0,0.00020715997661182
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Mediterraneibacter_A",0,0.497649999122042,0,0,0.412863239285628,0,0,0,0,0,0,0,0,0,0,0.0607008825605113
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Mediterraneibacter_A;s__Mediterraneibacter_A butyricigenes",0,0.363371170603932,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0242247447069288
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__SFDP01;s__SFDP01 sp900770785",0.0384682649765542,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00256455099843694
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA11774",0,0,0,0,0,0,0.252595876221398,0,0,0.00477566712668367,0,0,0,0,0,0.0171581028898721
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA3402",0,0,0,0,0,0,0,0,0,0.00683179923402827,0,0,0,0,0,0.000455453282268551
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-488;s__CAG-488 sp000434055",0,0,0.12595587907433,0,0,0,0,0,0,0,0,0,0,0,0,0.00839705860495534
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-488;s__CAG-488 sp016292785",0.159391146922175,0,0,0,0.470912720835624,0,0,0,0.0442567138869586,0.00374092703070627,0.0537499754298268,0,0,0.0523052762753454,0,0.0522904506920424
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAJFUH01",0,0,0,0,0,0,0,0,0.00119296448199721,0,0,0,0,0,0,7.95309654664807e-05
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Eubacterium_R;s__Eubacterium_R sp910577195",0,0,0,0,0,0,0,0,0,0.011695862196461,0,0,0,0,0.343577038547231,0.0236848600495795
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Fimenecus;s__Fimenecus sp002437245",0.181226111560973,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0120817407707315
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__HGM12789",0.11018167837163,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00734544522477532
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Scatavimonas;s__Scatavimonas sp900540275",0,0,0,0,0,0,0,0,0,0.00416306640661247,0,0,0,0,0,0.000277537760440831
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UBA1227;s__UBA1227 sp900545655",0.26758758709447,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0178391724729647
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UBA1417",0,0,0,0.0403912683877887,0,0,0,0,0,0,0,0,0,0,0,0.00269275122585258
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UBA1417;s__UBA1417 sp003531055",0,0,0,0,0,0,0,0,0.00256890902629646,0,0,0.535139046799585,0,0,0,0.0358471970550588
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UBA737;s__UBA737 sp905211675",0,0,0,0,0,0,0.135594915725076,0,0,0,0,0,0,0,0,0.00903966104833841
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__CAG-272;g__CAG-390;s__CAG-390 sp900753295",0.538783155937203,0,0,0,0.525837137476044,0,0,0,0,0.04819262802789,0,0,0,0,0,0.0741875280960758
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__CAG-272;g__CAG-448",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0712325028956204,0.242553965550365,0.0209190978963991
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__CAG-272;g__CAG-724;s__CAG-724 sp900551005",0,0,0,0.0328184897276497,0,0,0,0,0,0,0,0,0,0,0,0.00218789931517665
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__CAG-272;g__UBA11512",0,0,0,0,0,0,0,0,0,0,0,0,0.014747923537783,0,0,0.000983194902518869
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__CAG-272;g__UMGS911;s__UMGS911 sp900545935",0,0,0,0,0,0,0,0,0.605528166100573,0,0.365862692800259,0,0,0.0884462036227343,0,0.0706558041682377
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Alloscillospira",0,0,0.675611497513103,0,0,0,0,0,0,0,0,0,0.155784253201244,0,0,0.0554263833809565
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__CAG-170;s__CAG-170 sp902803075",0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0.0666666666666667
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__CAG-83;s__CAG-83 sp003487665",0,0,0,0,0,0,0,0,0.106729388688188,0,0,0,0,0,0,0.00711529257921252
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Dysosmobacter;s__Dysosmobacter sp017469475",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0218997599321194,0,0.00145998399547462
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__ER4",0,0,0,0.0922246434053867,0,0,0,0,0,0,0,0,0,0,0,0.00614830956035911
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__ER4;s__ER4 sp002405995",0,0,0,0,0,0,0,0,0,0,0.371268319899119,0,0,0,0,0.0247512213266079
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__F23-B02;s__F23-B02 sp003533405",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0143845909125416,0,0.00095897272750277
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Faecousia;s__Faecousia sp002436765",0,0.258747891821375,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0172498594547583
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Faecousia;s__Faecousia sp900544705",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.828719594197413,0.0552479729464942
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Limivicinus;s__Limivicinus sp900547315",0,0,0,0,0.282100461160017,0,0,0,0,0,0,0,0,0,0,0.0188066974106678
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Limivicinus;s__Limivicinus sp900549545",0.0753188050161488,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00502125366774326
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__UMGS1766;s__UMGS1766 sp017480395",0,0,0,0,0,0,0,0,0,0,0,0,0.00745551231401072,0,0,0.000497034154267381
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Anaerofilum",0,0,0.173399428372029,0,0,0,0,0,0,0,0,0,0,0,0,0.0115599618914686
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Gemmiger;s__Gemmiger sp900540775",0,0,0,0,0,0.490679970809769,0.142516267346901,0.430916697123133,0.00246656627995321,0,0.129160543023507,0,0,0,0,0.0797160029722176
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Merdivicinus;s__Merdivicinus sp905214265",0,0,0,0,0,0,0,0,0,0.0242268787649567,0,0,0,0,0,0.00161512525099712
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruminiclostridium_E",0,0,0,0,0,0,0,0,0,0.0053493398850261,0,0,0,0,0,0.00035662265900174
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruminiclostridium_E;s__Ruminiclostridium_E siraeum",0,0,0,0,0,0,0.143976041421902,0,0,0,0,0,0,0,0,0.00959840276146013
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruminiclostridium_E;s__Ruminiclostridium_E sp017935365",0.104568230031005,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0069712153354003
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruminiclostridium_E;s__Ruminiclostridium_E sp900539195",0,0,0,0.0749828898705046,0,0,0,0,0,0,0,0,0,0,0,0.00499885932470031
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruminococcus;s__Ruminococcus sp900540005",0,0,0,0.190821901523314,0,0,0,0,0,0,0,0,0,0,0,0.0127214601015543
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__UMGS1601;s__UMGS1601 sp900545345",0.0515432578181046,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00343621718787364
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Anaerovoracaceae;g__CAG-238;s__CAG-238 sp900542245",0.026587813393844,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00177252089292294
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Anaerovoracaceae;g__Copromorpha;s__Copromorpha sp900549125",0,0.365319229841821,0,0,0.622135818598242,0,0,0,0,0,0,0,0,0,0,0.0658303365626708
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Peptostreptococcaceae;g__Clostridioides;s__Clostridioides difficile",0,0,0,0,0,0,0,0,0,0,0,0,0.107347466961196,0,0,0.00715649779741306
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__TANB77;f__CAG-508;g__CAG-269;s__CAG-269 sp900556345",0,0,0,0,0,0,0,0,0.000129550063913077,0,0,0,0,0,0,8.63667092753849e-06
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Tissierellales;f__Peptoniphilaceae;g__Peptoniphilus_B;s__Peptoniphilus_B sp000478985",0,0,0,0,0,0,0,0,0.0297864921987218,0,0,0,0,0,0,0.00198576614658145
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__UBA1212;f__UBA1255;g__Egerieisoma;s__Egerieisoma sp015069165",0,0,0.171748383422878,0,0,0,0,0,0,0,0,0,0,0,0,0.0114498922281918
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__UBA1381;f__UMGS1253;g__Aphodoplasma;s__Aphodoplasma sp900550065",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0808717989449814,0,0.00539145326299876
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__UMGS1810;f__UMGS1810;g__RGIG4708;s__RGIG4708 sp905210855",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.157893859626485,0.0105262573084323
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__UMGS1810;f__UMGS1810;g__UMGS1810;s__UMGS1810 sp900555295",0.0194409058440659,0,0,0,0,0,0,0,0,0,0,0.279852619653767,0,0,0,0.0199529016998555
+"t__d__Bacteria;p__Firmicutes_B;c__Peptococcia;o__Peptococcales;f__Peptococcaceae;g__UMGS1590",0,0,0,0.0468952395607301,0,0,0,0,0,0,0,0,0,0,0,0.00312634930404868
+"t__d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Acidaminococcales;f__Acidaminococcaceae;g__Phascolarctobacterium_A;s__Phascolarctobacterium_A sp900757795",0.0242085121662854,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00161390081108569
+"t__d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Anaeromusales;f__Anaeromusaceae;g__Anaeromusa",0,0,0,0,0,0.433546603342386,0,0,0.00181892420927284,0,0,0,0,0,0,0.0290243685034439
+"t__d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Anaeromusales;f__Anaeromusaceae;g__Anaeromusa;s__Anaeromusa sp009929485",0,0,0,0,0,0,0,0,0,0.00422971171590771,0,0,0,0,0,0.000281980781060514
+"t__d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Veillonellales;f__Dialisteraceae;g__Dialister;s__Dialister sp900541485",0.0664842313980375,0,0,0,0,0,0.129340258371552,0,0,0,0.0463049436322427,0,0,0,0,0.0161419622267888
+"t__d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Veillonellales;f__Megasphaeraceae;g__Megasphaera;s__Megasphaera massiliensis",0,0,0,0,0,0,0,0,0,0.0319399513687346,0,0,0,0,0,0.00212933009124897
+"t__d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Veillonellales;f__Megasphaeraceae;g__Megasphaera;s__Megasphaera sp002319965",0,0,0,0,0,0,0,0,0,0.0350232657076601,0,0,0,0,0.11924284425978,0.0102844073311627
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Bacillales_D;f__Amphibacillaceae;g__Oceanobacillus",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.189097030461001,0.0126064686974001
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Coprobacillaceae;g__Stoquefichus;s__Stoquefichus massiliensis",0,0,0,0,0,0,0,0,0,0.0114633115164507,0,0,0,0,0,0.000764220767763382
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Enterococcaceae;g__Enterococcus_A",0,0,0,0,0,0,0,0,0,0.00307804574544103,0,0.264254286824515,0,0.0140200853087728,0,0.0187568278585819
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Enterococcaceae;g__Enterococcus;s__Enterococcus faecalis",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0177355518009739,0,0.00118237012006493
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Lactobacillus;s__Lactobacillus johnsonii",0,0,0.0213274582603769,0,0,0,0,0,0,0,0,0,0,0,0,0.00142183055069179
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Ligilactobacillus",0.0798360484126715,0,0,0,0,0,0,0,0,0.0111311611998354,0,0,0,0,0,0.0060644806408338
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Ligilactobacillus;s__Ligilactobacillus ruminis",0,0,0,0.0280952234213528,0,0,0,0,0,0.0031938686819088,0,0,0,0,0,0.00208593947355078
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Limosilactobacillus;s__Limosilactobacillus fermentum",0.242550363156615,0,0.21245757656627,0.282038356559367,0,0,0.170275732213815,0,0.0782835142853497,0.0405788400134346,0.0859585901861436,0.186114213478758,0,0,0,0.0865504790973168
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Weissella",0,0,0,0,0,0,0,0,0,0.00266863853125681,0,0,0,0,0,0.00017790923541712
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__CAG-533",0,0,0,0,0,0,0,0,0,0,0,0,0.0440755951733551,0,0,0.00293837301155701
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__CAG-710",0,0,0,0,0,0,0,0,0,0.00024126190089475,0,0,0,0,0,1.60841267263167e-05
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__RFN20;f__CAG-449;g__CAG-449;s__CAG-449 sp900551385",0,0,0,0,0,0,0,0,0,0,0,0.229538783703184,0,0,0,0.0153025855802123
+"t__d__Bacteria;p__Patescibacteria;c__Paceibacteria;o__Paceibacterales;f__UBA5633;g__MWCK01;s__MWCK01 sp002070005",0.0328022559122636,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00218681706081757
+"t__d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__RF32;f__CAG-239;g__CAJLXD01;s__CAJLXD01 sp905210515",0.0338952510999381,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00225968340666254
+"t__d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Competibacterales;f__Competibacteraceae;g__Competibacter_A",0.0167283845611486,0,0,0,0,0,0,0,0,0.000897874126780503,0.053179800936237,0,0,0,0,0.0047204039749444
+"t__d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Citrobacter",0,0,0,0,0,0,0.157304844350089,0,0,0,0,0,0,0,0,0.0104869896233392
+"t__d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Pseudocitrobacter",0,0,0,0,0,0,0,0,0.00220555390805237,0,0,0,0,0,0,0.000147036927203492

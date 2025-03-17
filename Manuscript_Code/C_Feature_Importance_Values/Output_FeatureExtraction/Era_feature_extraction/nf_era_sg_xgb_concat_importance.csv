@@ -1,0 +1,516 @@
+"Feature","Importance_Model_1","Importance_Model_2","Importance_Model_3","Importance_Model_4","Importance_Model_5","Importance_Model_6","Importance_Model_7","Importance_Model_8","Importance_Model_9","Importance_Model_10","Importance_Model_11","Importance_Model_12","Importance_Model_13","Importance_Model_14","Importance_Model_15","Mean_Importance"
+"m__-_SDMA",0.00602554974915656,0,0,0,0,0.00088271018917119,0,0,0,0,0,0,0,0,0.0235073749258629,0.00202770899094604
+"m__C00003_NAD+",0.00431648856621601,0,0,0,0,0,0,0,0,0,0,0.114541370500037,0,0,0,0.00792385727108356
+"m__C00008_ADP",0,0,0,0,0,0,0,0,0,0,0,0,0,0.154243984785695,0,0.0102829323190464
+"m__C00019_SAM+",0.00321764029803424,0.0506394773808841,0.508406468902505,0,0,0.00316473731540837,0.146930850886017,0,0,0.113641789541531,1,0.438716825628987,0,0,0,0.150981185996891
+"m__C00020_AMP",0,0.020446826779849,0,0,0,0,0,0,0,0.0515329977123611,0,0,0,0,0.0390462179028895,0.00740173615967331
+"m__C00024_Acetyl CoA",0,0,0,0,0,0,0,0.12987109696169,0,0,0.32877944525836,0,0,0,0,0.03057670281467
+"m__C00025_Glu",0,0,0,0,0,0.00152646335782124,0,0,0,0,0,0,0,0,0,0.000101764223854749
+"m__C00037_Gly",0,0,0,0,0.0632526864195644,0,0,0,0,0.23227193610036,0,0,0,0,0,0.0197016415013283
+"m__C00041_Ala",0,0.0360071535637935,0.160616023710187,0,0,0,0.0504986350323077,0,0,0,0,0,0,0,0,0.0164747874870859
+"m__C00042_Succinate",0,0,0,0,0,0,0,0,0,0,0.0773543954074369,0,0,0,0,0.00515695969382912
+"m__C00043_UDP-N-acetylglucosamine",0.171006222476413,0.196512206166797,0.0644669590500948,0,0,0,0.0969477040518023,0.320888970144747,0.0762080921396038,0,0,0,0,0.09399725205318,0,0.0680018270721759
+"m__C00047_Lys",0,0,0,0,0,0.000101300369422888,0,0,0,0,0,0,0,0,0.0377655214721173,0.00252445478943602
+"m__C00055_CMP",0.0144851906900647,0,0,0,0,0,0,0,0.222069125989198,0,0,0,0,0,0,0.0157702877786175
+"m__C00062_Arg",0,0,0.263529487451363,0,1,0,0.197327052231337,0,0,0.0924158308876523,0,0.751590502542372,0,0,0,0.153657524874182
+"m__C00065_Ser",0,0,0,0,0,0,0,0,0,0,0,0.071674442354921,0,0,0,0.00477829615699473
+"m__C00077_Ornithine",0,0,0,0,0,0,0,0,0,0,0.132041658076336,0,0,0,0,0.00880277720508904
+"m__C00078_Trp",0,0,0,0,0,0,0,0,0,0.0445316543741903,0,0,0,0,0,0.00296877695827935
+"m__C00082_Tyr",0,0,0,0,0,0.000502566303715739,0,0,0,0,0,0,0,0.182143083926479,0,0.012176376682013
+"m__C00093_Glycerophosphate",0,0,0,0,0,0.00151752114519825,0,0,0,0,0,0,0,0,0,0.00010116807634655
+"m__C00105_UMP",0,0,0,0,0,0.000445748347338991,0,0,0,0,0,0,0,0,0,2.97165564892661e-05
+"m__C00106_Uracil",0,0.0490039706754785,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00326693137836523
+"m__C00114_Choline",0,0,0.0491543527846773,0,0,0,0,0,0,0,0,0,0,0,0,0.00327695685231182
+"m__C00122_Fumarate",0,0,0,0,0,0,0.024250409453972,0,0,0,0,0,0,0,0,0.00161669396359813
+"m__C00140_N-Acetylglucosamine",0,0,0,0,0,0.00154633330455937,0,0,0,0,0,0,0,0,0,0.000103088886970624
+"m__C00148_Pro",0,0,0,0,0,0,0.0289086110989625,0,0,0,0,0,0,0,0.0666754103542934,0.00637226809688373
+"m__C00163_Propionate",0,0,0,0,0,0,0,0,0,0.0236921210108533,0,0,0,0,0,0.00157947473405689
+"m__C00178_Thymine",0,0,0,0,0,0,0,0,0.0489455203984802,0,0,0,0,0,0,0.00326303469323201
+"m__C00179_Agmatine",0.200328794094669,0.0825145622150013,0.53848102446415,0.0917979061490648,0.714862780625367,0.00585926696667891,0.161533398931413,0.633596752529136,1,0.543625317271877,0.323073600538872,0,0.0530230888730852,0.175879825035883,0.484319201079857,0.333926367918337
+"m__C00186_Lactate",0,0,0,0,0,0,0,0,0,0,0.279354882676668,0,0,0,0,0.0186236588451112
+"m__C00212_Adenosine",0,0.0583371862161527,0,0,0,0.00348205225413292,0.0903552490113052,0.0382063068014576,0,0,0.515431053024046,0.797772034774279,0,0,0,0.100238925472092
+"m__C00245_Taurine",0,0,0,0,0,0.00151702353717383,0,0,0,0.028363383918193,0,0,0,0.113448769331022,0,0.00955527845242593
+"m__C00253_Nicotinate",0.26929646471901,0.574657357926256,0.0473767610487952,0,0.638890972269198,0,0.479203252879011,0.0615531307780711,0.130580153314067,0.0357923291043191,0,0.056353086747135,0.209787019219201,0.0762842792777794,0.264400221948116,0.189611668615397
+"m__C00300_Creatine",0,0,0,0,0,0,0,0,0,0,0.0736551503405821,0,0,0,0,0.00491034335603881
+"m__C00327_Citrulline",0.259283046696819,0.0435839957220202,0.123002550540216,0,0,0.000475516233296346,0.201118799822047,0,0,0,0,0,0,0,0.145964833173681,0.051561916145872
+"m__C00329_Glucosamine",0,0,0,0,0,0,0,0,0,0,0,0.136797934262134,0,0,0,0.00911986228414226
+"m__C00357_N-Acetylglucosamine 6-phosphate",0.0417150062886031,0,0,0,0.0928001978450604,0,0,0,0,0,0,0,0,0,0,0.00896768027557757
+"m__C00385_Xanthine",0,0,0,0,0,0,0.17999620390864,0,0,0,0,0,0,0,0,0.0119997469272426
+"m__C00386_Carnosine",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0213428905194601,0,0.001422859367964
+"m__C00387_Guanosine",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0445774839983413,0,0.00297183226655608
+"m__C00388_Histamine",0,0,0,0,0,0,0,0,0,0,0,0.00956235889408288,0,0,0,0.000637490592938858
+"m__C00398_Tryptamine",0,0,0,0,0,0,0,0,0,0,0,0,0,0.456846388722504,0,0.0304564259148336
+"m__C00407_Ile",0,0,0,0,0,0,0,0,0,0,0.214629767532478,0,0,0,0,0.0143086511688318
+"m__C00429_Dihydrouracil",0.362243507323858,0.454517855533934,1,0.30297960644018,0.974965171217416,0.349662349384527,0.296538587011025,0,0.937836416664302,0.951846290592657,0.709447747362043,0.200443854239451,1,0.0545885997837148,0.468724163150979,0.537586276580272
+"m__C00430_5-Aminolevulinate",0.0272879255098323,0.428835847738556,0.12575148690742,0,0.37315579118303,0.0521201061298395,0.19835963070228,0.118696209984659,0.450879696413653,0.156559030952226,0.208512485615837,1,0.0755756197599158,0.407325751219363,0.291840186553424,0.260993317911336
+"m__C00431_5-Aminovalerate",0,0,0,0,0,0,0,0,0,0,0,0,0.0687549488924324,0,0,0.00458366325949549
+"m__C00449_Saccharopine",0,0,0,0,0,0,0,0,0,0,0.0798315625099996,0,0,0,0,0.0053221041673333
+"m__C00475_Cytidine",0,0,0,0,0,0,0,0.179816139923348,0,0,0,0.0275105240182286,0,0,0,0.0138217775961051
+"m__C00483_Tyramine",0,0,0,0,0,0.000114529745259524,0,0,0,0,0,0,0,0,0,7.63531635063494e-06
+"m__C00568_p-Aminobenzoate",0,0,0,0,0,0,0.0226728509835286,0,0,0,0,0,0,0,0,0.0015115233989019
+"m__C00576_Betaine aldehyde",0.0156000848041775,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00104000565361183
+"m__C00624_N-Acetylglutamate",0,0.0253828322367305,0,0,0,0,0,0,0,0,0,0,0,0.045492060685693,0,0.0047249928614949
+"m__C00642_p-Hydroxyphenylacetate",0,0,0,0,0,0,0,0,0,0.036638839035824,0,0,0,0,0,0.00244258926905493
+"m__C00711_Malate",0,0,0,0,0,0,0.0221019797217635,0,0,0,0,0,0,0,0,0.00147346531478424
+"m__C00785_Urocanate",0,0.0562644144866249,0,0.0664569702005202,0,0,0.039689160005449,0,0,0.0499635543025025,0,0.0298483660502547,0,0.152904761817183,0.0193574404474264,0.0276323111539974
+"m__C00847_4-Pyridoxate",0.0115041790635937,0,0.0697968792389158,0,0,0,0,0,0,0,0,0,0,0,0,0.00542007055350063
+"m__C00864_Pantothenate",0.0014882361300392,0,0,0,0,0,0.0728707171256572,0,0.0423616941502063,0,0,0,0,0,0,0.00778137649372685
+"m__C00954_Indole-3-acetate",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0689105042505291,0.00459403361670194
+"m__C00993_Ala-Ala",0,0,0,0,0,0,0.0680003190275875,0,0,0,0,0,0,0,0.0454462773040102,0.00756310642210651
+"m__C01029_N8-Acetylspermidine",0,0.0437976094915921,0.234778503299568,0,0,0,0,0.5882525610807,0,0,0,0,0,0,0,0.057788578258124
+"m__C01042_N-Acetylaspartate",0,0,0,0,0,0.00263764069572254,0,0,0,0,0,0,0,0,0,0.000175842713048169
+"m__C01046_N-Methylglutamate",0,0,0,0,0,0,0,0,0.0489552332535147,0,0,0,0,0,0,0.00326368221690098
+"m__C01047_N-gamma-Ethylglutamine",0,0.0357238661188918,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00238159107459279
+"m__C01118_o-Succinylhomoserine",0,0,0,0.0654126148378676,0,0,0,0,0,0,0,0,0,0,0,0.00436084098919118
+"m__C01425_Glu-Glu",0,0,0,0,0,0,0,0.115889424594437,0,0,0,0,0,0,0,0.00772596163962913
+"m__C01551_Allantoin",0,0,0,0,0,0.00115239061763737,0,0,0,0,0,0,0,0,0,7.68260411758244e-05
+"m__C01585_Hexanoate",0.000548313583645428,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3.65542389096952e-05
+"m__C01736_Purine riboside",0,0.0391008197901028,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00260672131934019
+"m__C01744_3-(4-Hydroxyphenyl)propionate",0,0,0,0,0,0,0,0.0410560474323783,0,0,0,0,0,0,0,0.00273706982882522
+"m__C01879_5-Oxoproline",0,0,0.0613243662198598,0,0,0.000449980470849284,0,0,0,0,0,0.420250433898545,0,0,0,0.0321349853726169
+"m__C02571_o-Acetylcarnitine",0.012495446948451,0.0427802217154278,0,0.0526537135274689,0,0,0,0,0,0.0685746471836125,0,0,0,0,0,0.011766935291664
+"m__C02614_Citramalate",0,0,0,0,0,0,0,0.085258897516461,0,0,0,0,0,0,0,0.0056839265010974
+"m__C02630_2-Hydroxyglutarate",0,0,0,0,0.0651810422292219,0,0,0,0,0,0,0,0,0,0,0.00434540281528146
+"m__C02656_Pimelate",0,0,0,0,0.066452500989634,0,0,0,0,0,0,0,0,0,0,0.00443016673264227
+"m__C02679_Dodecanoate",0.0317604508613109,0,0,0,0,0.0204670665462211,0.0481471030986967,0,0,0,0,0,0,0,0,0.00669164136708191
+"m__C02712_N-Acetylmethionine",0,0,0,0,0,0,0,0,0,0.114392394864058,0,0,0,0,0,0.00762615965760385
+"m__C04137_Octopine",0,0,0,0,0,0,0,0,0,0,0,0.148433790270671,0,0,0,0.00989558601804474
+"m__C04259_N-alpha,N-alpha-Dimethylhistidine",0,0,0,0,0,0.04863119621512,0,0,0,0,0,0,0,0,0,0.00324207974767467
+"m__C04483_DCA",0,0.0597818856342491,0.389483421148209,0,0.313358904754596,0.00728441921312772,0,0,0.169621212728859,0.208767185734676,0.0646950025740615,0.023384266997055,0,0,0.0509348664800257,0.0858207443509906
+"m__C04501_N-Acetylglucosamine 1-phosphate",0,0,0.0398983604788467,0,0,0,0,0.0250699774087165,0,0,0,0,0,0,0,0.00433122252583754
+"m__C05122_Taurocholate",0,0.038231361505671,0,0,0,0,0,0,0,0.0410000212273059,0,0,0,0,0,0.00528209218219846
+"m__C05332_Phenethylamine",0.0167344446848166,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00111562964565444
+"m__C05771_Isopropanolamine",0.145958718561364,0,0,0,0,0,0,0,0,0,0,0.0496407003487246,0,0,0,0.0130399612606726
+"m__C06524_Nornicotine",1,1,0.58316411992747,1,0,1,1,1,0.114817177749547,0.222161870273556,0.98885872878222,0.186039053392346,0,0.881603213070348,1,0.665109610879699
+"m__C06772_Diethanolamine",0,0.0881165685126181,0,0,0,0,0.0390971975121001,0,0,0.191941851193531,0.439682053789176,0.268290331919196,0,0,0,0.0684752001951082
+"m__C09815_Benzamide",0,0,0,0,0,0,0,0,0,0,0,0.239278175419343,0,0,0,0.0159518783612896
+"m__C11003_2,4-Dimethylaniline",0,0,0,0,0,0,0,0,0,0.0417311058115034,0,0,0,0.0671392141889441,0,0.00725802133336317
+"m__C11284_3-Indolebutyrate",0,0.0394733585768463,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00263155723845642
+"t__d__Bacteria;p__Actinobacteriota;c__Actinomycetia;o__Actinomycetales;f__Actinomycetaceae;g__Pauljensenia;s__Pauljensenia odontolytica_A",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0119130732709671,0,0.00079420488473114
+"t__d__Bacteria;p__Actinobacteriota;c__Actinomycetia;o__Actinomycetales;f__Bifidobacteriaceae;g__Bifidobacterium;s__Bifidobacterium imperatoris",0,0.0518060488773228,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00345373659182152
+"t__d__Bacteria;p__Actinobacteriota;c__Actinomycetia;o__Actinomycetales;f__Bifidobacteriaceae;g__Bifidobacterium;s__Bifidobacterium pseudocatenulatum",0,0,0,0,0,0,0,0,0,0,0,0.199427524605936,0,0,0,0.0132951683070624
+"t__d__Bacteria;p__Actinobacteriota;c__Actinomycetia;o__Actinomycetales;f__Bifidobacteriaceae;g__Bifidobacterium;s__Bifidobacterium ramosum",0,0,0.296035991448049,0,0,0,0,0,0,0,0,0,0,0,0,0.0197357327632032
+"t__d__Bacteria;p__Actinobacteriota;c__Actinomycetia;o__Actinomycetales;f__Microbacteriaceae;g__Microbacterium",0,0.0195545016785454,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00130363344523636
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Atopobiaceae;g__Lancefieldella",0,0,0,0,0,0,0.0392987244776278,0,0,0,0,0,0,0,0,0.00261991496517519
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Atopobiaceae;g__Lancefieldella;s__Lancefieldella parvula",0,0,0,0,0,0,0.109405090514911,0,0,0.0291051850733656,0.0797398767589589,0.0474778399766569,0,0,0.0847468955892341,0.0233649925275418
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Atopobiaceae;g__Paratractidigestivibacter;s__Paratractidigestivibacter sp905215465",0,0,0,0,0,0,0,0.0364966121631273,0,0,0,0,0,0,0,0.00243310747754182
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella;s__Collinsella aerofaciens_L",0,0,0,0,0,0.00244975745078971,0,0,0,0,0,0,0,0,0,0.000163317163385981
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella;s__Collinsella aerofaciens_W",0,0,0,0,0,0,0,0,0,0.0297744477487319,0,0,0,0,0,0.0019849631832488
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella;s__Collinsella sp014871605",0,0.0263523307881148,0,0,0,0.000994004766142038,0,0,0,0,0,0,0,0,0,0.00182308903695046
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella;s__Collinsella sp900541725",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0120653722089347,0.000804358147262314
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella;s__Collinsella sp900544135",0,0,0,0,0,0.0011446662351794,0,0,0,0,0,0,0,0,0,7.63110823452933e-05
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella;s__Collinsella sp900548255",0,0,0,0.157520546418923,0,0,0,0,0,0,0,0,0,0,0,0.0105013697612615
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella;s__Collinsella sp900549185",0.00521691164556452,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.000347794109704301
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella;s__Collinsella sp900549535",0,0,0,0,0,0.000555778648001093,0,0,0,0,0,0,0,0,0,3.70519098667395e-05
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella;s__Collinsella sp900550835",0,0,0,0,0,0.0014875975521247,0,0,0,0,0,0,0,0,0,9.91731701416468e-05
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella;s__Collinsella sp900552755",0,0,0,0,0,0.00105132462732302,0,0,0,0,0,0,0,0,0,7.00883084882012e-05
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella;s__Collinsella sp900553705",0,0,0,0,0,0.000586912296114278,0,0,0,0,0,0,0,0,0,3.91274864076186e-05
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella;s__Collinsella sp900554655",0,0,0,0,0,0,0,0,0,0.0497458771122816,0,0,0,0,0,0.00331639180748544
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella;s__Collinsella sp900556205",0,0,0,0,0,0.00571591575236867,0,0,0,0,0,0,0,0,0,0.000381061050157911
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella;s__Collinsella sp900757265",0,0,0,0,0,0.00735184755573891,0,0,0,0,0,0,0,0,0,0.000490123170382594
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella;s__Collinsella sp900757285",0,0,0,0,0,0.00077368799489737,0,0,0,0,0,0,0,0,0,5.15791996598247e-05
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella;s__Collinsella sp900765115",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0053070772613632,0,0.000353805150757547
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella;s__Collinsella sp905215765",0,0,0,0,0,0,0,0,0.406508328201989,0,0,0,0.0459825417566217,0,0,0.0301660579972407
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella;s__Collinsella sp905215835",0,0,0,0,0,0,0,0,0,0.106125751398727,0,0,0,0,0,0.00707505009324845
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__Adlercreutzia;s__Adlercreutzia celatus_A",0,0,0,0,0,0.000699436365938217,0,0,0,0,0,0,0,0,0,4.66290910625478e-05
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__Eggerthella",0,0.183144031364051,0,0,0.162446752886594,0,0.147724670669585,0,0,0.269252777274124,0,0,0,0,0.0507742567941694,0.0542228325992349
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__Eggerthella;s__Eggerthella sinensis",0,0,0.389918132867045,0,0.172482124767255,0,0.0409669921730225,0,0.156770657232603,0,0,0,0,0.209302078521672,0,0.0646293323707731
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__Eggerthella;s__Eggerthella sp014287365",0,0.0897045242327193,0,0.233668249600851,0,0.000440894623015304,0,0,0.0711721093617924,0.173095596289096,0,0.0959183371512123,0,0,0.109719990363523,0.0515813134414806
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__Eggerthella;s__Eggerthella timonensis",0.00879652022600434,0.165279575220949,0,0,0,0,0.230194111341355,0,0,0.402763609607269,0,0,0.0659491823595772,0.114487930949034,0.0156952677114106,0.0668777464943732
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__Ellagibacter;s__Ellagibacter sp900554945",0,0,0,0,0,0.00150379272907726,0,0,0,0,0,0,0,0,0,0.000100252848605151
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__Gordonibacter;s__Gordonibacter urolithinfaciens",0.00298003998036344,0,0,0,0,0,0.0219452179455892,0,0,0,0,0,0,0,0,0.00166168386173017
+"t__d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__Slackia_A;s__Slackia_A isoflavoniconvertens",0.000152045509385609,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1.01363672923739e-05
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Alloprevotella;s__Alloprevotella sp004552865",0,0,0,0.162013420027366,0,0,0,0,0,0,0,0,0,0,0,0.0108008946684911
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Alloprevotella;s__Alloprevotella sp900539625",0,0,0.0360298652839582,0,0,0,0,0,0,0,0,0,0,0,0,0.00240199101893055
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Alloprevotella;s__Alloprevotella sp900540885",0.00312897553794708,0,0,0,0,0,0,0,0,0,0,0.0626347402366519,0,0,0,0.0043842477183066
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Alloprevotella;s__Alloprevotella sp900542795",0.0113480779580958,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.000756538530539722
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__Bacteroides cellulosilyticus",0,0,0,0,0,0,0,0,0,0.0746214428843556,0,0,0,0,0,0.00497476285895704
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__Bacteroides clarus",0.00293477427265036,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.000195651618176691
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__Bacteroides fragilis",0,0,0,0,0,0.00112048232150591,0,0,0,0,0,0,0,0,0,7.46988214337271e-05
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__Bacteroides heparinolyticus",0.0201524329361645,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00134349552907764
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__Bacteroides sp014385165",0,0,0,0,0,0,0,0,0,0,0,0,0,0.172319090556747,0,0.0114879393704498
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__Bacteroides togonis",0,0,0,0,0,0,0,0,0,0.00377393955086015,0,0,0,0,0,0.000251595970057343
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__Bacteroides uniformis",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0197170502241129,0.00131447001494086
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Paraprevotella;s__Paraprevotella stercoravium",0,0,0,0,0,0.000994413778658818,0,0,0,0,0,0.0670325996246198,0,0,0,0.00453513422688524
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Phocaeicola_A;s__Phocaeicola_A sp900291465",0,0,0.0644964921136806,0,0,0,0,0,0,0,0,0,0,0,0,0.00429976614091204
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Phocaeicola;s__Phocaeicola excrementigallinarum",0,0,0,0,0,0,0,0,0,0,0,0.0314890169645958,0,0,0,0.00209926779763972
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Phocaeicola;s__Phocaeicola sp900552645",0,0,0,0,0,0,0,0,0.11906707000675,0,0,0,0,0,0,0.00793780466711666
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella brunnea",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0269630121479412,0.0269956274151961,0.00359724263754249
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella denticola",0,0,0,0,0,0,0,0.0292744540756721,0.042149182666382,0,0,0,0.0989570944013535,0,0,0.0113587154095605
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella fusca",0,0,0,0,0,0.00163148443165202,0,0,0,0,0,0,0,0,0,0.000108765628776801
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella histicola",0,0,0,0,0,0.0156711433230536,0,0,0,0,0,0,0,0,0,0.00104474288820357
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella ihumii",0,0,0,0,0.107094195635474,0,0,0,0,0,0,0,0,0,0,0.00713961304236492
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella lascolaii",0,0,0,0,0,0.0067535524760661,0,0,0,0,0,0,0,0,0,0.00045023683173774
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella melaninogenica_C",0,0,0,0,0,0,0,0,0,0,0,0.0618361398146589,0,0.00310965632490946,0,0.00432971974263789
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella multiformis",0,0,0,0,0,0,0,0.0942704661132648,0,0,0,0,0,0,0,0.00628469774088432
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella salivae",0,0,0,0,0,0,0,0,0,0,0,0,0,0.252180324009632,0,0.0168120216006421
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella shahii",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00105385466154616,7.02569774364106e-05
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella sp000436915",0.0385636185699471,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00257090790466314
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella sp002297965",0,0,0,0,0,0,0.0434263833766873,0.430677740407689,0,0,0,0,0,0,0,0.0316069415856251
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella sp002300055",0,0,0,0,0,0.00578424355422136,0,0,0,0,0,0,0,0,0,0.000385616236948091
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella sp002353825",0.0132945902905019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.000886306019366796
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella sp002490315",0,0,0,0.13037047574246,0,0,0,0,0,0,0,0,0,0,0,0.00869136504949731
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella sp013333285",0,0,0,0,0,0,0,0.0577546075779391,0,0,0,0,0,0,0,0.00385030717186261
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella sp017347605",0,0,0.0879285293904403,0,0,0.000690336604721975,0,0,0,0,0,0,0,0,0,0.00590792439967748
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella sp017623335",0,0,0,0,0,0,0,0.0444949148220573,0,0,0,0,0,0,0,0.00296632765480382
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella sp900315955",0,0,0,0,0,0.0174943251078552,0,0,0,0,0,0,0,0,0,0.00116628834052368
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella sp900317685",0,0,0,0,0,0.00240949375939301,0,0,0,0,0,0,0,0,0,0.000160632917292867
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella sp900322035",0,0,0,0,0,0,0,0,0,0,0,0,0,0.065321724959645,0,0.00435478166397633
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella sp900540415",0,0,0,0,0,0.00127141632914875,0,0,0,0,0,0.00412836744496955,0,0,0,0.00035998558494122
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella sp900554835",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00540861414310102,0.000360574276206735
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella sp900556825",0.00633806945578184,0,0,0,0,0.00201803788494171,0.0332566234064641,0,0,0,0,0,0,0,0,0.00277418204981251
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella sp900769055",0.0735310626775786,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00490207084517191
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella sp900772835",0,0,0,0,0,0,0,0.0396141649639064,0,0,0,0,0,0,0,0.0026409443309271
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella sp905214625",0,0,0,0,0,0,0,0,0.285044501554211,0,0,0,0,0,0,0.0190029667702807
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__UBA1189",0,0,0.0909594701357372,0,0,0,0,0,0,0,0,0,0,0,0,0.00606396467571581
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__UBA6398;s__UBA6398 sp002451695",0.0089623131592961,0,0.295212316389527,0.0541244226419093,0,0,0,0,0.136047338652655,0,0.0754132864810939,0,0.0918373538983055,0.0021248890696213,0,0.0442481280194939
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__UBA6398;s__UBA6398 sp900550635",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00181214501535429,0.000120809667690286
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Coprobacteraceae;g__Coprobacter;s__Coprobacter secundus",0,0,0,0,0,0,0.0486664808700382,0,0,0.0270333240410228,0,0,0,0.089332277526512,0,0.0110021388291715
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Dysgonomonadaceae;g__Petrimonas",0,0,0,0,0,0.00121252364194651,0,0,0,0,0,0,0,0,0,8.08349094631008e-05
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Marinifilaceae;g__Butyricimonas;s__Butyricimonas faecalis",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0283872672600851,0.00189248448400567
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Marinifilaceae;g__Butyricimonas;s__Butyricimonas faecavium",0,0,0,0,0,0.000994501146515078,0,0,0,0,0,0,0,0,0,6.63000764343385e-05
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Marinifilaceae;g__Butyricimonas;s__Butyricimonas paravirosa",0,0,0,0,0,0,0,0.0492162685906051,0,0,0,0,0,0,0,0.00328108457270701
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Marinifilaceae;g__Butyricimonas;s__Butyricimonas sp900759925",0,0,0,0,0,0.00113896052080075,0,0,0,0,0,0,0,0,0,7.59307013867166e-05
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Marinifilaceae;g__Butyricimonas;s__Butyricimonas sp900761485",0,0,0,0,0,0.000524748122603494,0,0,0,0,0,0,0,0,0,3.49832081735662e-05
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Marinifilaceae;g__Odoribacter",0,0,0,0,0.188279790232327,0,0,0,0,0,0,0,0,0,0,0.0125519860154885
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Marinifilaceae;g__Odoribacter;s__Odoribacter laneus",0,0,0,0,0,0,0.0234228552612333,0,0,0,0,0,0,0,0,0.00156152368408222
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Marinifilaceae;g__Odoribacter;s__Odoribacter sp009935865",0,0,0,0,0,0.00116112003735517,0,0,0,0,0,0,0,0,0,7.74080024903448e-05
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Marinifilaceae;g__Odoribacter;s__Odoribacter splanchnicus",0,0,0,0,0,0,0,0,0,0,0,0,0.0555516678724465,0,0,0.00370344452482977
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__CAG-485 sp900554845",0,0,0,0,0,0.00217713577423513,0,0,0,0,0,0,0,0,0,0.000145142384949009
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__CAG-485 sp905212215",0,0,0,0,0,0,0,0,0,0.00703613710815711,0,0,0,0,0,0.000469075807210474
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Duncaniella;s__Duncaniella muris",0,0,0,0,0,0,0,0.0773225112509574,0,0,0,0,0,0,0,0.00515483408339716
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Paramuribaculum;s__Paramuribaculum sp000431155",0.00454763975391242,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.000303175983594161
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Sodaliphilus;s__Sodaliphilus pleomorphus",0,0,0,0,0,0.00106501457703423,0,0,0,0,0,0.00629556049415114,0,0,0,0.000490705004745691
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Paludibacteraceae;g__RF16",0,0,0.0452914399812922,0,0,0,0,0,0,0,0,0,0,0,0,0.00301942933208615
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Porphyromonadaceae;g__Porphyromonas",0,0,0,0,0,0.00125054789262478,0,0,0,0,0,0,0,0,0,8.33698595083186e-05
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes_A",0,0,0,0,0,0.00227276899799343,0,0.144929579788055,0,0,0,0,0,0,0,0.00981348991906992
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes_A;s__Alistipes_A ihumii",0,0,0,0,0,0.00829955349631969,0,0,0,0,0,0,0,0,0,0.000553303566421313
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes_A;s__Alistipes_A indistinctus",0,0,0,0,0,0,0,0.101729501942154,0,0,0,0,0,0,0,0.00678196679614363
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes_A;s__Alistipes_A pullistercoris",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0016095613177832,0,0.000107304087852214
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes;s__Alistipes intestinigallinarum",0.00292315831186041,0,0,0,0,0,0.0364304078215073,0,0,0,0,0,0,0,0,0.00262357107555785
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes;s__Alistipes timonensis",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0690240505482439,0,0.00460160336988292
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Tannerellaceae;g__Parabacteroides;s__Parabacteroides acidifaciens",0,0,0,0,0,0,0,0,0,0,0,0,0,0.000352846448350003,0,2.35230965566668e-05
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Tannerellaceae;g__Parabacteroides;s__Parabacteroides chinchillae",0,0,0,0,0,0.00128954873997267,0,0,0,0,0,0,0,0,0,8.59699159981783e-05
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Tannerellaceae;g__Parabacteroides;s__Parabacteroides distasonis_A",0,0.0198793212744074,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00132528808496049
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Tannerellaceae;g__Parabacteroides;s__Parabacteroides faecis",0,0,0,0,0,0.0013080911863562,0,0,0,0,0,0,0,0,0,8.72060790904131e-05
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Tannerellaceae;g__Parabacteroides;s__Parabacteroides sp910577325",0,0,0,0,0,0.00098433087329894,0,0,0,0,0,0,0,0,0,6.56220582199293e-05
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Tannerellaceae;g__Tannerella",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0436980993928449,0.0792318437042499,0.00819532953980632
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__UBA932;g__Cryptobacteroides;s__Cryptobacteroides sp000433355",0,0,0,0,0,0,0,0,0,0,0.156539366736321,0,0,0,0,0.0104359577824214
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__W3P20-009;g__W3P20-009;s__W3P20-009 sp004552385",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0367774002835265,0.00245182668556843
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Chitinophagales;f__Chitinophagaceae;g__Chitinophaga;s__Chitinophaga silvisoli",0,0,0,0,0.10765182273524,0,0,0.0258648573341715,0,0.0254772599715644,0,0,0,0,0,0.0105995960027317
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Sphingobacteriales;f__Sphingobacteriaceae;g__Pedobacter",0,0,0,0,0,0,0.0227139949884459,0,0,0,0,0,0,0,0,0.00151426633256306
+"t__d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Sphingobacteriales;f__Sphingobacteriaceae;g__Pedobacter;s__Pedobacter miscanthi",0.0421169694407172,0,0.13647914993793,0,0,0,0.0229234105205243,0,0,0,0,0,0,0,0,0.0134346353266114
+"t__d__Bacteria;p__Campylobacterota;c__Campylobacteria;o__Campylobacterales;f__Campylobacteraceae;g__Campylobacter_A",0,0,0,0,0,0,0,0,0,0,0,0.0642306507400018,0,0,0,0.00428204338266678
+"t__d__Bacteria;p__Campylobacterota;c__Campylobacteria;o__Campylobacterales;f__Campylobacteraceae;g__Campylobacter_B",0,0,0,0,0,0,0.0308164983904599,0.143829809161554,0,0.0496612036642941,0.0549155625306568,0,0,0.109627600136446,0.0457675330327322,0.0289745471277429
+"t__d__Bacteria;p__Cyanobacteria;c__Vampirovibrionia;o__Gastranaerophilales;f__Gastranaerophilaceae;g__Stercorousia;s__Stercorousia sp905212085",0,0.0336668691471772,0,0,0,0,0,0.0763856841312253,0,0,0,0,0.0454651723062167,0,0,0.0103678483723079
+"t__d__Bacteria;p__Cyanobacteria;c__Vampirovibrionia;o__Gastranaerophilales;f__Gastranaerophilaceae;g__UMGS1585",0,0,0,0,0,0,0,0,0,0,0,0,0.0888530572671614,0,0,0.0059235371511441
+"t__d__Bacteria;p__Cyanobacteria;c__Vampirovibrionia;o__Gastranaerophilales;f__Gastranaerophilaceae;g__Zag111;s__Zag111 sp002102825",0,0,0,0,0,0,0,0,0,0.0727954529613679,0,0,0,0,0,0.00485303019742452
+"t__d__Bacteria;p__Cyanobacteria;c__Vampirovibrionia;o__Gastranaerophilales;f__Gastranaerophilaceae;g__Zag111;s__Zag111 sp900555325",0,0,0,0,0,0.00131400355538314,0,0,0,0,0,0,0,0,0,8.7600237025543e-05
+"t__d__Bacteria;p__Desulfobacterota_I;c__Desulfovibrionia;o__Desulfovibrionales;f__Desulfovibrionaceae;g__Bilophila;s__Bilophila sp902373525",0,0,0,0,0,0,0,0,0.0492001514491985,0,0,0,0,0,0,0.00328001009661323
+"t__d__Bacteria;p__Desulfobacterota_I;c__Desulfovibrionia;o__Desulfovibrionales;f__Desulfovibrionaceae;g__Bilophila;s__Bilophila wadsworthia",0,0,0,0,0,0,0,0,0,0.018470286083007,0,0,0,0,0,0.0012313524055338
+"t__d__Bacteria;p__Desulfobacterota_I;c__Desulfovibrionia;o__Desulfovibrionales;f__Desulfovibrionaceae;g__Desulfovibrio",0,0,0,0,0,0,0,0,0,0.00781304078732527,0.160530453111779,0,0,0,0,0.0112228995932736
+"t__d__Bacteria;p__Desulfobacterota_I;c__Desulfovibrionia;o__Desulfovibrionales;f__Desulfovibrionaceae;g__Mailhella",0,0,0,0,0,0.000259917940115441,0.0400837204628615,0.0290940527604681,0,0,0,0,0,0,0,0.00462917941089634
+"t__d__Bacteria;p__Desulfobacterota_I;c__Desulfovibrionia;o__Desulfovibrionales;f__Desulfovibrionaceae;g__Mailhella;s__Mailhella merdigallinarum",0,0,0,0,0,0,0,0,0.0579167856953351,0,0,0,0,0,0,0.00386111904635568
+"t__d__Bacteria;p__Desulfobacterota_I;c__Desulfovibrionia;o__Desulfovibrionales;f__Desulfovibrionaceae;g__Mailhella;s__Mailhella sp910579055",0,0,0,0,0,0,0,0.0269109472794626,0,0,0,0,0,0,0,0.00179406315196417
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Christensenellales;f__Borkfalkiaceae;g__Borkfalkia",0,0,0,0,0,0,0,0,0,0.00377052267315793,0,0,0,0,0,0.000251368178210529
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Christensenellales;f__CAG-74;g__Faecivicinus",0,0,0,0,0,0,0,0,0,0,0.0566006196784671,0,0,0,0,0.00377337464523114
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Christensenellales;f__CAG-74;g__Limiplasma;s__Limiplasma sp004556545",0,0,0,0,0,0,0.0482703224669282,0,0,0,0,0,0,0,0,0.00321802149779521
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Christensenellales;f__CAG-74;g__SFMI01",0,0,0,0,0,0,0,0,0,0.00123003667683262,0,0,0,0,0,8.20024451221747e-05
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Christensenellales;f__CAG-74;g__Ventricola;s__Ventricola sp900542445",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0194074439898385,0,0.00129382959932257
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Christensenellales;f__CAG-917;g__CAG-349",0,0,0,0,0,0,0,0,0,0.0295450622322336,0,0,0,0,0,0.00196967081548224
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Christensenellales;f__CAG-917;g__CAG-475",0,0,0,0,0,0,0,0,0,0,0,0.0798803378237952,0,0,0,0.00532535585491968
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Clostridiales;f__Clostridiaceae;g__Clostridium;s__Clostridium disporicum",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0177781906433595,0.0011852127095573
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Clostridiales;f__Clostridiaceae;g__Clostridium;s__Clostridium neonatale",0,0,0,0,0,0,0,0.101102007222518,0,0,0,0,0,0,0,0.00674013381483451
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Clostridiales;f__Clostridiaceae;g__Clostridium;s__Clostridium paraputrificum",0,0.0555635493834022,0,0,0,0,0,0.0456934456613175,0,0,0,0,0,0.0579673663347015,0,0.0106149574252948
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Clostridiales;f__Clostridiaceae;g__Clostridium;s__Clostridium sp900759995",0,0,0,0,0,0.00200743731991827,0,0,0,0,0,0,0,0,0,0.000133829154661218
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Eubacteriales;f__Anaerofustaceae;g__Anaerofustis;s__Anaerofustis stercorihominis_A",0,0,0,0,0,0.00372693146489203,0,0,0,0,0,0,0,0,0,0.000248462097659468
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Anaerotignaceae;g__Metalachnospira;s__Metalachnospira sp900553995",0,0,0,0,0,0,0,0,0,0.0178818140400575,0,0,0,0,0,0.00119212093600383
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Cellulosilyticaceae;g__Niameybacter",0,0.0498000767017431,0,0,0.220029339557997,0,0,0,0,0,0,0,0.0490701482261638,0,0,0.0212599709657269
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__14-2 sp001940225",0.030410278800576,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0020273519200384
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__14-2 sp910576975",0,0,0,0,0,0.00154080600884737,0,0,0,0.00498520585516762,0,0,0,0,0,0.000435067457600999
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__1XD8-76",0,0,0,0,0,0,0,0.0283006434979088,0,0,0,0,0,0,0,0.00188670956652725
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__1XD8-76;s__1XD8-76 sp910578085",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.01043306194661,0.000695537463107331
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__Acetatifactor intestinalis",0.0299752906289304,0,0,0,0,0,0.0483355781098319,0,0,0,0,0,0,0,0,0.00522072458258415
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__Acetatifactor sp003447295",0,0,0,0,0,0,0,0,0,0,0,0,0,0.00910832726571911,0,0.000607221817714607
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Agathobacter",0,0,0,0.0750524295717243,0,0,0,0,0,0,0.578933362388567,0,0,0,0.0239084602594619,0.0451929501479836
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Agathobacter;s__Agathobacter faecis",0,0,0,0,0,0.22937812825213,0,0,0,0,0,0,0,0,0,0.0152918752168087
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Agathobacter;s__Agathobacter rectalis",0,0,0,0,0,0.00107414134658074,0,0,0,0,0,0,0,0,0,7.16094231053828e-05
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Agathobacter;s__Agathobacter sp900543445",0,0,0,0,0,0,0,0,0,0,0,0,0,0.46603633173178,0.105989272978648,0.0381350403140285
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Agathobacter;s__Agathobacter sp900548765",0.06066056170013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00404403744667533
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Agathobacter;s__Agathobacter sp900549895",0,0,0.0937485895100737,0,0,0,0,0,0,0,0,0,0,0,0,0.00624990596733824
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Agathobacter;s__Agathobacter sp900550545",0,0,0,0,0,0,0.0343904897506194,0,0,0,0,0,0,0,0,0.00229269931670796
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Agathobacter;s__Agathobacter sp900552085",0,0,0,0,0,0,0,0,0,0.0802095611139228,0,0.00985423681340688,0,0,0,0.00600425319515531
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__AM51-8",0.00655845110961438,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.000437230073974292
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Anaerostipes",0,0.0477766184594358,0.0875653505724844,0,0,0,0,0,0,0.0428747680864431,0,0,0,0,0,0.0118811158078909
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Bariatricus;s__Bariatricus sp900554415",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00647233453883481,0.000431488969255654
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia",0.00598871204503971,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0707573416436177,0.00511640357924383
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia_A;s__Blautia_A caecimuris",0.0778002457635135,0.151889577572902,0.401650788053274,0,0,0.157492206410742,0.363626408851328,0,0,0,0,0,0,0,0,0.0768306151101172
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia_A;s__Blautia_A faecis",0,0,0,0,0,0,0,0,0,0.0827823165823044,0,0,0,0,0,0.00551882110548696
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia_A;s__Blautia_A obeum",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.119630038551726,0.00797533590344842
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia_A;s__Blautia_A sp000436615",0,0,0,0,0,0.00131361070694282,0,0,0,0,0,0,0,0,0,8.7574047129521e-05
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia_A;s__Blautia_A sp900066145",0.00138049563038429,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9.20330420256192e-05
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia_A;s__Blautia_A sp900316115",0,0,0,0,0,0,0,0,0,0.0626029703976985,0,0,0,0,0,0.00417353135984657
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia;s__Blautia argi",0,0,0,0,0,0,0.136703428611747,0,0,0,0,0,0,0,0.0777985257419676,0.0143001302902476
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia;s__Blautia sp001304935",0.106028388050603,0,0,0,0,0,0.0523519671363928,0,0,0,0,0,0.151534095134665,0,0.0329912124900579,0.0228603775207812
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia;s__Blautia sp900120295",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0415103557643477,0.00276735705095652
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Butyrivibrio_A",0,0,0.214423010481621,0,0,0,0,0,0,0,0,0,0,0,0,0.0142948673654414
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Butyrivibrio_A;s__Butyrivibrio_A crossotus",0.191513341823239,0,0,0,0,0.00366180169487388,0,0,0,0,0,0,0,0,0,0.0130116762345409
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-127;s__CAG-127 sp002431865",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0296171618152856,0,0.00197447745435238
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-317;s__CAG-317 sp900543415",0,0,0,0,0,0,0,0.179544492145816,0,0,0,0,0,0,0,0.0119696328097211
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-45",0,0,0,0,0,0,0,0.0361625013215169,0,0,0,0,0,0,0,0.00241083342143446
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-510;s__CAG-510 sp900550475",0,0,0,0,0,0,0,0,0.0628774709503208,0,0,0.0280810409619495,0,0,0,0.00606390079415135
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-56;s__CAG-56 sp905200565",0,0,0,0,0,0,0,0,0.159632782546808,0,0,0,0,0,0,0.0106421855031206
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-590;s__CAG-590 sp000431135",0,0,0,0,0,0.00117052384689554,0,0,0,0,0,0,0,0,0.0144135948352437,0.00103894124547595
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-882;s__CAG-882 sp003486385",0,0.0283364673201429,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00188909782134286
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CHH4-2",0,0,0.061708121596741,0,0,0,0,0,0,0,0,0,0,0,0.00219885634560283,0.00426046519615625
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Choladocola",0.0153715755359326,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00102477170239551
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Choladocola;s__Choladocola sp003480725",0,0,0.0412851465156516,0,0,0,0,0.0607086434619711,0.041284526476192,0,0.111198962294759,0,0,0,0,0.0169651519165716
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Coprococcus_A",0,0,0,0,0,0.00469820708424116,0,0,0,0,0,0,0,0,0,0.000313213805616078
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Coprococcus;s__Coprococcus sp900066115",0,0,0,0,0,0,0,0,0,0.0812188760988798,0.114653452543501,0,0,0.0700465447800578,0,0.0177279248948292
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Coprococcus;s__Coprococcus sp900548315",0,0.0484205130650391,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00322803420433594
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Copromonas",0,0,0,0,0,0,0.030964198947427,0,0,0,0,0,0,0,0,0.00206427992982847
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Copromonas;s__Copromonas sp900066055",0,0,0,0,0,0,0.0337123290288943,0,0,0,0,0,0,0,0,0.00224748860192629
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Copromonas;s__Copromonas sp900066785",0,0,0,0,0,0,0.0216559071931637,0,0,0,0,0,0,0,0,0.00144372714621091
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Enterocloster;s__Enterocloster clostridioformis_A",0,0,0,0,0,0.00186562128365375,0,0,0,0,0,0,0,0,0,0.000124374752243584
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Enterocloster;s__Enterocloster porci",0,0,0,0,0,0,0,0,0,0,0.0632162779212763,0,0,0,0,0.00421441852808508
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_F;s__Eubacterium_F sp002431395",0,0,0,0,0,0,0,0,0.065961709737049,0,0,0,0,0,0,0.00439744731580326
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_F;s__Eubacterium_F sp003491505",0,0,0,0,0,0,0,0,0,0.0637315430221504,0,0,0,0,0,0.00424876953481003
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_I;s__Eubacterium_I avistercoris",0,0,0,0,0,0,0,0,0,0,0,0.0186496573772846,0,0,0,0.00124331049181897
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__F0428",0,0,0,0,0,0,0,0.0269200653894158,0,0,0,0,0,0,0.0022363092591206,0.00194375830990243
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Faecalimonas",0.023039527439505,0,0.103588575703866,0,0.811951294678375,0,0.0329450487697982,0,0.228820827970616,0.207469146455118,0,0.277200449428511,0,0.275066175875566,0,0.130672069754757
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Faecalimonas;s__Faecalimonas phoceensis",0,0.0537727852737334,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00358485235158222
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Faecalimonas;s__Faecalimonas sp000209385",0,0,0,0,0.100546823892964,0,0,0,0,0,0,0,0,0,0,0.00670312159286425
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Faecalimonas;s__Faecalimonas sp900550235",0.028039913908323,0.0362075375990658,0.323619472879278,0,0.753554201392416,0,0.069441244882775,0,0.317176939740541,0.264866120070026,0,0,0.0869566967127324,0,0,0.125324141812344
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Faecalimonas;s__Faecalimonas sp900556835",0,0,0,0,0,0.00085898071111539,0.0719577657419205,0,0,0,0,0,0,0,0,0.00485444976353572
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Fimimorpha",0,0,0,0,0,0,0,0,0,0,0,0.0458855911732901,0,0,0,0.00305903941155267
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__KM106-2",0,0,0,0,0,0,0,0,0.0600704510250759,0,0,0,0,0,0,0.00400469673500506
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Lachnoanaerobaculum",0,0,0,0,0,0,0,0.147805364521892,0,0.17862879747222,0,0,0,0,0,0.0217622774662742
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Lachnoanaerobaculum;s__Lachnoanaerobaculum sp000296385",0.012117399975739,0,0,0,0.0595276109427263,0,0.26948813282118,0.148138714778248,0,0.490583369480631,0.315974426061248,0,0,0,0.0948432422873487,0.0927115264231414
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Lachnoclostridium_B;s__Lachnoclostridium_B sp900066765",0,0,0,0,0,0,0.0282531044575203,0,0,0.016643300662244,0,0,0,0,0,0.00299309367465096
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Lachnospira;s__Lachnospira sp000436535",0,0.0301737859799043,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00201158573199362
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Marvinbryantia;s__Marvinbryantia formatexigens",0,0,0,0,0,0.000412859976192337,0,0,0,0,0,0,0,0,0,2.75239984128225e-05
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Marvinbryantia;s__Marvinbryantia sp900066075",0,0,0,0,0,0,0,0.0293385809199963,0,0,0,0,0,0,0,0.00195590539466642
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Massilistercora;s__Massilistercora timonensis",0,0,0,0,0,0,0,0,0,0,0,0.0353834341825342,0,0,0,0.00235889561216895
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Mediterraneibacter;s__Mediterraneibacter massiliensis",0,0,0,0,0,0.000741854585499849,0,0,0,0,0.0602014198045171,0,0,0,0,0.00406288495933447
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Mediterraneibacter;s__Mediterraneibacter stercoripullorum",0.102941607955521,0,0.0528694002911694,0,0,0,0,0.141417660561449,0,0.231112353345962,0,0,0,0.726385671434672,0,0.0836484462392516
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Merdisoma;s__Merdisoma sp900066385",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00476462503291867,0.000317641668861245
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Oliverpabstia;s__Oliverpabstia sp004556655",0,0,0,0,0,0.244509340678796,0,0,0,0,0,0,0,0,0,0.0163006227119197
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Oribacterium",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.286102884270113,0.0190735256180075
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Oribacterium;s__Oribacterium asaccharolyticum",0,0,0,0,0,0,0,0,0.163803795816525,0,0,0,0,0,0,0.010920253054435
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Pelethocola",0,0,0,0,0,0.000701651458237697,0,0,0,0,0,0,0,0,0,4.67767638825131e-05
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Roseburia",0,0,0,0,0,0.00153882376109221,0,0,0,0,0,0,0,0,0,0.00010258825073948
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Roseburia;s__Roseburia hominis",0,0,0,0,0,0,0,0,0,0.0879792490958784,0,0,0,0,0,0.00586528327305856
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Roseburia;s__Roseburia inulinivorans",0,0,0,0,0,0.0342977836748112,0,0,0,0,0,0,0,0,0,0.00228651891165408
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Roseburia;s__Roseburia sp900542495",0.0404034920577921,0,0,0,0,0.0356187692927869,0,0,0,0,0,0,0,0,0,0.00506815075670527
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Roseburia;s__Roseburia sp900548205",0,0,0,0,0,0,0,0,0,0,0,0,0,0.027035628712925,0.0199710286054457,0.00313377715455804
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__RUG11237",0,0.0244237514611945,0,0,0,0,0.0384222037783595,0,0,0,0,0,0,0,0.0101209707811804,0.00486446173471563
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__RUG115;s__RUG115 sp900315735",0,0,0,0,0,0,0,0,0,0,0,0,0,0.380426029764963,0,0.0253617353176642
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Ruminococcus_B",0.0273327416601562,0,0,0,0.172314265055976,0.00107523436552253,0.144078315492056,0.608730558490147,0,0,0,0,0,0.591936890875095,0,0.10303120039593
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Ruminococcus_B;s__Ruminococcus_B gnavus",0,0,0,0,0,0,0.0696365741312692,0,0,0,0,0,0,0,0,0.00464243827541795
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Ruminococcus_B;s__Ruminococcus_B sp900544395",0,0,0,0,0,0,0,0.39948062485121,0,1,0,0.0645569979588532,0,0.266451599507647,0,0.115365948154514
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Schaedlerella",0,0,0,0,0,0,0,0,0.0450885046919404,0,0,0,0,0,0,0.00300590031279603
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Schaedlerella;s__Schaedlerella sp002320245",0,0,0.218697471483,0,0,0,0,0,0,0,0,0,0,0,0,0.0145798314322
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Schaedlerella;s__Schaedlerella sp900066545",0,0,0.114349154420863,0,0,0,0,0,0,0,0,0,0,0,0,0.00762327696139084
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__SFDP01",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00292393327287959,0.000194928884858639
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Stomatobaculum",0,0.0237679453410858,0,0,0.0856624496267593,0,0.0390407615384727,0,0,0,0,0,0,0,0,0.00989807710042119
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Stomatobaculum;s__Stomatobaculum longum",0,0,0,0,0,0,0,0.0747490175615333,0,0.113947182810158,0,0,0,0,0.0385076978799833,0.0151469265501116
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA11774",0,0,0.0488774840365728,0,0,0,0.0476221800015882,0.368541751757142,0,0,0,0,0,0,0,0.0310027610530202
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA2821;s__UBA2821 sp902786515",0,0,0,0,0,0.00139030126996901,0,0,0,0,0,0,0,0,0,9.26867513312673e-05
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA3766",0,0,0,0,0,0,0,0.0987568851980222,0,0,0,0,0,0,0,0.00658379234653481
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA629",0,0,0,0,0,0,0,0,0,0,0,0.000934496230370191,0,0,0,6.22997486913461e-05
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA9414;s__UBA9414 sp003458885",0,0,0.0392796553485948,0,0,0,0,0,0,0,0,0,0,0,0,0.00261864368990632
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UMGS1370;s__UMGS1370 sp900542035",0,0,0,0,0,0,0.026498915180679,0,0,0,0,0,0,0,0,0.0017665943453786
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__V9D3004",0,0,0,0,0,0,0,0,0.0649855846770462,0,0,0,0,0,0,0.00433237231180308
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__VUNI01",0,0,0,0,0,0,0.0372258379379494,0,0,0,0,0.0649732790526216,0,0,0.023792855357357,0.0083994648231952
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__VUNI01;s__VUNI01 sp009695765",0,0,0,0,0,0,0,0,0,0,0,0.121807961069104,0,0.0466297867523186,0,0.0112291831880948
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Acutalibacter;s__Acutalibacter stercoravium",0,0,0,0,0,0,0,0,0.101908316201432,0,0,0,0,0,0,0.00679388774676211
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-177;s__CAG-177 sp000431775",0,0,0,0,0,0,0.159316408244851,0,0,0,0,0,0,0,0.0512923909225315,0.0140405866111589
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-217",0,0,0,0,0,0,0,0.11241270620417,0,0,0,0,0,0,0,0.00749418041361133
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Eubacterium_R",0,0,0,0,0,0,0,0,0,0.0101279866579945,0,0,0,0,0,0.000675199110532967
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Eubacterium_R;s__Eubacterium_R sp900539775",0,0,0,0,0,0,0,0,0,0.00867276913289838,0,0,0,0,0,0.000578184608859892
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Fimenecus;s__Fimenecus sp002437245",0,0,0,0,0.0760179819109,0,0,0,0,0,0,0,0,0,0,0.00506786546072667
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__JAGZMM01;s__JAGZMM01 sp018364155",0,0,0,0,0,0.00137735036638617,0,0,0,0,0,0,0,0,0,9.1823357759078e-05
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Pseudoruminococcus_A",0,0,0,0,0,0,0.0321446101052137,0,0,0,0,0,0,0,0,0.00214297400701425
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Ruminococcus_E;s__Ruminococcus_E sp003438075",0,0,0.229363209112641,0,0,0,0,0,0,0,0,0.0555241891270048,0,0,0,0.0189924932159764
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UBA1417;s__UBA1417 sp003531055",0.0087685067107628,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.000584567114050853
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UBA1417;s__UBA1417 sp900549945",0,0.0472303196549533,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00314868797699689
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1071;s__UMGS1071 sp900541905",0,0,0,0,0,0,0,0,0,0.423498495945076,0,0,0,0,0,0.028233233063005
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1532",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0326177532897276,0.00217451688598184
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Butyricicoccaceae;g__Butyricicoccus",0,0,0,0,0,0.00111166287402052,0,0,0,0,0,0,0,0,0,7.4110858268035e-05
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Butyricicoccaceae;g__Butyricicoccus;s__Butyricicoccus pullicaecorum",0,0,0,0,0,0,0,0,0,0,0,0,0,0.00806378429016754,0,0.000537585619344503
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Butyricicoccaceae;g__UBA4644",0,0,0,0,0,0.00218555500737193,0,0,0,0,0,0,0,0,0,0.000145703667158129
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__BX7;g__CAJFTX01",0,0,0,0,0,0.00246268666586491,0.0435637571579709,0,0,0,0,0,0,0,0,0.00306842958825572
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__BX7;g__CAJFTX01;s__CAJFTX01 sp904420075",0,0,0,0,0,0.00684699393290107,0,0,0,0,0,0,0,0,0,0.000456466262193404
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__CAG-272;g__CAG-448;s__CAG-448 sp003150135",0,0,0.111883081915809,0,0,0,0,0.02854542419551,0,0,0,0,0,0,0.0156109025696137,0.0104026272453955
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__CAG-272;g__CAG-724",0,0,0,0,0,0,0,0.0598139991135379,0,0,0,0,0,0,0,0.00398759994090253
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__CAG-272;g__CAG-724;s__CAG-724 sp900551005",0,0,0,0,0,0,0,0,0,0.0754157677745903,0,0,0,0,0,0.00502771785163935
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__CAG-272;g__CAG-841;s__CAG-841 sp000437375",0,0,0,0,0,0,0,0,0,0,0,0,0,0.00276326508566032,0,0.000184217672377355
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__CAG-272;g__UMGS1696;s__UMGS1696 sp900554225",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0158902262108545,0,0.00105934841405696
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__CAG-272;g__UMGS902",0,0,0,0,0,0.0159199456983934,0,0,0,0,0,0,0,0,0,0.00106132971322623
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__An92;s__An92 sp016901735",0,0,0,0,0,0.00179492861603371,0,0,0,0,0,0,0,0,0,0.00011966190773558
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__CAG-103",0,0.0443940737811093,0.135918323825681,0,0,0,0.232675147070463,0,0,0.179684249662339,0.798439189164558,0,0.0455469973552134,0.0840506157603997,0,0.101380573107984
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__CAG-103;s__CAG-103 sp000432375",0.0327235245868615,0.0670570181802438,0,0,0.0827293623752688,0.0253761743156528,0.0611117526750685,0,0.253496878466742,0.215629578541272,0,0,0,0,0.227103165735692,0.0643484969917867
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__CAG-103;s__CAG-103 sp018265835",0.0604916759214818,0,0,0.20959779840389,0,0,0,0,0,0.447425861313657,0.574829951949502,0,0.0591055058068827,0.740799554419966,0,0.139483356521025
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__CAG-103;s__CAG-103 sp900317855",0.0237213301446554,0.0359906182242406,0,0,0.314189747738862,0,0,0,0,0.754567433612125,0,0,0,0,0,0.0752312753146589
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__CAG-103;s__CAG-103 sp900757655",0,0,0,0,0,0,0.0267685592267548,0,0,0,0,0,0,0,0,0.00178457061511699
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__CAG-170;s__CAG-170 sp002298695",0,0.0657010325774711,0,0,0,0,0.0365672778576356,0,0,0,0,0,0,0,0,0.00681788736234045
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__CAG-170;s__CAG-170 sp900549635",0,0,0,0,0,0,0,0,0,0.0253086821537578,0,0,0,0,0,0.00168724547691719
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__CAG-170;s__CAG-170 sp900553545",0,0,0,0,0,0,0,0,0,0,0.161041468110193,0,0,0,0,0.0107360978740129
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__CAG-83;s__CAG-83 sp000431575",0.00555499248739652,0,0,0,0,0,0.0800032365213322,0,0,0.00397968573766954,0,0,0,0,0,0.00596919431642655
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Dysosmobacter;s__Dysosmobacter sp001916835",0,0,0,0,0,0,0,0,0,0.112597759378517,0,0,0,0,0,0.00750651729190115
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Dysosmobacter;s__Dysosmobacter sp004558115",0,0,0.0396493568846715,0,0,0,0,0,0,0,0,0,0,0,0,0.0026432904589781
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Dysosmobacter;s__Dysosmobacter sp900544105",0,0,0,0,0,0,0.220109348043441,0,0,0,0,0,0,0,0,0.0146739565362294
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Dysosmobacter;s__Dysosmobacter sp900544615",0,0.0415351311242919,0,0,0,0,0.107673652351231,0.152554815379338,0,0,0,0,0,0,0,0.0201175732569908
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Dysosmobacter;s__Dysosmobacter sp900550685",0,0,0,0,0,0,0.0851000309051782,0,0,0,0,0,0,0,0,0.00567333539367855
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__ER4",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0598310890740082,0.00398873927160054
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Evtepia",0,0,0,0,0.0685576255159432,0,0,0,0,0,0,0,0,0,0,0.00457050836772954
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Evtepia;s__Evtepia gabavorous",0,0.0300253866095489,0,0,0,0,0,0,0,0,0,0.0997863884088185,0,0,0,0.00865411833455782
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Faecousia;s__Faecousia gallistercoris",0,0,0,0,0.637772282195191,0.0198949449938852,0,0,0,0,0,0,0,0,0,0.0438444818126051
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Faecousia;s__Faecousia sp900549705",0,0,0,0,0,0,0,0,0,0.0758021032457838,0,0,0,0,0,0.00505347354971892
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Faecousia;s__Faecousia sp900554625",0,0,0,0,0,0,0,0,0,0,0,0.00939801537581372,0,0,0,0.000626534358387581
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Intestinimonas;s__Intestinimonas massiliensis",0,0,0,0,0,0,0.022932042317632,0,0,0,0,0,0,0,0,0.00152880282117547
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Lawsonibacter;s__Lawsonibacter sp014287875",0,0.0232640928483084,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00155093952322056
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Onthomonas;s__Onthomonas sp900758315",0,0,0,0,0,0.000731500778402995,0,0,0,0,0,0,0,0,0,4.87667185601996e-05
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Pseudoscilispira",0,0,0,0,0,0,0.0460956959221152,0,0,0,0,0,0,0,0,0.00307304639480768
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Avimicrobium;s__Avimicrobium caecorum",0,0,0,0,0,0,0,0,0,0.00582972479112211,0,0,0,0,0,0.000388648319408141
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Avimicrobium;s__Avimicrobium sp900761965",0.00708879881987969,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00047258658799198
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Bittarella",0,0,0,0,0,0,0,0,0,0,0,0,0,0.020911501660471,0.000984549112419446,0.00145973671819269
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Faecalibacterium;s__Faecalibacterium gallistercoris",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0134905903489134,0.000899372689927563
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Faecalibacterium;s__Faecalibacterium prausnitzii_L",0,0,0,0,0,0.00143243099145727,0,0,0,0,0,0,0,0,0,9.5495399430485e-05
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Faecalibacterium;s__Faecalibacterium sp900551435",0,0,0,0,0,0.000705804602842798,0,0,0,0,0,0,0,0,0,4.70536401895199e-05
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Gemmiger;s__Gemmiger sp900540775",0,0,0,0,0,0,0,0,0,0,0,0.00424416548108257,0,0,0,0.000282944365405505
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Gemmiger;s__Gemmiger sp900545545",0,0,0,0,0,0.00104710232502373,0,0,0,0,0,0,0,0,0,6.98068216682489e-05
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Gemmiger;s__Gemmiger sp900556255",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0313304554648242,0.00208869703098828
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Gemmiger;s__Gemmiger variabilis_A",0,0,0,0,0,0.000909045152664047,0,0,0,0,0,0,0,0,0,6.06030101776031e-05
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__HGM13222",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0197293466840704,0.00131528977893803
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruminococcus",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0188382270392508,0,0.00125588180261672
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruthenibacterium;s__Ruthenibacterium merdipullorum",0,0.0271473453064501,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00180982302043001
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__UBA1394;s__UBA1394 sp900554975",0,0,0,0,0,0.00247628331407154,0,0,0,0,0,0,0,0,0,0.000165085554271436
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__UBA644;g__QAKR01",0,0,0,0,0,0.000130001733247319,0,0,0,0,0,0,0,0,0,8.66678221648792e-06
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Anaerovoracaceae;g__Emergencia;s__Emergencia sp900551775",0,0,0,0,0,0.000488157973340991,0,0,0,0,0,0,0,0,0,3.25438648893994e-05
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Anaerovoracaceae;g__VUNA01",0.0012488800067966,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8.32586671197731e-05
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Peptostreptococcaceae;g__Romboutsia;s__Romboutsia ilealis",0,0,0,0,0,0,0,0.02521333287413,0,0,0,0,0,0,0,0.00168088885827533
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Peptostreptococcaceae;g__Terrisporobacter",0,0.0676919137874747,0.0795271578240791,0,0,0,0.0353675963831296,0,0.264615634320485,0,0,0,0.103587965811082,0,0.144475733171296,0.0463510667531698
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Peptostreptococcaceae;g__Terrisporobacter;s__Terrisporobacter sp900557165",0,0.053349956676094,0,0.0517927188822432,0,0.00839628669571091,0,0,0,0,0,0,0,0,0,0.00756926415026987
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__TANB77;f__CAG-508;g__CAG-269;s__CAG-269 sp001916035",0,0,0,0,0,0.00626188628430955,0,0,0,0,0,0,0,0,0,0.000417459085620637
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__TANB77;f__CAG-508;g__CAG-273",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0162016780027129,0.00108011186684753
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__TANB77;f__CAG-508;g__CAG-452;s__CAG-452 sp000434035",0,0,0,0,0,0.00125262344188452,0,0,0,0,0,0,0,0,0,8.35082294589677e-05
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__TANB77;f__CAG-508;g__CAG-492;s__CAG-492 sp000434015",0,0,0,0,0,0.0027522102373475,0,0,0,0,0,0,0,0,0,0.000183480682489834
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__TANB77;f__CAG-508;g__CAG-793;s__CAG-793 sp900557475",0,0,0,0,0,0,0,0,0,0,0,0.103359312956121,0,0,0,0.00689062086374141
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__TANB77;f__CAG-508;g__Merdicola;s__Merdicola sp905200315",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0474460374724009,0.00316306916482672
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__UBA1212;f__UBA1255;g__UMGS1851",0,0,0,0,0,0,0,0,0,0,0.11634761687677,0,0,0,0,0.00775650779178469
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__UBA1381;f__UBA1381;g__HGM11521",0,0,0,0,0,0.00113532544507633,0,0,0,0,0,0.0725886630327616,0,0,0,0.00491493256518919
+"t__d__Bacteria;p__Firmicutes_A;c__Clostridia;o__UMGS1840;f__UMGS1840;g__UMGS1840;s__UMGS1840 sp900555525",0,0,0,0,0,0,0,0,0,0.0026973947838192,0,0,0,0,0,0.00017982631892128
+"t__d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Acidaminococcales;f__Acidaminococcaceae;g__Acidaminococcus;s__Acidaminococcus fermentans_A",0,0,0,0,0,0,0,0,0,0,0,0.00726462925129963,0,0,0,0.000484308616753309
+"t__d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Acidaminococcales;f__Acidaminococcaceae;g__Phascolarctobacterium_A",0,0,0,0,0,0.000284387794255267,0,0,0,0,0,0,0,0,0,1.89591862836845e-05
+"t__d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Acidaminococcales;f__Acidaminococcaceae;g__Phascolarctobacterium_A;s__Phascolarctobacterium_A sp004558595",0,0,0,0,0,0.00074046672561925,0,0,0,0,0,0,0,0,0,4.93644483746166e-05
+"t__d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Acidaminococcales;f__Acidaminococcaceae;g__Phascolarctobacterium_A;s__Phascolarctobacterium_A succinatutens",0,0.0246852105758306,0,0,0,0,0,0.102367573550496,0,0,0,0,0,0,0,0.00847018560842175
+"t__d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Selenomonadales;f__Selenomonadaceae;g__Anaerovibrio;s__Anaerovibrio sp900548165",0,0,0,0,0,0,0,0.0485223622998425,0,0,0,0,0,0,0,0.00323482415332283
+"t__d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Selenomonadales;f__Selenomonadaceae;g__Centipeda",0,0,0,0,0,0,0,0,0,0,0,0.52604877739938,0,0,0,0.035069918493292
+"t__d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Veillonellales;f__Megasphaeraceae;g__Megasphaera;s__Megasphaera elsdenii",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00469873834113811,0.000313249222742541
+"t__d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Veillonellales;f__Veillonellaceae;g__Veillonella;s__Veillonella denticariosi",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.159852743308794,0.0106568495539196
+"t__d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Veillonellales;f__Veillonellaceae;g__Veillonella;s__Veillonella dispar",0,0,0,0,0,0,0.0346016683907413,0,0,0,0,0,0,0,0.198978775234985,0.0155720295750484
+"t__d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Veillonellales;f__Veillonellaceae;g__Veillonella;s__Veillonella nakazawae",0.0105151733350967,0.0213298000167328,0,0,0,0,0,0,0,0,0,0,0.0916383045231236,0,0,0.00823221852499688
+"t__d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Veillonellales;f__Veillonellaceae;g__Veillonella;s__Veillonella parvula",0,0,0,0,0,0,0.0358015604472385,0,0,0,0,0,0,0,0,0.00238677069648257
+"t__d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Veillonellales;f__Veillonellaceae;g__Veillonella;s__Veillonella parvula_A",0,0,0,0,0,0,0.0470988589792359,0,0,0,0,0,0,0,0,0.00313992393194906
+"t__d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Veillonellales;f__Veillonellaceae;g__Veillonella;s__Veillonella rodentium",0,0,0,0,0,0,0,0,0,0.0593668466486725,0,0,0,0,0,0.00395778977657816
+"t__d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Veillonellales;f__Veillonellaceae;g__Veillonella;s__Veillonella rogosae",0,0,0.0750855229186104,0,0,0,0,0,0,0,0,0,0,0,0,0.00500570152790736
+"t__d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Veillonellales;f__Veillonellaceae;g__Veillonella;s__Veillonella sp003463825",0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0.0666666666666667
+"t__d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Veillonellales;f__Veillonellaceae;g__Veillonella;s__Veillonella sp900549845",0,0,0,0,0.163570641476998,0,0,0,0,0,0,0,0,0,0,0.0109047094317999
+"t__d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Veillonellales;f__Veillonellaceae;g__Veillonella;s__Veillonella sp900550455",0,0,0.108006842854658,0,0,0,0,0,0,0,0,0.3280814596058,0,0,0,0.0290725534973639
+"t__d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Veillonellales;f__Veillonellaceae;g__Veillonella;s__Veillonella sp900556785",0.10683662244208,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00712244149613867
+"t__d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Veillonellales;f__Veillonellaceae;g__Veillonella;s__Veillonella sp900765235",0,0,0.342278344167371,0,0,0,0,0,0,0,0,0,0,0,0,0.0228185562778247
+"t__d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Veillonellales;f__Veillonellaceae;g__Veillonella;s__Veillonella sp902834965",0.0444329796286046,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0126276489405401,0.00380404190460965
+"t__d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Veillonellales;f__Veillonellaceae;g__Veillonella;s__Veillonella sp905214495",0,0,0,0,0,0,0,0,0,0.249610693005372,0,0,0,0,0.208171696994784,0.0305188260000104
+"t__d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Veillonellales;f__Veillonellaceae;g__Veillonella;s__Veillonella tobetsuensis",0,0,0.352854763532959,0,0,0,0,0,0,0.0467593688166864,0,0,0,0,0,0.0266409421566431
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Acholeplasmatales;f__Anaeroplasmataceae;g__CAG-307",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0250819632419416,0.00167213088279611
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Coprobacillaceae;g__Coprobacillus",0.00341258329881025,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.000227505553254016
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Coprobacillaceae;g__Coprobacillus;s__Coprobacillus cateniformis",0.00142321110919397,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9.48807406129315e-05
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Coprobacillaceae;g__Erysipelatoclostridium",0,0,0.562643350878154,0,0,0,0,0,0.294140901201783,0,0,0,0,0,0,0.0571189501386625
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Coprobacillaceae;g__Erysipelatoclostridium;s__Erysipelatoclostridium ramosum",0,0,0,0,0,0.00272807727120612,0,0,0,0,0.0557629737964187,0,0,0,0,0.00389940340450832
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Coprobacillaceae;g__Erysipelatoclostridium;s__Erysipelatoclostridium spiroforme_A",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0050080897462181,0.000333872649747873
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Coprobacillaceae;g__Faecalibacillus;s__Faecalibacillus sp003480255",0,0,0,0,0,3.89370094763425e-06,0,0,0,0,0,0,0,0,0,2.59580063175616e-07
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Coprobacillaceae;g__Faecalibacillus;s__Faecalibacillus sp900544435",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00376847673604304,0.00025123178240287
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Absicoccus",0,0,0,0,0,0,0,0,0,0,0,0.0159711009002793,0,0,0,0.00106474006001862
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Bulleidia",0,0,0,0,0,0,0,0,0,0.0885288536871561,0,0,0,0,0,0.00590192357914374
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Bulleidia;s__Bulleidia moorei",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.190335259825471,0.0126890173216981
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Clostridium_AQ",0,0.0196619375059238,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00131079583372825
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Clostridium_AQ;s__Clostridium_AQ sp003481775",0,0.0219811084659768,0,0,0,0.00228587581330103,0,0,0,0,0,0,0,0,0,0.00161779895195186
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Holdemanella;s__Holdemanella sp900556915",0,0,0.520442615568269,0,0,0,0,0,0,0,0,0,0,0,0,0.0346961743712179
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Holdemanella;s__Holdemanella sp900754615",0,0,0.10849554889375,0,0.925993869480299,0,0.0341669920640153,0,0,0,0,0,0,0,0,0.071243760695871
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Longicatena",0.16931440869614,0.070062932288333,0,0.0626413035921434,0.0664352577534275,0,0.222242006836136,0,0,0,0.0954671632991894,0.138375716913257,0,0,0.0142590658592059,0.0559198570158555
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Longicatena;s__Longicatena caecimuris",0.005030068546759,0,0.0977517769194662,0,0,0,0.238747225107425,0,0,0,0,0,0,0,0,0.02276860470491
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Haloplasmatales_A;f__Turicibacteraceae;g__Turicibacter",0,0.0388411469455622,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00258940979637082
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Haloplasmatales_A;f__Turicibacteraceae;g__Turicibacter;s__Turicibacter sp001543345",0,0.0426462752264486,0,0,0,0.000359578269604237,0,0,0,0,0,0,0,0,0,0.00286705689973686
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Haloplasmatales_A;f__Turicibacteraceae;g__Turicibacter;s__Turicibacter sp017888305",0,0,0,0,0,0,0,0.0754542048765684,0,0,0,0,0,0,0,0.00503028032510456
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Aerococcaceae;g__Granulicatella",0,0,0.0699539520778921,0,0,0,0,0,0,0,0,0,0,0,0,0.0046635968051928
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Lactiplantibacillus;s__Lactiplantibacillus pentosus",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0233531770583033,0.00155687847055355
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Lactobacillus;s__Lactobacillus paragasseri",0,0,0.0498303284862971,0,0,0,0,0,0,0,0,0,0,0,0,0.00332202189908647
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Limosilactobacillus",0,0.0215632784992903,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00143755189995269
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Liquorilactobacillus",0.00660411163409089,0,0,0,0,0,0,0,0,0.0249273166864948,0,0,0,0,0,0.00210209522137238
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus",0.107409822482719,0.0210266862535967,0.0443015398550416,0,0,0.105697522833923,0.112479571069424,0,0.0463476618656209,0,0,0,0,0,0.168539658599787,0.0403868308640075
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus anginosus",0,0,0,0,0,0,0,0,0,0,0.18641139071823,0,0,0,0.00932471981418784,0.0130490740354945
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus anginosus_C",0.00461326178970754,0,0,0,0,0,0,0.0324000049057749,0,0,0,0,0,0,0,0.00246755111303216
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus equinus",0,0,0.0487408133067875,0,0.0912167386914514,0,0,0.0657953425752048,0,0.0264285741124591,0,0,0,0,0.0373078828104309,0.0179659567664222
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus equinus_B",0.00453889630746014,0,0.325194898647257,0,0.178912983324079,0,0.0464264500362102,0,0,0,0,0.404437762455285,0,0.220685945643727,0.108809828990755,0.0859337843603183
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus gallolyticus",0,0,0,0,0,0.000839265039233512,0,0,0,0,0,0,0,0,0,5.59510026155675e-05
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus gallolyticus_B",0,0,0.142170857601702,0,0,0,0,0,0,0,0,0.582539179329592,0,0,0.0576338168552425,0.0521562569191025
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus gordonii",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00426267301989131,0.000284178201326088
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus gordonii_A",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.118726587644118,0.00791510584294121
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus infantis_B",0,0,0.0368196247611741,0,0,0,0,0,0,0.0215639993843183,0.0853783004591996,0,0,0,0,0.00958412830697946
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus infantis_C",0,0.0303867104722745,0.0498902540975264,0,0,0,0.034560695741758,0,0,0,0.156365374559362,0,0,0,0.137171485334663,0.0272249680137055
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus infantis_E",0,0,0,0,0.197599184627392,0,0,0,0,0,0,0,0,0,0,0.0131732789751595
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus mitis_BQ",0.0220467979799395,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00146978653199597
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus oralis_BL",0.00985948327695779,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0129695762260228,0.0015219373001987
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus oralis_I",0,0,0,0,0,0,0,0,0,0,0,0,0,0.133867557646046,0.239114732167676,0.0248654859875815
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus parasanguinis_D",0.000254461798925858,0,0,0,0,0,0.0645738486103438,0,0,0,0,0,0,0,0,0.00432188736061798
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus pseudopneumoniae_P",0,0,0,0,0,0,0,0,0,0,0,0,0.0769373341710906,0,0,0.00512915561140604
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus rubneri",0,0,0,0.0505723696773686,0,0,0,0,0,0,0,0,0,0,0,0.00337149131182457
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus salivarius",0,0,0,0,0,0,0,0.333748208821724,0,0,0,0,0,0,0,0.0222498805881149
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus sanguinis_H",0,0,0,0,0,0.0217168680268092,0,0,0.067095091463377,0,0.132798712645224,0,0,0,0,0.0147740448090273
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus sanguinis_I",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0479909525918796,0,0.00319939683945864
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus sp000187445",0,0,0,0,0,0.0289995709833133,0,0,0,0,0,0,0,0,0,0.00193330473222088
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus sp000411475",0,0,0.301886133509701,0,0,0,0,0,0,0,0,0,0,0,0,0.02012574223398
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus sp001556435",0.0335215361664746,0,0,0,0,0,0.0307658492925304,0.0292362584348905,0,0,0,0,0,0,0,0.00623490959292636
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus sp001578805",0,0,0.0487701166073084,0,0.226974302009126,0.0104947136480577,0,0.129349596927844,0,0,0,0,0,0,0,0.0277059152794891
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus sp001808705",0,0,0,0,0,0,0,0,0,0,0.0569998928655765,0,0,0,0,0.0037999928577051
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus sp003521145",0,0,0,0,0,0.00483157340069305,0,0,0.143495483671837,0,0,0,0,0.161114033331772,0,0.0206294060269535
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus sp900550895",0,0,0,0,0,0,0,0,0,0.0154152568521983,0,0,0,0,0,0.00102768379014655
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus sp902363395",0,0,0.0705154462049779,0,0,0,0,0.0259909094850305,0,0,0,0,0,0,0,0.00643375704600056
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus sp902373455",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.108131324094027,0.0072087549396018
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus troglodytae",0,0,0,0,0,0,0,0,0,0,0,0.0778615052735362,0,0,0,0.00519076701823574
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus vestibularis",0,0,0.521072404638967,0,0,0,0,0,0,0,0,0,0,0,0,0.0347381603092645
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__CAG-1193;s__CAG-1193 sp900550145",0,0,0,0,0,0,0,0,0,0.0146131223567663,0,0,0,0,0,0.000974208157117752
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas",0,0,0,0,0,0,0,0.0278978898370218,0,0.0205164531680721,0,0,0,0,0,0.00322762286700626
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__RUG705",0,0,0,0,0,0.000527470644138398,0,0.203534040373387,0.0427354631289804,0,0,0,0,0.0381813004341192,0.132156970785502,0.0278090163577417
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__RUG705;s__RUG705 sp905188025",0,0,0,0,0,0.00231908746597671,0,0,0,0.068508899420773,0.130402073567528,0,0,0,0.0161444494730228,0.0144916339951533
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__UMGS995",0,0,0,0,0,0,0,0,0.0470265205385381,0,0,0,0,0,0,0.00313510136923588
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Staphylococcales;f__Gemellaceae;g__Gemella;s__Gemella morbillorum",0,0,0,0,0,0.000759707091810042,0,0,0,0,0,0,0,0,0,5.06471394540028e-05
+"t__d__Bacteria;p__Firmicutes;c__Bacilli;o__Staphylococcales;f__Gemellaceae;g__Gemella;s__Gemella sp002871655",0,0,0,0,0,0,0.0219816837270561,0,0,0,0,0,0,0,0,0.00146544558180374
+"t__d__Bacteria;p__Fusobacteriota;c__Fusobacteriia;o__Fusobacteriales;f__Fusobacteriaceae;g__Cetobacterium_A",0,0,0,0,0,0.000894375127937642,0,0,0,0,0,0,0,0,0,5.96250085291761e-05
+"t__d__Bacteria;p__Fusobacteriota;c__Fusobacteriia;o__Fusobacteriales;f__Fusobacteriaceae;g__Fusobacterium_A;s__Fusobacterium_A sp900543175",0,0,0,0,0,0,0.0312024311798233,0,0,0,0,0,0,0,0,0.00208016207865489
+"t__d__Bacteria;p__Fusobacteriota;c__Fusobacteriia;o__Fusobacteriales;f__Leptotrichiaceae;g__Leptotrichia",0,0,0,0,0,0,0,0,0.148111485490123,0,0,0,0,0,0,0.00987409903267483
+"t__d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__RF32;f__CAG-239;g__HGM16780;s__HGM16780 sp900538765",0,0,0,0,0,0,0,0,0,0.0277050099675525,0,0,0,0,0,0.0018470006645035
+"t__d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae;g__Parasutterella;s__Parasutterella excrementihominis",0.0222849812852749,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00148566541901832
+"t__d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae;g__Parasutterella;s__Parasutterella gallistercoris",0,0,0,0,0,0.0140848704270608,0,0,0,0,0,0,0,0,0,0.000938991361804055
+"t__d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Cedecea",0,0,0,0,0,0.000829947983723713,0,0,0,0,0,0,0,0,0,5.53298655815809e-05
+"t__d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Citrobacter_A",0,0,0,0,0,0,0,0,0.0417208288883967,0,0,0,0,0,0,0.00278138859255978
+"t__d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Citrobacter_A;s__Citrobacter_A amalonaticus_C",0,0,0,0,0,0,0.0372613643585735,0,0,0,0,0,0,0,0,0.00248409095723824
+"t__d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Citrobacter_A;s__Citrobacter_A rodentium",0,0,0,0,0,0.00143322896485169,0,0,0,0,0,0,0,0,0,9.55485976567795e-05
+"t__d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Citrobacter_B",0,0,0,0,0,0,0,0,0.0881137483202304,0,0,0,0,0,0,0.00587424988801536
+"t__d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Edwardsiella",0,0,0.151322550240673,0,0,0,0.0682267648620676,0,0,0,0,0,0,0,0,0.0146366210068493
+"t__d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Escherichia",0,0,0,0,0,0.000661183976712573,0,0,0,0,0,0,0,0,0,4.40789317808382e-05
+"t__d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Klebsiella;s__Klebsiella aerogenes",0,0,0,0,0,0.01563034110192,0,0,0,0,0,0,0,0,0,0.001042022740128
+"t__d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Klebsiella;s__Klebsiella ornithinolytica",0,0,0.103444012187314,0,0,0,0,0,0,0,0,0,0,0,0,0.00689626747915425
+"t__d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Klebsiella;s__Klebsiella planticola",0,0,0,0,0,0,0,0,0,0,0,0.124466728021886,0,0,0,0.00829778186812573
+"t__d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Klebsiella;s__Klebsiella sp004342285",0,0.0756331916116025,0,0,0,0,0,0,0,0,0,0,0,0,0.0223796869690578,0.00653419190537735
+"t__d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Klebsiella;s__Klebsiella variicola",0,0,0,0,0,0,0,0,0,0,0,0,0,0.223614589919623,0,0.0149076393279749
+"t__d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Leclercia",0,0,0,0,0,0,0.0452109707833095,0,0,0,0,0,0,0,0,0.0030140647188873
+"t__d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Mixta",0,0.0213285476165123,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00142190317443416
+"t__d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Phytobacter",0,0,0,0,0,0,0.0312781147603475,0,0,0,0,0,0,0,0,0.00208520765068983
+"t__d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Proteus",0,0,0,0,0,0.00149981841235593,0,0,0,0,0,0,0,0,0,9.99878941570621e-05
+"t__d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Salmonella",0,0,0,0,0,0.000588231612126383,0,0,0,0,0,0,0,0,0,3.92154408084255e-05
+"t__d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Serratia",0,0,0,0,0,0.000629711087602478,0,0,0,0,0,0,0,0,0,4.19807391734986e-05
+"t__d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Pasteurellaceae;g__Haemophilus_A;s__Haemophilus_A sputorum",0,0,0,0,0,0,0,0,0,0,0,0.00238996319145627,0,0,0.010791773185779,0.000878782425149018
+"t__d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Succinivibrionaceae;g__Succinivibrio;s__Succinivibrio sp900315395",0,0,0,0,0,0.00270451311686895,0,0,0,0,0,0,0,0,0,0.00018030087445793
+"t__d__Bacteria;p__Spirochaetota;c__Spirochaetia;o__Sphaerochaetales;f__Sphaerochaetaceae;g__UBA9732",0,0,0,0,0,0,0,0,0,0,0,0,0,0.0297638408636927,0,0.00198425605757951
