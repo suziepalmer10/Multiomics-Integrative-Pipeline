@@ -3,9 +3,22 @@
 # Integrative Pipeline Code Instructions
 
 This repository contains the necessary code and instructions to run the Integrative Learner Pipeline for multi-omics microbiome data analysis. 
+- [Introduction](#introduction)
 
 ## 📌 Table of Contents
-- [Manuscript Code](#section-1-manuscript-code)
+- [SECTION 1: Manuscript Code](#section-one) 
+  1) [Original Studies Used in the Analysis](#original-studies-used-in-the-analysis)
+  2) [Multi-omics Data Processing by Borenstein Lab](#borenstein-lab-data-processing)
+  3) [Pre-processing for the Integrative Pipeline](#preprocessing-integrative-learner-pipeline)
+  4) [Script Storage for Integrative Analysis](#script-storage-integrative-analysis)
+  5) [Running the Integrative Analysis](#integrative-analysis)
+  6) Processing the Performance Data for the Tables Used for Heatmap
+  7) Combined Heatmap Creation
+  8) Pie Charts
+  9) Feature Extraction for Model Comparisons
+  10) Elastic Net, Random Forest and XGBoost Feature Comparison Script and Violin Plot Creation
+  
+  
 - [Running the Integrative Analysis](#running-the-integrative-analysis)
 - [Running on Your Own Data](#section-2-running-the-integrated-learner-pipeline-on-your-own-data)
 - [Citation](#citation)
@@ -13,7 +26,7 @@ This repository contains the necessary code and instructions to run the Integrat
 
 ---
 
-## 📂 SECTION 1: Manuscript Code {#section-1-manuscript-code}
+## SECTION 1: Manuscript Code
 
 ### 1) Original Studies Used in the Analysis
 The following studies provided multi-omics microbiome data:
@@ -74,7 +87,7 @@ The following studies provided multi-omics microbiome data:
 - `B_BashScripts`: `job_template.sh`, `submit_jobs.sh` and `submit_jobs_individually.sh` are the three scripts associated with running all data associated with the metadata files. The `job_template.sh` will feed the metadata.txt script (shown above) and associated parameters into the `automated_pipeline.R` script and ensures that the correct performance metrics and visualization scripts are read in. The `submit_jobs.sh` script will iterate through all directories contained in the configuration directory (config_dir) and submit all metadata files to the cluster. The `submit_jobs_individually.sh` will only submit one directory of metadata files to run on the cluster. `check_jobs.sh` is used to quickly check whether jobs have finished or not by using the `Analysis_Run_Documentation` file. 
 - `C_Configuration_Files`: contains the configuration files for all of the analyses used for this study. 
 
-### 5) 🔄 Running the Integrative Analysis
+### 5) Running the Integrative Analysis
 - You will need to fill out configuration files (or use the ones contained in `C_Configuration_Files`. 
 - The parameters need for each configuration file are:
 ```bash
