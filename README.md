@@ -13,8 +13,7 @@ This repository contains the necessary code and instructions to run the Integrat
 
 ---
 
-## 📂 SECTION 1: Manuscript Code
-- [Manuscript Code](#section-1-manuscript-code)
+## 📂 SECTION 1: Manuscript Code {#section-1-manuscript-code}
 
 ### 1) Original Studies Used in the Analysis
 The following studies provided multi-omics microbiome data:
