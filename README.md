@@ -16,8 +16,8 @@
   - [9) Feature Extraction for Model Comparisons](#9-feature-extraction-for-model-comparisons)  
   - [10) Elastic Net, Random Forest, and XGBoost Feature Comparison Script and Violin Plot Creation](#10-elastic-net-random-forest-and-xgboost-feature-comparison-script-and-violin-plot-creation)  
 - [SECTION 2: Running the Integrated Learner Pipeline on Your Own Data](#section-2-running-the-integrated-learner-pipeline-on-your-own-data)
--[Citation](#citation)  
--[License](#license)  
+- [Citation](#citation)  
+- [License](#license)  
 
 ---
 
