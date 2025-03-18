@@ -1,5 +1,5 @@
 # Multiomics-Integrative-Pipeline
-=======
+================================================================================
 # Integrative Pipeline Code Instructions
 
 
@@ -15,8 +15,9 @@
   - [8) Pie Charts](#8-pie-charts)  
   - [9) Feature Extraction for Model Comparisons](#9-feature-extraction-for-model-comparisons)  
   - [10) Elastic Net, Random Forest, and XGBoost Feature Comparison Script and Violin Plot Creation](#10-elastic-net-random-forest-and-xgboost-feature-comparison-script-and-violin-plot-creation)  
-  - [Citation](#citation)  
-  - [License](#license)  
+- [SECTION 2: Running the Integrated Learner Pipeline on Your Own Data](#section-2-running-the-integrated-learner-pipeline-on-your-own-data)
+-[Citation](#citation)  
+-[License](#license)  
 
 ---
 
@@ -65,11 +66,9 @@ The following studies provided multi-omics microbiome data:
 - Metagenomics, metabolomics, and metadata were merged based on the `Sample` metadata column.
 
 **Scripts for Data Processing**
-- Scripts for this code can be found in: `Manuscript_Code/A_Data_Processing/`. There are 4 directories contained inside: Erawijantari, Wang, Franzosa and Yachida. 
-- Each of these directories contain two subdirectories: `/A_Data_ObtainedfromBorenstein` and `/B_OutputDataForIntegrativeAnalysis`. 
+- Scripts for this code can be found in: [Borenstein Lab Processed Data](https://github.com/borenstein-lab/microbiome-metabolome-curated-data/tree/main/data/processed_data). There are 4 directories contained inside: Erawijantari, Wang, Franzosa and Yachida.
 - The scripts to process each dataset are also contained in these directories: `*_data_processing.R` (i.e., `Erawijantari_data_processing.R`) and are used to uniquely process each study.  
-- `/A_Data_ObtainedfromBorenstein`: contains the originally processed files from Borenstein: `species.tsv`, `genera.tsv`, `mtb.tsv` and `metadata.tsv`. 
-- `/B_OutputDataForIntegrativeAnalysis`: Contains the output files from running the `*_data_processing.R` file. Notice that there will be more than one output file based on missing values in response variables (which can change the sample size) and whether the data is reduced or full-dimensional. 
+- `/A_OutputDataForIntegrativeAnalysis`: Contains the output files from running the `*_data_processing.R` file. Notice that there will be more than one output file based on missing values in response variables (which can change the sample size) and whether the data is reduced or full-dimensional. 
 
 ### 4) Script Storage for Integrative Analysis
 - The scripts to run the Integrative Pipeline can be found at `Manuscript_Code/B_Integrative_Pipeline/A_Integrative_Pipeline_Code`. There are three subdirectories:
@@ -150,7 +149,7 @@ Under `Manuscript_Code/B_Integrative_Pipeline/C_Output_AUROC_RMSE_Heatmap_Tables
 
 ---
 
-## 🔬 SECTION 2: Running the Integrated Learner Pipeline on Your Own Data
+## SECTION 2: Running the Integrated Learner Pipeline on Your Own Data
 
 If you are interested in running the Integrated Learner Pipeline on your own dataset, navigate to `Code_and_Analyses/RunYourOwnData`. Follow the same setup and configuration procedures outlined in **SECTION 1**, ensuring your dataset adheres to the required format.
 
@@ -158,12 +157,12 @@ For additional assistance, please refer to the documentation in `RunYourOwnData`
 
 ---
 
-## 📖 Citation
+## Citation
 If you use this pipeline in your research, please cite: 
 
 ---
 
-## 📜 License
+## License
 This project is open-source under the MIT License.
 
 ---
