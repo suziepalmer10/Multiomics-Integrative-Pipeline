@@ -2,27 +2,21 @@
 =======
 # Integrative Pipeline Code Instructions
 
-This repository contains the necessary code and instructions to run the Integrative Learner Pipeline for multi-omics microbiome data analysis. 
-- [Introduction](#introduction)
 
-## 📌 Table of Contents
-- [SECTION 1: Manuscript Code](#section-one) 
-  [1) Original Studies Used in the Analysis](#original-studies-used-in-the-analysis)
-  2) [Multi-omics Data Processing by Borenstein Lab](#borenstein-lab-data-processing)
-  3) [Pre-processing for the Integrative Pipeline](#preprocessing-integrative-learner-pipeline)
-  4) [Script Storage for Integrative Analysis](#script-storage-integrative-analysis)
-  5) [Running the Integrative Analysis](#integrative-analysis)
-  6) Processing the Performance Data for the Tables Used for Heatmap
-  7) Combined Heatmap Creation
-  8) Pie Charts
-  9) Feature Extraction for Model Comparisons
-  10) Elastic Net, Random Forest and XGBoost Feature Comparison Script and Violin Plot Creation
-  
-  
-- [Running the Integrative Analysis](#running-the-integrative-analysis)
-- [Running on Your Own Data](#section-2-running-the-integrated-learner-pipeline-on-your-own-data)
-- [Citation](#citation)
-- [License](#license)
+## Table of Contents
+- [SECTION 1: Manuscript Code](#section-1-manuscript-code)  
+  - [1) Original Studies Used in the Analysis](#1-original-studies-used-in-the-analysis)  
+  - [2) Multi-omics Data Processing by Borenstein Lab](#2-multi-omics-data-processing-by-borenstein-lab)  
+  - [3) Pre-processing for the Integrative Pipeline](#3-pre-processing-for-the-integrative-pipeline)  
+  - [4) Script Storage for Integrative Analysis](#4-script-storage-for-integrative-analysis)  
+  - [5) Running the Integrative Analysis](#5-running-the-integrative-analysis)  
+  - [6) Processing the Performance Data for the Tables Used for Heatmap](#6-processing-the-performance-data-for-the-tables-used-for-heatmap)  
+  - [7) Combined Heatmap Creation](#7-combined-heatmap-creation)  
+  - [8) Pie Charts](#8-pie-charts)  
+  - [9) Feature Extraction for Model Comparisons](#9-feature-extraction-for-model-comparisons)  
+  - [10) Elastic Net, Random Forest, and XGBoost Feature Comparison Script and Violin Plot Creation](#10-elastic-net-random-forest-and-xgboost-feature-comparison-script-and-violin-plot-creation)  
+  - [Citation](#citation)  
+  - [License](#license)  
 
 ---
 
