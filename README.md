@@ -7,7 +7,7 @@ This repository contains the necessary code and instructions to run the Integrat
 
 ## 📌 Table of Contents
 - [SECTION 1: Manuscript Code](#section-one) 
-  1) [Original Studies Used in the Analysis](#original-studies-used-in-the-analysis)
+  [1) Original Studies Used in the Analysis](#original-studies-used-in-the-analysis)
   2) [Multi-omics Data Processing by Borenstein Lab](#borenstein-lab-data-processing)
   3) [Pre-processing for the Integrative Pipeline](#preprocessing-integrative-learner-pipeline)
   4) [Script Storage for Integrative Analysis](#script-storage-integrative-analysis)
