@@ -5,7 +5,6 @@
 This repository contains the necessary code and instructions to run the Integrative Learner Pipeline for multi-omics microbiome data analysis. 
 
 ## 📌 Table of Contents
-- [Getting Started](#getting-started)
 - [Manuscript Code](#section-1-manuscript-code)
 - [Running the Integrative Analysis](#running-the-integrative-analysis)
 - [Running on Your Own Data](#section-2-running-the-integrated-learner-pipeline-on-your-own-data)
@@ -15,6 +14,7 @@ This repository contains the necessary code and instructions to run the Integrat
 ---
 
 ## 📂 SECTION 1: Manuscript Code
+- [Manuscript Code](#section-1-manuscript-code)
 
 ### 1) Original Studies Used in the Analysis
 The following studies provided multi-omics microbiome data:
