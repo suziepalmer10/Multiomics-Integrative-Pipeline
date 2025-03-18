@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Multiomics-Integrative-Pipeline
 =======
 # Integrative Pipeline Code Instructions
@@ -166,4 +165,3 @@ This project is open-source under the MIT License.
 For any issues or questions, please open an issue on GitHub and/or contact suzette.palmer@utsouthwestern.edu.
 
 
->>>>>>> 31e2f9c (read me)
