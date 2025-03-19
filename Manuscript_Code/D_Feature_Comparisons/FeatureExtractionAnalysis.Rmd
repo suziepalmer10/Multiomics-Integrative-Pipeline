@@ -25,15 +25,15 @@ Note: If you would like to use the code below for your own analysis, you will ne
 If you want to compare the top 20 features selected for each model, you would use "20" as your number (example below). 
 You will also need to change the working directory to whereever you store your data. 
 ```{r}
-setwd ("/Users/suzettepalmer/Desktop/IntegratedLearner_March2025/Code_and_Files/Feature_Comparisons/")
+#setwd ("/Users/suzettepalmer/Desktop/IntegratedLearner_March2025/Code_and_Files/Feature_Comparisons/")
 
 #Top 20
-non_zero_count_value = 20
-output_path = 'Top20/'
+#non_zero_count_value = 20
+#output_path = 'Top20/'
 
 # #Top 1
-# non_zero_count_value = 1
-# output_path = 'Top1/'
+ # non_zero_count_value = 1
+ # output_path = 'Top1/'
 # #Top 5
 # non_zero_count_value = 5
 # output_path = 'Top5/'
@@ -44,8 +44,8 @@ output_path = 'Top20/'
 # non_zero_count_value = 50
 # output_path = 'Top50/'
 # #Top 3
-# non_zero_count_value = 3
-# output_path = 'Top3/'
+non_zero_count_value = 3
+output_path = 'Top3/'
 ```
 This next block contains multiple functions. 
 
@@ -102,22 +102,23 @@ process_files_by_pattern <- function(pattern, directory = ".", feature_column = 
 ```
 These commands go with the code chunk above to allow us to extract all of the dataframe files from each of the analyses run and that we want to graph in future R markdown chunks. 
 ```{r}
+setwd ("/Users/suzettepalmer/Desktop/Integrated_Pipeline_March2025/Code_and_Analyses/Manuscript_Code/C_Feature_Importance_Values/Output_FeatureExtraction")
 # Erawijantari
-era_metab_results <- process_files_by_pattern("metab_importance\\.csv$", '/Users/suzettepalmer/Desktop/IntegratedLearner_March2025/Code_and_Files/Feature_Importance_Values/Era_feature_extraction')
-era_taxa_results <- process_files_by_pattern("taxa_importance\\.csv$", '/Users/suzettepalmer/Desktop/IntegratedLearner_March2025/Code_and_Files/Feature_Importance_Values/Era_feature_extraction')
-era_concat_results <- process_files_by_pattern("concat_importance\\.csv$", '/Users/suzettepalmer/Desktop/IntegratedLearner_March2025/Code_and_Files/Feature_Importance_Values/Era_feature_extraction')
+era_metab_results <- process_files_by_pattern("metab_importance\\.csv$", 'Era_feature_extraction')
+era_taxa_results <- process_files_by_pattern("taxa_importance\\.csv$", 'Era_feature_extraction')
+era_concat_results <- process_files_by_pattern("concat_importance\\.csv$", 'Era_feature_extraction')
 # Franzosa
-franzosa_metab_results <- process_files_by_pattern("metab_importance\\.csv$", '/Users/suzettepalmer/Desktop/IntegratedLearner_March2025/Code_and_Files/Feature_Importance_Values/Franzosa_feature_extraction')
-franzosa_taxa_results <- process_files_by_pattern("taxa_importance.csv", '/Users/suzettepalmer/Desktop/IntegratedLearner_March2025/Code_and_Files/Feature_Importance_Values/Franzosa_feature_extraction')
-franzosa_concat_results <- process_files_by_pattern("concat_importance.csv", '/Users/suzettepalmer/Desktop/IntegratedLearner_March2025/Code_and_Files/Feature_Importance_Values/Franzosa_feature_extraction')
+franzosa_metab_results <- process_files_by_pattern("metab_importance\\.csv$", 'Franzosa_feature_extraction')
+franzosa_taxa_results <- process_files_by_pattern("taxa_importance.csv", 'Franzosa_feature_extraction')
+franzosa_concat_results <- process_files_by_pattern("concat_importance.csv", 'Franzosa_feature_extraction')
 #Yachida
-yachida_metab_results <- process_files_by_pattern("metab_importance\\.csv$", '/Users/suzettepalmer/Desktop/IntegratedLearner_March2025/Code_and_Files/Feature_Importance_Values/Yachida_feature_extraction')
-yachida_taxa_results <- process_files_by_pattern("taxa_importance.csv", '/Users/suzettepalmer/Desktop/IntegratedLearner_March2025/Code_and_Files/Feature_Importance_Values/Yachida_feature_extraction')
-yachida_concat_results <- process_files_by_pattern("concat_importance.csv", '/Users/suzettepalmer/Desktop/IntegratedLearner_March2025/Code_and_Files/Feature_Importance_Values/Yachida_feature_extraction')
+yachida_metab_results <- process_files_by_pattern("metab_importance\\.csv$", 'Yachida_feature_extraction')
+yachida_taxa_results <- process_files_by_pattern("taxa_importance.csv", 'Yachida_feature_extraction')
+yachida_concat_results <- process_files_by_pattern("concat_importance.csv", 'Yachida_feature_extraction')
 #Wang
-wang_metab_results <- process_files_by_pattern("metab_importance\\.csv$", '/Users/suzettepalmer/Desktop/IntegratedLearner_March2025/Code_and_Files/Feature_Importance_Values/Wang_feature_extraction')
-wang_taxa_results <- process_files_by_pattern("taxa_importance.csv", '/Users/suzettepalmer/Desktop/IntegratedLearner_March2025/Code_and_Files/Feature_Importance_Values/Wang_feature_extraction')
-wang_concat_results <- process_files_by_pattern("concat_importance.csv", '/Users/suzettepalmer/Desktop/IntegratedLearner_March2025/Code_and_Files/Feature_Importance_Values/Wang_feature_extraction')
+wang_metab_results <- process_files_by_pattern("metab_importance\\.csv$", 'Wang_feature_extraction')
+wang_taxa_results <- process_files_by_pattern("taxa_importance.csv", 'Wang_feature_extraction')
+wang_concat_results <- process_files_by_pattern("concat_importance.csv", 'Wang_feature_extraction')
 ```
 Since my feature extraction results are stored based on Dataset name in separate directories, I need to separate my feature reduced results from my full dimensional results (represented as 'nf_' or 'un'). As an example, we have this line: "era_metab_split <- split_dataframes(era_metab_results, '^era', '^nf')", which uses the "split_dataframes" function. The feature reduced files start with "era" and the full dimensional files start with "nf". This will return a list of two lists to "era_metab_split", with the first being the feature reduced ("filtered") and the second being the full dimensional ("unfiltered) list. 
 ```{r}
@@ -304,6 +305,8 @@ extract_unique_patterns <- function(name_list) {
 ```
 
 ```{r}
+setwd("/Users/suzettepalmer/Desktop/Integrated_Pipeline_March2025/Code_and_Analyses/Manuscript_Code/D_Feature_Comparisons/Output_FeatureComparison")
+dir.create(output_path, showWarnings = FALSE, recursive = TRUE)
 #pattern extraction for filtered metabolomics
 fm_patterns <- extract_unique_patterns(names(metab_filtered_list2))
 metab_filtered_results_list <- automate_comparisons(output_path,fm_patterns, metab_filtered_list2, "metab_filtered_03112025.xlsx")

@@ -19,7 +19,8 @@ library(tidyverse) #tidyverse_2.0.0
 ```
 Change the working directory, where your processed data excel files are stored from the FeatureExtractionAnalysis.Rmd file. 
 ```{r}
-setwd('/Users/suzettepalmer/Desktop/IntegratedLearner_March2025/Code_and_Files/Feature_Comparisons/')
+# setwd('/Users/suzettepalmer/Desktop/Integrated_Pipeline_March2025/Code_and_Analyses/Manuscript_Code/D_Feature_Comparisons/Output_FeatureComparison')
+# knitr::opts_knit$set(root.dir = "/Users/suzettepalmer/Desktop/Integrated_Pipeline_March2025/Code_and_Analyses/Manuscript_Code/D_Feature_Comparisons/Output_FeatureComparison/")
 ```
 
 There are 6 possible options to generate violin plots
@@ -31,7 +32,7 @@ concat feature_reduced
 concat full_dimensional
 
 ```{r}
-dataset_selection = 'metabolite'
+dataset_selection = 'concat'
 parameter_selection = 'full_dimensional'
 
 ```
@@ -39,6 +40,7 @@ parameter_selection = 'full_dimensional'
 
 Next, we will load in the desired analyses that we would like to process moving forward. 
 ```{r}
+setwd('/Users/suzettepalmer/Desktop/Integrated_Pipeline_March2025/Code_and_Analyses/Manuscript_Code/D_Feature_Comparisons/Output_FeatureComparison')
 if (dataset_selection == 'metabolite' & parameter_selection == 'feature_reduced') {
 top1_df <- read_excel('Top1/1metab_filtered_03112025.xlsx')
 top3_df <- read_excel('Top3/3metab_filtered_03112025.xlsx')
@@ -156,37 +158,39 @@ unique(df_combined$Dataframe_Name)
 
 Possible binary and continuous names
 ```{r}
-continuous <- c(
+
+continuous <- list(
   "era_age", "era_cholesterol", "era_glucose", 
-  "franzosa_ControlvsCD_Age", "franzosa_ControlvsCD_Fp", 
-  "franzosa_ControlvsDisease_Age", 
-  "franzosa_ControlvsDisease_Fp", "franzosa_ControlvsUC_Age", 
-  "franzosa_ControlvsUC_Fp",
+  "franzosa_ControlvsCD_Age",  "franzosa_ControlvsCD_Fp",
+  "franzosa_ControlvsDisease_Age", "franzosa_ControlvsDisease_Fp",
+  "franzosa_ControlvsUC_Age", "franzosa_ControlvsUC_Fp",
   "yachida_age", "yachida_alcohol", "yachida_BrinkmanIndex", 
   "wang_age", "wang_creatinine", "wang_egfr", "wang_urea",
-  "wang_bmi", 
   "nf_era_age", "nf_era_cholesterol", "nf_era_glucose", 
-  "un_franzosa_ControlvsCD_Age", "un_franzosa_ControlvsCD_Fp", 
-  "un_franzosa_ControlvsDisease_Age",
-  "un_franzosa_ControlvsDisease_Fp", "un_franzosa_ControlvsUC_Age", 
-  "un_franzosa_ControlvsUC_Fp",
-  "nf_yachida_age", "nf_yachida_alcohol", "nf_yachida_BrinkmanIndex", 
+  "un_franzosa_ControlvsCD_Age",  "un_franzosa_ControlvsCD_Fp",
+  "un_franzosa_ControlvsDisease_Age", "un_franzosa_ControlvsDisease_Fp",
+  "un_franzosa_ControlvsUC_Age", "un_franzosa_ControlvsUC_Fp",
+  "nf_yachida_age", "nf_yachida_alcohol", "nf_yachida_BrinkmanIndex",
   "nf_wang_age", "nf_wang_bmi", "nf_wang_creatinine", "nf_wang_egfr", "nf_wang_urea"
 )
 
-binary <- c(
-  "era_alcohol", "era_sg", "franzosa_ControlvsDisease_ConvDisease", 
-  "yachida_gender", "yachida_healthyvscancer", "yachida_healthyvsearly", 
-  "yachida_healthyvsstageI_II", "yachida_healthyvsstageIII_IV",
-  "wang_studygroup", 
-  "era_gender",
-  "nf_era_alcohol", 
-  "nf_era_sg", "nf_era_gender",
-  "un_franzosa_ControlvsDisease_ConvDisease", 
-  "nf_yachida_alcohol", 
-  "nf_yachida_gender", "nf_yachida_healthyvscancer", "nf_yachida_healthyvsstageIII_IV",
-  "nf_wang_studygroup"
+binary <- list(
+  "era_alcohol", "era_sg",
+   "franzosa_ControlvsCD_ConvCD", 
+   "franzosa_ControlvsDisease_ConvDisease",
+   "franzosa_ControlvsUC_ConvUC",
+   "yachida_gender",
+  "yachida_healthyvscancer", "yachida_healthyvsearly", "yachida_healthyvsstageI_II", "yachida_healthyvsstageIII_IV",
+  "wang_studygroup",
+   "nf_era_alcohol", "nf_era_gender", "nf_era_sg",
+   "un_franzosa_ControlvsCD_ConvCD", 
+   "un_franzosa_ControlvsDisease_ConvDisease", 
+   "un_franzosa_ControlvsUC_ConvUC", 
+  "nf_yachida_gender",
+  "nf_yachida_healthyvscancer", "nf_yachida_healthyvsstageIII_IV", "nf_wang_studygroup"
 )
+
+
 
 ```
 
@@ -200,6 +204,22 @@ This subsets the manually curated binary and continuous datasets for the graph b
 df_binary <- df_combined_1[df_combined_1$Dataframe_Name %in% binary, ]
 df_continuous <- df_combined_1[df_combined_1$Dataframe_Name %in% continuous, ]
 ```
+
+```{r}
+# Identify missing variables that were not categorized as Binary or Continuous
+all_datasets <- unique(df_combined_1$Dataframe_Name)
+classified_datasets <- unique(c(df_binary$Dataframe_Name, df_continuous$Dataframe_Name))
+unclassified_datasets <- setdiff(all_datasets, classified_datasets)
+
+# Print unclassified variables to the console
+if (length(unclassified_datasets) > 0) {
+  cat("Warning: The following datasets were not classified as Binary or Continuous:\n")
+  print(unclassified_datasets)
+} else {
+  cat("All datasets have been successfully classified as Binary or Continuous.\n")
+}
+```
+
 
 ```{r}
 # Custom colors for boxplot
@@ -254,6 +274,7 @@ generate_violin_plots <- function(prefix, title_cont, title_binary) {
   dev.off()
 }
 
+setwd('/Users/suzettepalmer/Desktop/Integrated_Pipeline_March2025/Code_and_Analyses/Manuscript_Code/D_Feature_Comparisons/Output_ViolinPlots')
 if (dataset_selection == 'metabolite' && parameter_selection == 'feature_reduced') {
   generate_violin_plots("metabolite_filtered", 
                         "Comparisons of Feature Reduced Continuous Metabolites Selected Across Datasets", 
