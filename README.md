@@ -15,6 +15,7 @@
   - [8) Pie Charts](#8-pie-charts)  
   - [9) Feature Extraction for Model Comparisons](#9-feature-extraction-for-model-comparisons)  
   - [10) Elastic Net, Random Forest, and XGBoost Feature Comparison Script and Violin Plot Creation](#10-elastic-net-random-forest-and-xgboost-feature-comparison-script-and-violin-plot-creation)  
+  - [11) Feature Extraction for Comparing Feature Reduced and Full Dimension Datasets Across Machine Learning Models](#11-feature-extraction-for-comparing-feature-reduced-and-full-dimension-datasets-across-machine-learning-models)
 - [SECTION 2: Running the Integrated Learner Pipeline on Your Own Data](#section-2-running-the-integrated-learner-pipeline-on-your-own-data)
 - [Citation](#citation)  
 - [License](#license)  
@@ -147,7 +148,7 @@ Under `Manuscript_Code/B_Integrative_Pipeline/C_Output_AUROC_RMSE_Heatmap_Tables
 - The R Markdown file: `Feature_Comparison_ViolinPlot.Rmd` is used to create Violin Plots to visualize model feature selection comparisons for Elastic Net, Random Forest and XGBoost models, which are used for Figures 4-6. 
 - The output Violin plots are stored in the subdirectory: `Output_ViolinPlots`.
 
-## 11) Feature Extraction for Comparing Feature Reduced and Full Dimension Datasets Across Machine Learning Models. 
+## 11) Feature Extraction for Comparing Feature Reduced and Full Dimension Datasets Across Machine Learning Models
 
 - Files for this analysis are contained in:`Manuscript_Code/E_FeatureReduced_vs_FullDimensional_Comparisons`.
 - The Rscript to run this analysis is: `coefficient_filtervunfilter_comparison_01102025.R`. 
