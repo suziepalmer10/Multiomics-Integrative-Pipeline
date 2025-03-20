@@ -32,8 +32,8 @@ concat feature_reduced
 concat full_dimensional
 
 ```{r}
-dataset_selection = 'concat'
-parameter_selection = 'full_dimensional'
+dataset_selection = 'taxa'
+parameter_selection = 'feature_reduced'
 
 ```
 
@@ -203,6 +203,12 @@ This subsets the manually curated binary and continuous datasets for the graph b
 ```{r}
 df_binary <- df_combined_1[df_combined_1$Dataframe_Name %in% binary, ]
 df_continuous <- df_combined_1[df_combined_1$Dataframe_Name %in% continuous, ]
+
+df_binary$Metric<- factor(df_binary$Metric, levels = c("all_overlap", "enet_rf_overlap",
+                    "enet_xgb_overlap", "rf_xgb_overlap", "enet_only", "rf_only", "xgb_only" ))
+df_continuous$Metric<- factor(df_continuous$Metric, levels = c("all_overlap", "enet_rf_overlap",
+                    "enet_xgb_overlap", "rf_xgb_overlap", "enet_only", "rf_only", "xgb_only" ))
+
 ```
 
 ```{r}
@@ -224,12 +230,13 @@ if (length(unclassified_datasets) > 0) {
 ```{r}
 # Custom colors for boxplot
 custom_colors <- c("all_overlap" = "#0071bc",  # Blue
-                   "enet_rf_overlap" = "#939598",  # Orange
-                   "rf_only" = "#B31E2D",  # Green
-                   "xgb_only" = "#F3C366",  # Gray
-                   "enet_only" = "#6b00b9", 
+                   "enet_rf_overlap" = "#F3C366",  # Orange
+                   "rf_only" = "#939598",  # Green
+                   "xgb_only" = "#B31E2D",  # Gray
+                   "enet_only" = "#FFFFFF", 
                    "enet_xgb_overlap" = "#76dcd2", 
-                   "rf_xgb_overlap" = "#FFFFFF")  # Purple
+                   "rf_xgb_overlap" = "#6b00b9")  # Purple
+
 ```
 The function below creates a faceted violin plot for each of your comparisons. 
 ```{r}
