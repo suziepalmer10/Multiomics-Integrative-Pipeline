@@ -28,9 +28,9 @@
 ## SECTION 1: Introduction
 
 This GitHub page serves three main purposes:
--	1.	To enable users to run their own multi-omics (metabolomics and taxa) data through 21 different models. Users can also extract key features (metabolites and taxa) from these models for further analysis, aiding their research. Details can be found in [SECTION 1: Introduction](#section-1-introduction). 
--	2.	To ensure reproducibility of the manuscript generated using this code. All steps, including the corresponding code and plots, are outlined below. See [SECTION 2: Running the Integrated Learner Pipeline on Your Own Data](#section-2-running-the-integrated-learner-pipeline-on-your-own-data). 
--	3.	To provide contact information for assistance with running the code. This can be found in the [License](#license) section. 
+-	1)	To enable users to run their own multi-omics (metabolomics and taxa) data through 21 different models. Users can also extract key features (metabolites and taxa) from these models for further analysis, aiding their research. Details can be found in [SECTION 1: Introduction](#section-1-introduction). 
+-	2)	To ensure reproducibility of the manuscript generated using this code. All steps, including the corresponding code and plots, are outlined below. See [SECTION 2: Running the Integrated Learner Pipeline on Your Own Data](#section-2-running-the-integrated-learner-pipeline-on-your-own-data). 
+-	3)	To provide contact information for assistance with running the code. This can be found in the [License](#license) section. 
 
 If you use this code for your analyses, please cite it as outlined in the [Citation](#citation) section.
 
