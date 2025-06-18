@@ -1,4 +1,4 @@
-model <- function(trainData, testData, actual_testing_Data, response_variable, response_type){
+model <- function(trainData, validationData, testingData, response_variable, response_type){
   set.seed(123)
   
   # Define the tuning grid for mtry
@@ -25,22 +25,22 @@ model <- function(trainData, testData, actual_testing_Data, response_variable, r
     trControl = trainControl(method = "cv", number = 5)
   )
   
-  # Make predictions on testData
+  # Make predictions on validationData
   if (response_type == "binary") {
-    predictions <- predict(model, newdata = testData[, -which(names(testData) == response_variable)], type = "prob")[, 2]
-    predictions_response <- as.numeric(testData[[response_variable]] == levels(testData[[response_variable]])[2])
+    predictions <- predict(model, newdata = validationData[, -which(names(validationData) == response_variable)], type = "prob")[, 2]
+    predictions_response <- as.numeric(validationData[[response_variable]] == levels(validationData[[response_variable]])[2])
   } else {
-    predictions <- predict(model, newdata = testData[, -which(names(testData) == response_variable)])
-    predictions_response <- testData[[response_variable]]
+    predictions <- predict(model, newdata = validationData[, -which(names(validationData) == response_variable)])
+    predictions_response <- validationData[[response_variable]]
   }
   
-  # Make predictions on actual_testing_Data
+  # Make predictions on testingData
   if (response_type == "binary") {
-    test_predictions <- predict(model, newdata = actual_testing_Data[, -which(names(actual_testing_Data) == response_variable)], type = "prob")[, 2]
-    test_predictions_response <- as.numeric(actual_testing_Data[[response_variable]] == levels(actual_testing_Data[[response_variable]])[2])
+    test_predictions <- predict(model, newdata = testingData[, -which(names(testingData) == response_variable)], type = "prob")[, 2]
+    test_predictions_response <- as.numeric(testingData[[response_variable]] == levels(testingData[[response_variable]])[2])
   } else {
-    test_predictions <- predict(model, newdata = actual_testing_Data[, -which(names(actual_testing_Data) == response_variable)])
-    test_predictions_response <- actual_testing_Data[[response_variable]]
+    test_predictions <- predict(model, newdata = testingData[, -which(names(testingData) == response_variable)])
+    test_predictions_response <- testingData[[response_variable]]
   }
   
   return(list(predictions = predictions, 

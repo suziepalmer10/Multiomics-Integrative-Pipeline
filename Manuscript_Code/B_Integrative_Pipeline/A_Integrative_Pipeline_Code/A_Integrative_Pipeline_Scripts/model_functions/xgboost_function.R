@@ -1,29 +1,29 @@
-model <- function(trainData, testData, actual_testing_Data, response_variable, response_type) {
+model <- function(trainData, validationData, testingData, response_variable, response_type) {
   set.seed(123)
   
   # Prepare the data
   if (response_type == "binary") {
     trainData[[response_variable]] <- as.factor(trainData[[response_variable]])
-    testData[[response_variable]] <- as.factor(testData[[response_variable]])
-    actual_testing_Data[[response_variable]] <- as.factor(actual_testing_Data[[response_variable]])
+    validationData[[response_variable]] <- as.factor(validationData[[response_variable]])
+    testingData[[response_variable]] <- as.factor(testingData[[response_variable]])
     
     dtrain <- xgb.DMatrix(data = as.matrix(trainData %>% select(-all_of(response_variable))), 
                           label = as.numeric(trainData[[response_variable]]) - 1)
-    dtest <- xgb.DMatrix(data = as.matrix(testData %>% select(-all_of(response_variable))), 
-                         label = as.numeric(testData[[response_variable]]) - 1)
-    dactual_test <- xgb.DMatrix(data = as.matrix(actual_testing_Data %>% select(-all_of(response_variable))), 
-                                label = as.numeric(actual_testing_Data[[response_variable]]) - 1)
+    dtest <- xgb.DMatrix(data = as.matrix(validationData %>% select(-all_of(response_variable))), 
+                         label = as.numeric(validationData[[response_variable]]) - 1)
+    dactual_test <- xgb.DMatrix(data = as.matrix(testingData %>% select(-all_of(response_variable))), 
+                                label = as.numeric(testingData[[response_variable]]) - 1)
   } else if (response_type == "continuous") {
     trainData[[response_variable]] <- as.numeric(trainData[[response_variable]])
-    testData[[response_variable]] <- as.numeric(testData[[response_variable]])
-    actual_testing_Data[[response_variable]] <- as.numeric(actual_testing_Data[[response_variable]])
+    validationData[[response_variable]] <- as.numeric(validationData[[response_variable]])
+    testingData[[response_variable]] <- as.numeric(testingData[[response_variable]])
     
     dtrain <- xgb.DMatrix(data = as.matrix(trainData %>% select(-all_of(response_variable))), 
                           label = trainData[[response_variable]])
-    dtest <- xgb.DMatrix(data = as.matrix(testData %>% select(-all_of(response_variable))), 
-                         label = testData[[response_variable]])
-    dactual_test <- xgb.DMatrix(data = as.matrix(actual_testing_Data %>% select(-all_of(response_variable))), 
-                                label = actual_testing_Data[[response_variable]])
+    dtest <- xgb.DMatrix(data = as.matrix(validationData %>% select(-all_of(response_variable))), 
+                         label = validationData[[response_variable]])
+    dactual_test <- xgb.DMatrix(data = as.matrix(testingData %>% select(-all_of(response_variable))), 
+                                label = testingData[[response_variable]])
   } else {
     stop("Unsupported response type. Please use 'binary' or 'continuous'.")
   }
@@ -81,30 +81,30 @@ model <- function(trainData, testData, actual_testing_Data, response_variable, r
     trControl = train_control
   )
   
-  # Make predictions on testData
+  # Make predictions on validationData
   predictions <- if (response_type == "binary") {
-    predict(model_stage2, newdata = as.matrix(testData %>% select(-all_of(response_variable))), type = "prob")[, 2]
+    predict(model_stage2, newdata = as.matrix(validationData %>% select(-all_of(response_variable))), type = "prob")[, 2]
   } else {
-    predict(model_stage2, newdata = as.matrix(testData %>% select(-all_of(response_variable))))
+    predict(model_stage2, newdata = as.matrix(validationData %>% select(-all_of(response_variable))))
   }
   
   predictions_response <- if (response_type == "binary") {
-    as.numeric(testData[[response_variable]] == levels(testData[[response_variable]])[2])
+    as.numeric(validationData[[response_variable]] == levels(validationData[[response_variable]])[2])
   } else {
-    testData[[response_variable]]
+    validationData[[response_variable]]
   }
   
-  # Make predictions on actual_testing_Data
+  # Make predictions on testingData
   test_predictions <- if (response_type == "binary") {
-    predict(model_stage2, newdata = as.matrix(actual_testing_Data %>% select(-all_of(response_variable))), type = "prob")[, 2]
+    predict(model_stage2, newdata = as.matrix(testingData %>% select(-all_of(response_variable))), type = "prob")[, 2]
   } else {
-    predict(model_stage2, newdata = as.matrix(actual_testing_Data %>% select(-all_of(response_variable))))
+    predict(model_stage2, newdata = as.matrix(testingData %>% select(-all_of(response_variable))))
   }
   
   test_predictions_response <- if (response_type == "binary") {
-    as.numeric(actual_testing_Data[[response_variable]] == levels(actual_testing_Data[[response_variable]])[2])
+    as.numeric(testingData[[response_variable]] == levels(testingData[[response_variable]])[2])
   } else {
-    actual_testing_Data[[response_variable]]
+    testingData[[response_variable]]
   }
   
   return(list(predictions = predictions, 

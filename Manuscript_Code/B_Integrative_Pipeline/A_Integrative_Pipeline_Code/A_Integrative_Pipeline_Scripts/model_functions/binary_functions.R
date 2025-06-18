@@ -15,10 +15,10 @@ accuracy_calculation <- function(y_true, predictions) {
 }
 
 # CALCULATING AUC-ROC VALUES
-aucroc_calculation <- function(y_true, predictions) {
+auroc_calculation <- function(y_true, predictions) {
     roc_obj <- roc(y_true, predictions)
-    aucroc <- auc(roc_obj)
-    return(aucroc)
+    auroc <- auc(roc_obj)
+    return(auroc)
 }
 
 # CALCULATING KAPPA VALUES
@@ -45,10 +45,10 @@ kappa_fold_concat <- list()
 accuracy_fold_metabolomics <- list()
 accuracy_fold_mss<- list()
 accuracy_fold_concat <- list()
-# Initialize lists for aucroc
-aucroc_fold_metabolomics <- list()
-aucroc_fold_mss<- list()
-aucroc_fold_concat <- list()
+# Initialize lists for auroc
+auroc_fold_metabolomics <- list()
+auroc_fold_mss<- list()
+auroc_fold_concat <- list()
 
 #load in lists for testing set
 #Initialize lists for kappa
@@ -59,21 +59,21 @@ test_kappa_fold_concat <- list()
 test_accuracy_fold_metabolomics <- list()
 test_accuracy_fold_mss<- list()
 test_accuracy_fold_concat <- list()
-#initialize lists for aucroc
-test_aucroc_fold_metabolomics <- list()
-test_aucroc_fold_mss<- list()
-test_aucroc_fold_concat <- list()
+#initialize lists for auroc
+test_auroc_fold_metabolomics <- list()
+test_auroc_fold_mss<- list()
+test_auroc_fold_concat <- list()
 
 #initialize lists for averaged stacked, weighted nnls and lasso/enet
-#aucroc
-aucroc_averaged_stacked <- list()
-test_aucroc_averaged_stacked <- list()
-aucroc_weighted_nnls <- list()
-test_aucroc_weighted_nnls <- list()
-aucroc_sparse_nnls <- list()
-test_aucroc_sparse_nnls <- list()
-aucroc_pls <- list()
-test_aucroc_pls <- list()
+#auroc
+auroc_averaged_stacked <- list()
+test_auroc_averaged_stacked <- list()
+auroc_weighted_nnls <- list()
+test_auroc_weighted_nnls <- list()
+auroc_sparse_nnls <- list()
+test_auroc_sparse_nnls <- list()
+auroc_pls <- list()
+test_auroc_pls <- list()
 
 #accuracy
 accuracy_averaged_stacked <- list()

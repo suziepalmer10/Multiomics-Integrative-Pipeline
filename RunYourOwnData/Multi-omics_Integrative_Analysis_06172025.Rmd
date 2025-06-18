@@ -1,0 +1,507 @@
+---
+title: "Multi-omics_Integration_Analysis_06172025"
+author: "Suzette Palmer"
+date: "2025-06-17"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+#set seed
+set.seed(123)
+```
+
+#SECTION 1: Install and Import Packages to Run the Multi-omics Integration Analysis Using Your Own Data
+Note: all packages below need to be installed to run. Make sure you have one of the later versions of R. If the packages are not compatible with the R version, then this will not run. 
+```{r}
+pkgs_needed <- c(
+  "caret", "kernlab", "xgboost", "tidyverse", "MLmetrics",
+  "nnls", "argparse", "glmnet", "pls", "pROC", "irr", "randomForest", "tools"
+)
+
+# TRUE/FALSE test + action
+for (pkg in pkgs_needed) {
+  if (!requireNamespace(pkg, quietly = TRUE)) {
+    install.packages(pkg, dependencies = TRUE)
+  }
+  suppressPackageStartupMessages(
+    library(pkg, character.only = TRUE)
+  )
+}
+```
+#SECTION 2: Import and process your data 
+* As long as your data is contained in the same folder as the Rmd file (aka this code), you should be able to access your own datasets. 
+* Below, I have added in mock datasets that can be easily modified and replaced with your own matched data. 
+* Note: if you do upload separate data files for metabolomics, taxonomy and metadata, you will need a column that matches across all three datasets, such as "Sample Name" in these data. I would recommend loading data in this way, since my script requires adding "t__" for taxa and "m__" for metabolomics to each column name in order to parse these into three different datasets. 
+
+```{r load-data, message = FALSE, warning = FALSE}
+metadata_df <- read_csv("data/metadata.csv")
+metabolite_df <- read_csv("data/metabolite_dataset.csv")
+taxa_df <- read_csv("data/taxa_dataset.csv")
+```
+
+##Add indicators for data entry type for downstream parsing. 
+* Add an "m__" to all columns in the metabolomics data, except for 'Sample Name'. 
+* Add a "t__" to all columns in the taxa data, except for 'Sample Name'. 
+
+```{r}
+metabolite_df <- metabolite_df %>% rename_with(~ paste0("m__", .x), -`Sample Name`)
+taxa_df <- taxa_df %>% rename_with(~ paste0("t__", .x), -`Sample Name`)
+```
+ 
+NOTE: Before merging files, you should perform any quality control steps, such as filtering low read counts, feature reduction, log-normalization, etc. 
+
+##Merge Metdata, Metabolomics and Taxa Data by Common Column, 'Sample Name'
+```{r}
+merged <- metadata_df %>% inner_join(metabolite_df,  by = "Sample Name") %>% full_join(taxa_df, by = "Sample Name") 
+```
+NOTE: Be sure to check your dimensions. Do you have the right number of rows and columns? If not, then the merge was unsuccessful and you will need to debug. 
+
+##Check to ensure the data is the correct type - character, numeric, etc. 
+* If the type is not right, such as a numeric (number) such as 1.74 being read as a character, '1.74', this will throw and error and will stop running. 
+```{r}
+lapply(merged, class)
+```
+```{r}
+#if you need to convert a column, such as for the "Continuous_Response" column, you can use the following command or similar command for your run. 
+merged$Continuous_Response <- as.numeric(merged$Continuous_Response)
+```
+Now you can check that column again to see if it was changed. 
+```{r}
+class(merged$Continuous_Response)
+```
+
+
+#SECTION 3: Insert custom parameters based on the analysis you would like to run. These are called "arguments" and are needed for the code to run the correct functions. 
+
+<> represents the availible options for these. 
+numeric represents a number that you should use, such as 0.80, 3 and 5. 
+`model_to_run = <elastic net>, <random forest>, or <xgboost>`
+`study_name = <name_that_you_want_output_files_stored_as>`
+`type_of_analysis = <binary> or <continuous>`
+`response_variable = <name_of_outcome_variable>`
+`stratify_variable = <>, <name_of_variable_to_stratify_on>`
+`training_proportion = numeric; default = 0.8, help = "Training Proportion to use. Default is 0.8.`
+`num_repeats = numeric; default=3, help = "Number of repeats to use for Repeated v-fold CV. Default is 3.`
+`num_folds = numeric", default = 5, help = "Number of folds to use for Repeated v-fold CV. Default is 5`
+
+* For `model_to_run`, there are three machine learning models to choose from, which include elastic net, random forest and xgboost. Based on your selection, a custom script will be loaded in for that model. 
+* For `study_name`, you will need to give whichever name you would like your files loaded into. Please make sure to use only valid characters and do not add spaces!! You can add a "_" or "-" to separate words. 
+* For `type_of_analysis` you will need to select `binary` or `continuous`. Binary refers to two categories, such as 'Control' versus 'Disease' Continuous refers to numerical values, such as height for a population or CFU/grams feces values. 
+* For `response_variable` you will need to give the name of the column that you will be using as your ground truth or real values for estimating how well your model predictions are. For this mock `metadata_df` file, the 'Continuous_Response' column and the 'Binary_Response' column represent response columns. 
+`stratify_variable` is used to ensure that each of your folds have a relatively balanced set, especially if you are working with different groups. An example would be if you had a dataset with a continuous response variable, where mice received 10 different antibiotics. You might want to make sure each cross validation set had approximately equal numbers of each antibiotic groups when making predictions for the continuous response variables. 
+`training_proportion` is the amount of your total data that you would like to be used as training. The rest of this data is going to be your testing data. 
+`num_repeats` is the number of repeats to used for repeated v-fold cross validation. 
+`num_folds` is the number of folds to use in repeated v-fold cross validation
+
+##Insert Your Parameters Below. 
+Currently, this is set to run a binary random forest multi-omics integration analysis.
+```{r}
+model_to_run = "random forest"
+study_name = "mock_continuous"
+type_of_analysis = "continuous"
+response_variable = "Continuous_Response"
+stratify_variable = "Stratify_On" 
+training_proportion = 0.8 #test set will be 0.2
+num_repeats = 3
+num_folds = 5
+
+```
+
+##Load in Model Script
+```{r}
+if (model_to_run == "random forest") {
+  source("model_functions/rf_function.R")
+} else if (model_to_run == "elastic net") {
+  source("model_functions/enet_function.R")
+} else if (model_to_run == "xgboost") {
+  source("model_functions/xgboost_function.R")
+} else {
+  message("Please check model name; the current entry is not valid.")
+}
+
+```
+
+
+
+##Load in Model Performance Scripts Based on Binary or Continuous Analysis
+```{r}
+# Handle script reading and response variable conversion
+if (type_of_analysis == "binary") {
+  #load in binary_functions for downstream analysis
+  #these include accuracy, aucroc, and kappa.
+  source("model_functions/binary_functions.R")
+  binary_metrics <- list(
+    accuracy = accuracy_calculation,
+    kappa = kappa_calculation,
+    aucroc = aucroc_calculation
+  )
+  metrics <- binary_metrics
+  print("For binary table this is the counts recorded: ")
+  print(table(merged[[response_variable]]))
+  print('Binary functions Accuracy, AUCROC and Kappa have been loaded.')
+  # Convert response variable to factor for binary analysis
+  if (!is.factor(merged[[response_variable]])) {
+    merged[[response_variable]] <- as.factor(merged[[response_variable]])
+    print(paste("The response variable", response_variable, "has been converted to a factor."))
+  }
+} else if (type_of_analysis == "continuous") {
+  #load in binary_functions for downstream analysis
+  #these include mae, rmse and r^2
+  source("model_functions/continuous_functions.R")
+  continuous_metrics <- list(
+    rmse = rmse_calculation,
+    r2 = r2_calculation,
+    mae = mae_calculation
+  )
+  metrics <- continuous_metrics
+  print('Continuous functions R^2, RMSE and MAE have been loaded.')
+  # Ensure response variable is numeric for continuous analysis
+  if (!is.numeric(merged[[response_variable]])) {
+    merged[[response_variable]] <- as.numeric(merged[[response_variable]])
+    print(paste("The response variable", response_variable, "has been converted to numeric."))
+  }
+} else {
+  stop("Invalid Type of analysis. Please enter 'binary' or 'continuous'.")
+}
+```
+#SECTION 4: Testing and Training based on binary or continuous arguments. 
+* The purpose of this block is to divide your data into training and testing based off of the proportions using stratification that you have provided. Additionally, 
+```{r split-data, warning = FALSE}
+#TRAINING AND TESTING BASED ON CONTINUOUS OR BINARY FUNCTIONS.
+# Split train and test data based on straified variable (if present)
+if (!is.null(stratify_variable)) {
+  parts <- createDataPartition(merged[[stratify_variable]], p=training_proportion, list=FALSE)
+} else {
+  parts <- createDataPartition(merged, p=training_proportion, list=FALSE)
+}
+#parse out training and testing data by index position. 
+train <- merged[parts, ]
+test <- merged[-parts, ]
+
+# Storage for validation predictions
+stacked_metabolomics_predictions <- list()
+stacked_mss_predictions <- list()
+ground_truth_predictions <- list()
+
+#storage of testing predictions 
+test_stacked_metabolomics_predictions <- list()
+test_stacked_mss_predictions <- list()
+test_stacked_response_predictions <- list()
+
+#Storage for models created. 
+metab_model <- list()
+mss_model <- list()
+concat_model <- list()
+
+#metabolite column names
+m_columns <- grep("^m__", colnames(merged), value = TRUE)
+#taxa_column_names 
+t_columns <- grep("^t__", colnames(merged), value = TRUE)
+
+# Subset the testing data
+testset_concatenation  <- test %>% select(response_variable, m_columns, t_columns)
+testset_metabolomics <- test %>% select(response_variable, m_columns)
+testset_mss<- test %>% select(response_variable, t_columns)
+```
+
+#SECTION 6: V-fold cross validation for base learning models. 
+```{r cv-step, warning = FALSE}
+# Perform repeated cross-validation
+for (repeat_ in 1:num_repeats) {
+  for (fold in 1:num_folds) {
+    # Create train and test indices for the current fold
+    set.seed(repeat_ * fold)  # Vary the seed for each fold
+    indices <- createFolds(train[[response_variable]], k = num_folds, list = TRUE)
+    train_index <- unlist(indices[-fold])
+    validation_index <- unlist(indices[fold])
+    
+    # Split the data into training and testing sets
+    train_data <- train[train_index, ]
+    validation_data <- train[validation_index, ]
+    
+    # Subset the training data
+    train_concat <- train_data %>% select(response_variable, m_columns, t_columns)
+    train_metabolomics <- train_data %>% select(response_variable, m_columns)
+    train_mss <- train_data %>% select(response_variable, t_columns)
+    # Subset the validation data
+    validation_concat <- validation_data %>% select(response_variable, m_columns, t_columns)
+    validation_metabolomics <- validation_data %>% select(response_variable, m_columns)
+    validation_mss <- validation_data %>% select(response_variable, t_columns)
+    
+    # Models to run
+    metab_predictions <- model(train_metabolomics, validation_metabolomics, testset_metabolomics, response_variable, type_of_analysis)
+    mss_predictions <- model(train_mss, validation_mss, testset_mss, response_variable, type_of_analysis)
+    concat_predictions <- model(train_concat, validation_concat, testset_concatenation, response_variable, type_of_analysis)
+    
+    # Store models to revisit
+    metab_model[[length(metab_model)+1]] <- metab_predictions[[5]]
+    mss_model[[length(mss_model)+1]] <- mss_predictions[[5]]
+    concat_model[[length(concat_model)+1]] <- concat_predictions[[5]]
+    
+    # Store predictions for downstream stacking analysis
+    # This is for the validation set
+    stacked_metabolomics_predictions[[length(stacked_metabolomics_predictions)+1]] <- metab_predictions[[1]]
+    stacked_mss_predictions[[length(stacked_mss_predictions)+1]] <- mss_predictions[[1]]
+    ground_truth_predictions[[length(ground_truth_predictions)+1]] <- metab_predictions[[2]]
+    # This is for the testing set
+    test_stacked_metabolomics_predictions[[length(test_stacked_metabolomics_predictions)+1]] <- metab_predictions[[3]]
+    test_stacked_mss_predictions[[length(test_stacked_mss_predictions)+1]] <- mss_predictions[[3]]
+    test_stacked_response_predictions[[length(test_stacked_response_predictions)+1]] <- metab_predictions[[4]]
+    
+    # Calculate and store the fold-level performance metrics
+    for (metric_name in names(metrics)) {
+      metric_function <- metrics[[metric_name]]
+      assign(paste0(metric_name, "_fold_metabolomics"), c(get(paste0(metric_name, "_fold_metabolomics")), metric_function(metab_predictions[[2]], metab_predictions[[1]])))
+      assign(paste0(metric_name, "_fold_mss"), c(get(paste0(metric_name, "_fold_mss")), metric_function(mss_predictions[[2]], mss_predictions[[1]])))
+      assign(paste0(metric_name, "_fold_concat"), c(get(paste0(metric_name, "_fold_concat")), metric_function(concat_predictions[[2]], concat_predictions[[1]])))
+      assign(paste0("test_", metric_name, "_fold_metabolomics"), c(get(paste0("test_", metric_name, "_fold_metabolomics")), metric_function(metab_predictions[[4]], metab_predictions[[3]])))
+      assign(paste0("test_", metric_name, "_fold_mss"), c(get(paste0("test_", metric_name, "_fold_mss")), metric_function(mss_predictions[[4]], mss_predictions[[3]])))
+      assign(paste0("test_", metric_name, "_fold_concat"), c(get(paste0("test_", metric_name, "_fold_concat")), metric_function(concat_predictions[[4]], concat_predictions[[3]])))
+    }
+  }
+}
+```
+
+#SECTION 7: Metalearning Model Validation and Testing Prediction
+* Using stacked generalization methodologies, meta-learning models for averaged stacking using simple mean, weighted non-negative least squares, stacking using lasso regression and partial least squares.  
+```{r meta-model, warning = FALSE}
+# Lasso weights and lambda
+sparse_nnls_weights <- list()
+best_lambda_list <- list()
+best_alpha_list <- list()
+# NNLS weights
+nnls_weights <- list()
+# PLS models
+pls_models <- list()
+best_ncomp_list <- list()
+
+for (i in 1:length(stacked_metabolomics_predictions)) {
+  New_df_train <- cbind(
+    unlist(stacked_metabolomics_predictions[[i]]), 
+    unlist(stacked_mss_predictions[[i]]), 
+    unlist(ground_truth_predictions[[i]])
+  )
+  colnames(New_df_train) <- c('Metabolomics', 'MSS', 'Ground Truth')
+  New_df_train <- as.data.frame(New_df_train)
+  
+  # NNLS weighted
+  train_weights <- nnls(as.matrix(New_df_train[, 1:2]), as.matrix(New_df_train[, 3]))
+  New_df_train$weighted <- New_df_train$Metabolomics * train_weights$x[1] + New_df_train$MSS * train_weights$x[2]
+  # Averaged stacked
+  New_df_train$average <- New_df_train$Metabolomics * 0.5 + New_df_train$MSS * 0.5
+  
+  # Determine family for glmnet
+  if (type_of_analysis == "binary") {
+    family <- "binomial"
+  } else if (type_of_analysis == "continuous") {
+    family <- "gaussian"
+  } else {
+    stop("Unsupported response type. Please use 'binary' or 'continuous'.")
+  }
+  
+  # Lasso with non-negative lower bounds
+  alpha_values <- seq(0, 1, by = 0.1)
+  lambda_values <- 10^seq(2, -2, by = -0.1)
+  best_alpha <- 0
+  best_lambda <- 0
+  best_cv_error <- Inf
+  
+  for (alpha in alpha_values) {
+    cv_fit <- cv.glmnet(
+      as.matrix(New_df_train[, 1:2]), 
+      New_df_train$`Ground Truth`, 
+      alpha = alpha, 
+      nfolds = 5, 
+      family = family,
+      lambda = lambda_values
+    )
+    cv_error <- min(cv_fit$cvm)
+    
+    if (cv_error < best_cv_error) {
+      best_cv_error <- cv_error
+      best_alpha <- alpha
+      best_lambda <- cv_fit$lambda.min
+    }
+  }
+  
+  final_fit <- glmnet(
+    as.matrix(New_df_train[, 1:2]), 
+    New_df_train$`Ground Truth`, 
+    alpha = best_alpha, 
+    lambda = best_lambda, 
+    family = family
+  )
+  sparse_weighted_predictions <- as.data.frame(predict(final_fit, as.matrix(New_df_train[, 1:2])))
+  New_df_train$sparse_weighted <- sparse_weighted_predictions$s0
+  
+  # PLS model fitting and cross-validation
+  pls_cv <- plsr(`Ground Truth` ~ Metabolomics + MSS, data = New_df_train, validation = "CV")
+  best_ncomp <- which.min(pls_cv$validation$PRESS)
+  pls_model <- plsr(`Ground Truth` ~ Metabolomics + MSS, data = New_df_train, ncomp = best_ncomp)
+  pls_models[[i]] <- pls_model
+  best_ncomp_list[[i]] <- best_ncomp
+  
+  #New_df_train$pls_pred <- predict(pls_model, New_df_train[, 1:2], ncomp = best_ncomp)
+  pls_train_prediction <- as.data.frame(predict(pls_model, New_df_train[, c("Metabolomics", "MSS")], ncomp = best_ncomp))
+  New_df_train$pls_pred <- drop(pls_train_prediction[, 1])
+  
+  for (metric_name in names(metrics)) {
+    metric_function <- metrics[[metric_name]]
+    assign(paste0(metric_name, "_averaged_stacked"), c(get(paste0(metric_name, "_averaged_stacked")), metric_function(New_df_train$`Ground Truth`, New_df_train$average)))
+    assign(paste0(metric_name, "_sparse_nnls"), c(get(paste0(metric_name, "_sparse_nnls")), metric_function(New_df_train$`Ground Truth`, New_df_train$weighted)))
+    assign(paste0(metric_name, "_weighted_nnls"), c(get(paste0(metric_name, "_weighted_nnls")), metric_function(New_df_train$`Ground Truth`, New_df_train$sparse_weighted)))
+    assign(paste0(metric_name, "_pls"), c(get(paste0(metric_name, "_pls")), metric_function(New_df_train$`Ground Truth`, New_df_train$pls_pred)))
+  }
+  
+  # Store NNLS weights and PLS model for testing
+  nnls_weights[[i]] <- train_weights$x
+  sparse_nnls_weights[[i]] <- coef(final_fit)
+  best_lambda_list[[i]] <- best_lambda
+  best_alpha_list[[i]] <- best_alpha
+}
+
+# TESTING DATA
+test_sparse_nnls_weights <- list()
+test_pls_models <- list()
+new_df_test_list <- list()
+
+for (i in 1:length(test_stacked_metabolomics_predictions)) {
+  new_df_test <- cbind(
+    unlist(test_stacked_metabolomics_predictions[[i]]), 
+    unlist(test_stacked_mss_predictions[[i]]), 
+    unlist(test_stacked_response_predictions[[i]])
+  )
+  colnames(new_df_test) <- c('Metabolomics', 'MSS', 'Ground Truth')
+  new_df_test <- as.data.frame(new_df_test)
+  new_df_test$weighted <- new_df_test$Metabolomics * nnls_weights[[i]][1] + new_df_test$MSS * nnls_weights[[i]][2]
+  new_df_test$average <- new_df_test$Metabolomics * 0.5 + new_df_test$MSS * 0.5
+  
+  # Lasso/enet using glmnet with the best lambda from training
+  final_fit <- glmnet(as.matrix(new_df_test[, 1:2]), new_df_test$`Ground Truth`, family = family, alpha = best_alpha_list[[i]], lambda = best_lambda_list[[i]])
+  sparse_test_weighted_predictions <- as.data.frame(predict(final_fit, as.matrix(new_df_test[, 1:2])))
+  new_df_test$sparse_weighted <- sparse_test_weighted_predictions$s0
+  test_sparse_nnls_weights[[i]] <- coef(final_fit)
+  
+  # Predict using PLS model
+  pls_model <- pls_models[[i]]
+  #new_df_test$pls_pred <- predict(pls_model, new_df_test[, 1:2], ncomp = best_ncomp_list[[i]])
+  pls_test_predictions <- as.data.frame(predict(pls_model, new_df_test[, c("Metabolomics", "MSS")], ncomp = best_ncomp_list[[i]]))
+  new_df_test$pls_pred <- unlist(pls_test_predictions[, 1])
+  new_df_test_list[[i]] <-  new_df_test
+    
+  for (metric_name in names(metrics)) {
+    metric_function <- metrics[[metric_name]]
+    assign(paste0('test_', metric_name, "_averaged_stacked"), c(get(paste0('test_', metric_name, "_averaged_stacked")), metric_function(new_df_test$`Ground Truth`, new_df_test$average)))
+    assign(paste0('test_', metric_name, "_sparse_nnls"), c(get(paste0('test_', metric_name, "_sparse_nnls")), metric_function(new_df_test$`Ground Truth`, new_df_test$weighted)))
+    assign(paste0('test_', metric_name, "_weighted_nnls"), c(get(paste0('test_', metric_name, "_weighted_nnls")), metric_function(new_df_test$`Ground Truth`, new_df_test$sparse_weighted)))
+    assign(paste0('test_', metric_name, "_pls"), c(get(paste0('test_', metric_name, "_pls")), metric_function(new_df_test$`Ground Truth`, new_df_test$pls_pred)))
+  }
+}
+
+testing <- new_df_test_list[[2]]
+
+#can use to check to make sure you have numeric classes for debugging
+#lapply(testing, class)
+```
+
+#SECTION 8: Results and Data Visualization
+
+```{r}
+# Function to calculate means and standard deviations and return a formatted dataframe
+stats_results <- function(lists, row_labels, metric) {
+  means <- sapply(lists, function(x) mean(unlist(x), na.rm = TRUE))
+  sds <- sapply(lists, function(x) sd(unlist(x), na.rm = TRUE))
+  result_df <- data.frame(
+    Category = row_labels,
+    Mean = means,
+    SD = sds
+  )
+  colnames(result_df)[2:3] <- paste(metric, c("_Mean", "_SD"), sep = " ")
+  return(result_df)
+}
+
+# load in source file functions for correct visualizations
+if (type_of_analysis == "binary") {
+  source('model_functions/binary_performance_functions.R')
+} else if (type_of_analysis == "continuous") {
+  source('model_functions/continuous_performance_functions.R')
+} else {
+  stop("Unsupported response type. Please use 'binary' or 'continuous'.")
+}
+
+# Convert the data to long format
+long_data <- all_results_df %>%
+  pivot_longer(cols = -Category, names_to = "Metric", values_to = "Value") %>%
+  # Split column names into Metric and Type based on the format "Metric Type"
+  separate(Metric, into = c("Metric", "Type"), sep = "_") %>%
+  # Ensure Type is treated as a factor with levels "Mean" and "SD"
+  mutate(Type = factor(Type, levels = c("Mean", "SD")))
+
+# Separate Mean and SD for plotting
+mean_df <- long_data %>% filter(Type == "Mean")
+sd_df <- long_data %>% filter(Type == "SD")
+
+plot_df <- mean_df %>%
+  left_join(sd_df, by = c("Category", "Metric"), suffix = c(".mean", ".sd")) %>%
+  mutate(
+    ymin = Value.mean - Value.sd,
+    ymax = Value.mean + Value.sd
+  )
+
+# Update plot_df with ordered factors
+plot_df_order <- plot_df %>%
+  mutate(
+    Metric = factor(Metric, levels = facet_order),
+    Category = factor(Category, levels = x_order)
+  )
+
+#create a faceted boxplot for the performance metrics 
+plot <- ggplot(data = plot_df_order, aes(x = Category, y = Value.mean, fill = Category)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  geom_errorbar(aes(ymin = ymin, ymax = ymax), width = 0.2, position = position_dodge(0.9)) +
+  facet_wrap(~ Metric, scales = "free_y") +
+  theme_minimal() +
+  labs(title = study_name, x = "Integration Technique", y = "Metric Value") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+plot
+```
+
+#SECTION 9: Save your data
+```{r}
+#save the plot file 
+plot_file = paste0("results/", study_name, ".png")
+ggsave(filename = plot_file, plot = plot, width = 10, height = 8, dpi = 300, bg='white')
+#save the RData file
+rdata_filename = paste0("results/", study_name, ".RData")
+save.image(file=rdata_filename)
+#save the performance metrics file
+performance_filename = paste0("results/", study_name, ".csv")
+write.csv(all_results_df, file = performance_filename, row.names = TRUE)
+```
+
+YEAH! You now have some models and data! If you want to extract features down the road or look at your values, you can load in the RData file for this. 
+
+#SECTION 10: Feature Importance Extraction from Models
+* This will load in two functions. 
+*The first function is called `normalize_absolute` and will first take the absolute value and then perform min-max normalization across each fold. 
+*The second function will load in a feature extraction method based on whether "elastic net", "random forest" or "xgboost" are used. 
+```{r}
+source("model_functions/feature_extraction.R")
+metab_importance <- feature_extraction(metab_model)
+concat_importance <- feature_extraction(concat_model)
+taxa_importance <- feature_extraction(mss_model)
+```
+
+YEAH!! You now have tables for features that you might want to look into using peer review or experimentation for the concatenated and base learning models. 
+You can export these tables to the results folder below.
+```{r}
+  write.csv(metab_importance, file = paste0("results/", study_name, "_metab_importance.csv"), row.names = FALSE)
+  write.csv(concat_importance, file = paste0("results/", study_name, "_concat_importance.csv"), row.names = FALSE)
+  write.csv(taxa_importance, file = paste0("results/", study_name, "_taxa_importance.csv"), row.names = FALSE)
+```
+
+Remember: the higher Mean_Importance means that the taxa or metabolites are more important. You can reorder in excel and/or in R to view these. 
+
+
+

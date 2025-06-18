@@ -1,20 +1,19 @@
 #SECTION 1: Load in necessary libraries. 
 #note: libraries specific for functions will be stored in the function files. 
-library(caret)
-library(kernlab)
-library(xgboost)
-library(tidyverse)
-library(MLmetrics)
-library(nnls)
-library(optparse)
-library(argparse)
-library(glmnet)
-library(pls)
-library(pROC)
-library(irr)
-library(glmnet)
-library(randomForest)
-library(xgboost)
+pkgs_needed <- c(
+  "caret", "kernlab", "xgboost", "tidyverse", "MLmetrics",
+  "nnls", "argparse", "glmnet", "pls", "pROC", "irr", "randomForest","readr"
+)
+
+# TRUE/FALSE test + action
+for (pkg in pkgs_needed) {
+  if (!requireNamespace(pkg, quietly = TRUE)) {
+    install.packages(pkg, dependencies = TRUE)
+  }
+  suppressPackageStartupMessages(
+    library(pkg, character.only = TRUE)
+  )
+}
 
 #set seed
 set.seed(123)
@@ -83,120 +82,101 @@ start_time <- Sys.time()
 # Define the metrics for continuous and binary data
 
 #SECTION 2: LOAD IN DATA AND CHECK DATA TYPE AND LENGTH
-data = read_csv(input_file, show_col_types=FALSE)
-#checks
-print(paste('The data file used is: ', input_file))
-print(paste('The proportion used for testing is: ', training_proportion))
-print(paste('The number of repeats is: ', num_repeats))
-print(paste('The number of folds is: ', num_folds))
-#DATA CHECK FOR METABOLITES
-# Get the column names that start with 'm__'
-m_columns <- grep("^m__", colnames(data), value = TRUE)
-print(paste('The number of metabolites are: ', length(m_columns)))
-# Check for missing values in metabolite columns
-missing_values_m <- sapply(data[m_columns], function(column) any(is.na(column)))
-columns_with_na_m <- length(names(missing_values_m)[missing_values_m])
-print(paste("Metabolite number of columns with NA: ", columns_with_na_m))
-#DATA CHECK FOR TAXA
-#Get the column names that start with 't__'
-t_columns <- grep("^t__", colnames(data), value = TRUE)
-print(paste('The number of taxa are: ', length(t_columns)))
-# Check for missing values in taxa columns
-missing_values_t <- sapply(data[t_columns], function(column) any(is.na(column)))
-columns_with_na_t <- length(names(missing_values_t)[missing_values_t])
-print(paste("Taxa number of columns with NA: ", columns_with_na_t))
-#DATA CHECK FOR RESPONSE VARIABLE AND STRATIFIED VARIABLE 
-print(paste('TRUE/FALSE: The response variable, ', response_variable, ' has missing values. ', any(is.na(data[[response_variable]]))))
-#check if stratify variable is present
-# Check if the input is empty and assign NULL if so
-if (stratify_variable == "") {
-  stratify_variable <- NULL
-  print('Notice: The stratify variable is NULL. ')
-}
-#if the stratify_variable is not NULL, check for missing values. 
-if (!is.null(stratify_variable)) {
-  print(paste('TRUE/FALSE: The stratify variable, ', stratify_variable, ' has missing values. ', any(is.na(data[[stratify_variable]]))))
+
+#helper functions
+get_columns_by_prefix <- function(prefix) {
+  grep(paste0('^', prefix), colnames(data), value = TRUE)
 }
 
-# Check for missing values in the specified columns
-#DATA CHECK BEFORE READING IN ANYMORE FILES - CHECK FOR NA
-check_missing_values <- function(column_names) {
-  any(sapply(data[column_names], function(column) any(is.na(column))))
-}
-# Combine all columns to check
-columns_to_check <- c(response_variable, m_columns, t_columns)
-#if stratify variable is not null
-if (!is.null(stratify_variable)) {
-  columns_to_check <- c(columns_to_check, stratify_variable)
-}
-# Check for missing values
-if (check_missing_values(columns_to_check)) {
-  stop("There are NA values in the dataset. Please check the data again before proceeding.")
-} else {
-  print("No missing values detected in the dataset. Analysis will proceed.")
+summarise_missing <- function(cols, label) {
+  print(paste('The number of', label, 'are:', length(cols)))
+  n_na <- sum(sapply(data[cols], function(x) any(is.na(x))))
+  print(paste(label, 'number of columns with NA:', n_na))
 }
 
-# Check and convert columns to numeric if they are not already numeric
-convert_to_numeric <- function(column_names) {
-  for (col in column_names) {
+convert_and_check_numeric <- function(cols) {
+  for (col in cols) {
     if (!is.numeric(data[[col]])) {
-      # Attempt to convert to numeric
-      data[[col]] <- as.numeric(data[[col]])
+      data[[col]] <<- as.numeric(data[[col]])
       if (any(is.na(data[[col]]))) {
-        warning(paste("Some values in column", col, "could not be converted to numeric and have been set to NA."))
+        warning(paste('Some values in column', col,
+                      'could not be converted to numeric and have been set to NA.'))
       }
     }
   }
+  if (!all(sapply(data[cols], is.numeric))) {
+    stop('Not all specified columns are numeric. Please check the data.')
+  }
 }
 
-# Convert specified columns to numeric
-convert_to_numeric(c(m_columns, t_columns))
-# Check if conversion was successful
-check_numeric <- function(column_names) {
-  all(sapply(data[column_names], is.numeric))
+#features for metabolites and taxa
+m_columns <- get_columns_by_prefix('m__')
+t_columns <- get_columns_by_prefix('t__')
+
+# check for missing values
+summarise_missing(m_columns, 'metabolites')
+summarise_missing(t_columns, 'taxa')
+
+# check for response and stratify variables. 
+print(paste('TRUE/FALSE: The response variable,', response_variable,
+            'has missing values.', any(is.na(data[[response_variable]]))))
+
+if (identical(stratify_variable, '')) {
+  stratify_variable <- NULL
+  print('Notice: The stratify variable is NULL.')
+} else if (!is.null(stratify_variable)) {
+  print(paste('TRUE/FALSE: The stratify variable,', stratify_variable,
+              'has missing values.', any(is.na(data[[stratify_variable]]))))
 }
-if (!check_numeric(c(m_columns, t_columns))) {
-  stop("Not all metabolite and taxa columns are numeric. Please check the data.")
+#check for missing values in the entire dataset. NAs can throw errors in modeling. 
+all_columns_to_check <- c(response_variable, m_columns, t_columns)
+if (!is.null(stratify_variable)) {
+  all_columns_to_check <- c(all_columns_to_check, stratify_variable)
+}
+
+if (any(sapply(data[all_columns_to_check], function(x) any(is.na(x))))) {
+  stop('There are NA values in the dataset. Please check the data again before proceeding.')
 } else {
-  print("All metabolite and taxa columns are numeric.")
+  print('No missing values detected in the dataset. Analysis will proceed.')
 }
-# Handle script reading and response variable conversion
-if (type_of_analysis == "binary") {
-  #load in binary_functions for downstream analysis
-  #these include accuracy, aucroc, and kappa.
-  source("model_functions/binary_functions.R")
-  binary_metrics <- list(
+
+# check whether classes are numeric. 
+convert_and_check_numeric(c(m_columns, t_columns))
+print('All metabolite and taxa columns are numeric.')
+
+# Metrics and response variable type
+if (type_of_analysis == 'binary') {
+  source('model_functions/binary_functions.R')
+  metrics <- list(
     accuracy = accuracy_calculation,
-    kappa = kappa_calculation,
-    aucroc = aucroc_calculation
+    kappa    = kappa_calculation,
+    auroc   = auroc_calculation
   )
-  metrics <- binary_metrics
-  print("For binary table this is the counts recorded: ")
+  print('For binary table this is the counts recorded:')
   print(table(data[[response_variable]]))
-  print('Binary functions Accuracy, AUCROC and Kappa have been loaded.')
-  # Convert response variable to factor for binary analysis
+  print('Binary functions Accuracy, AUROC and Kappa have been loaded.')
+  
   if (!is.factor(data[[response_variable]])) {
     data[[response_variable]] <- as.factor(data[[response_variable]])
-    print(paste("The response variable", response_variable, "has been converted to a factor."))
+    print(paste('The response variable', response_variable, 'has been converted to a factor.'))
   }
-} else if (type_of_analysis == "continuous") {
-  #load in binary_functions for downstream analysis
-  #these include mae, rmse and r^2
-  source("model_functions/continuous_functions.R")
-  continuous_metrics <- list(
+  
+} else if (type_of_analysis == 'continuous') {
+  source('model_functions/continuous_functions.R')
+  metrics <- list(
     rmse = rmse_calculation,
-    r2 = r2_calculation,
-    mae = mae_calculation
+    r2   = r2_calculation,
+    mae  = mae_calculation
   )
-  metrics <- continuous_metrics
   print('Continuous functions R^2, RMSE and MAE have been loaded.')
-  # Ensure response variable is numeric for continuous analysis
+  
   if (!is.numeric(data[[response_variable]])) {
     data[[response_variable]] <- as.numeric(data[[response_variable]])
-    print(paste("The response variable", response_variable, "has been converted to numeric."))
+    print(paste('The response variable', response_variable, 'has been converted to numeric.'))
   }
+  
 } else {
-  stop("Invalid Type of analysis. Please enter 'binary' or 'continuous'.")
+  stop("Invalid type_of_analysis. Please enter 'binary' or 'continuous'.")
 }
 
 #SECTION 3 - TRAINING AND TESTING BASED ON CONTINUOUS OR BINARY FUNCTIONS.
@@ -224,12 +204,7 @@ metab_model <- list()
 mss_model <- list()
 concat_model <- list()
 
-# #Subset the for concatenation, metabolomics and mss
-# testset_concatenation <- subset(test, select = c(response_variable, m_columns, t_columns))
-# testset_metabolomics <- subset(test, select = c(response_variable, m_columns))
-# testset_mss <- subset(test, select = c(response_variable, t_columns))
-
-# Subset the training data
+# Subset the testing data
 testset_concatenation  <- test %>% select(response_variable, m_columns, t_columns)
 testset_metabolomics <- test %>% select(response_variable, m_columns)
 testset_mss<- test %>% select(response_variable, t_columns)
@@ -291,7 +266,6 @@ for (repeat_ in 1:num_repeats) {
 }
 
 #SECTION 4: Integrated performance models 
-
 #TRAINING DATA
 #loop through the stacked metabolomics, since this list will be the same size 
 #as mss and ground truth. 
