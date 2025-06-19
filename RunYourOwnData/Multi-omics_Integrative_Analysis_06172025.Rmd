@@ -98,9 +98,9 @@ numeric represents a number that you should use, such as 0.80, 3 and 5.
 Currently, this is set to run a binary random forest multi-omics integration analysis.
 ```{r}
 model_to_run = "random forest"
-study_name = "mock_continuous"
-type_of_analysis = "continuous"
-response_variable = "Continuous_Response"
+study_name = "mock_continuous"  #"mock_binary"
+type_of_analysis = 'continuous'  #"binary"
+response_variable = 'Continuous_Response' #"Binary_Response"
 stratify_variable = "Stratify_On" 
 training_proportion = 0.8 #test set will be 0.2
 num_repeats = 3
@@ -129,17 +129,17 @@ if (model_to_run == "random forest") {
 # Handle script reading and response variable conversion
 if (type_of_analysis == "binary") {
   #load in binary_functions for downstream analysis
-  #these include accuracy, aucroc, and kappa.
+  #these include accuracy, auroc, and kappa.
   source("model_functions/binary_functions.R")
   binary_metrics <- list(
     accuracy = accuracy_calculation,
     kappa = kappa_calculation,
-    aucroc = aucroc_calculation
+    auroc = auroc_calculation
   )
   metrics <- binary_metrics
   print("For binary table this is the counts recorded: ")
   print(table(merged[[response_variable]]))
-  print('Binary functions Accuracy, AUCROC and Kappa have been loaded.')
+  print('Binary functions Accuracy, auroc and Kappa have been loaded.')
   # Convert response variable to factor for binary analysis
   if (!is.factor(merged[[response_variable]])) {
     merged[[response_variable]] <- as.factor(merged[[response_variable]])

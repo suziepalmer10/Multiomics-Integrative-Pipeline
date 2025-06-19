@@ -13,10 +13,10 @@ row_labels <- c("Metabolomics", "MSS", "Concatenated", "Averaged Stacked", "Weig
 
 # Get the dataframes for each metric
 kappa_train_df <- stats_results(kappa_train_results, row_labels, "Kappa Train")
-auroc_train_df <- stats_results(auroc_train_results, row_labels, "auroc Train")
+auroc_train_df <- stats_results(auroc_train_results, row_labels, "AUROC Train")
 accuracy_train_df <- stats_results(accuracy_train_results, row_labels, "Accuracy Train")
 kappa_test_df <- stats_results(kappa_test_results, row_labels, "Kappa Test")
-auroc_test_df <- stats_results(auroc_test_results, row_labels, "auroc Test")
+auroc_test_df <- stats_results(auroc_test_results, row_labels, "AUROC Test")
 accuracy_test_df <- stats_results(accuracy_test_results, row_labels, "Accuracy Test")
 
 # Merge all dataframes by 'Category'
